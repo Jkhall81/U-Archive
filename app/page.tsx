@@ -14,18 +14,18 @@ export default function Home() {
         {/* Main content container left side of screen */}
         <div className="h-full w-full px-6 xl:w-[80vw]">
           {/* Three Line H1 */}
-          <div className="mt-[300px] space-y-2 w-full flex flex-col text-3xl 2xl:text-6xl text-white font-extrabold">
-            <h1 className="mb-[50px] text-amber-700 text-7xl">U-Archive</h1>
+          <div className="mt-[25vh] space-y-2 w-full flex flex-col text-3xl 2xl:text-6xl text-white font-extrabold">
+            <h1 className="mb-[4vh] text-amber-700 text-7xl">U-Archive</h1>
             <h2>Simplify Storage</h2>
             <h2>and Securely Manage Your Growing</h2>
             <h2 className="pl-[20%] 2xl:pl-[52%]">Healthcare Data</h2>
           </div>
 
           {/* White Divider Line */}
-          <div className="border-b-4 border-white w-[80%] 2xl:w-[60%] mt-[50px]" />
+          <div className="border-b-4 border-white w-[80%] 2xl:w-[60%] mt-[4vh]" />
 
           {/* Text */}
-          <p className="mt-[50px] text-slate-900 prose text-2xl font-bold">
+          <p className="mt-[4vh] text-slate-900 prose text-2xl font-bold">
             At U-Archive, we simplify storage for healthcare providers by
             securely backing up patient records and critical documents. Our
             service helps you manage growing data, ensuring compliance and
@@ -34,7 +34,7 @@ export default function Home() {
           </p>
 
           {/* Buttons */}
-          <div className="flex mt-[50px] space-x-6">
+          <div className="flex mt-[4vh] space-x-6">
             <Link href="/">
               <Button
                 size="lg"
