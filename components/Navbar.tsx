@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "w-full h-[140px] bg-transparent absolute flex max-2xl:hidden",
+        "w-full h-[140px] bg-transparent absolute flex max-2xl:hidden select-none",
         `${pathname === "/" ? "text-white" : ""}`
       )}
     >
