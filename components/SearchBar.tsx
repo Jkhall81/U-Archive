@@ -34,7 +34,7 @@ const SearchBar = () => {
     defaultValues: {
       lastName: "",
       dob: "",
-      chartNumber: "254",
+      chartNumber: "",
     },
   });
 
