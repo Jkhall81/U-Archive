@@ -1,20 +1,45 @@
+"use client";
+
+import { z } from "zod";
+import { searchBarSchema } from "@/schemas/forms/searchBarSchema";
+import { UseFormReturn } from "react-hook-form";
+import {
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "./ui/form";
+import { Input } from "./ui/input";
+
+type FormValues = z.infer<typeof searchBarSchema>;
+
 interface Props {
   label: string;
-  name: string;
+  name: keyof FormValues;
   placeHolder: string;
+
+  form: UseFormReturn<FormValues>;
 }
 
-const SearchBarInput = ({ label, name, placeHolder }: Props) => {
+export const SearchBarInput = ({ label, placeHolder, name, form }: Props) => {
   return (
-    <div className="flex space-x-6 text-xl">
-      <label htmlFor={name}>{label}</label>
-      <input
-        className="pl-4 text-xl rounded-xl placeholder-black bg-slate-400 dark:bg-white"
-        name={name}
-        type="text"
-        placeholder={placeHolder}
-      />
-    </div>
+    <FormField
+      name={name}
+      control={form.control}
+      render={({ field }) => (
+        <FormItem className="flex items-center">
+          <FormLabel className="w-full">{label}</FormLabel>
+          <FormControl>
+            <Input
+              className="rounded-xl"
+              placeholder={placeHolder}
+              {...field}
+            />
+          </FormControl>
+          <FormMessage />
+        </FormItem>
+      )}
+    />
   );
 };
-export default SearchBarInput;
