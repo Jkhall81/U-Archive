@@ -1,7 +1,5 @@
 "use client";
 
-import { useState, ChangeEvent } from "react";
-import { demographicsData } from "@/lib/dummyData/demographics";
 import { SearchBarInput } from "./SearchBarInput";
 import { Button } from "./ui/button";
 import { useForm } from "react-hook-form";
@@ -10,25 +8,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Form } from "./ui/form";
 
-const SearchBar = () => {
-  const [inputs, setInputs] = useState({
-    lastName: "",
-    dob: "",
-    chartNumber: "",
-  });
+interface SearchBarProps {
+  onSubmit: (data: z.infer<typeof searchBarSchema>) => void;
+}
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setInputs((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const onSubmit = (data: z.infer<typeof searchBarSchema>) => {
-    console.log("Form Values: ", data);
-  };
-
+const SearchBar = ({ onSubmit }: SearchBarProps) => {
   const form = useForm<z.infer<typeof searchBarSchema>>({
     resolver: zodResolver(searchBarSchema),
     defaultValues: {
