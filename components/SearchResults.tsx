@@ -1,28 +1,12 @@
 import { SearchResultItem } from "./SearchResultItem";
-
-interface Patient {
-  chartNumber: number;
-  firstName: string;
-  midInitial: string;
-  lastName: string;
-  dateOfBirth: string;
-  SSN: string;
-  street1: string;
-  street2: string;
-  city: string;
-  state: string;
-  zipCode: string;
-  homePhone: string;
-  workPhone: string;
-  cellPhone: string;
-  email: string;
-}
+import { Patient } from "@/lib/dummyData/types";
 
 interface SearchResultsProps {
   data: Patient[];
+  onPatientSelect: (patient: Patient) => void;
 }
 
-const SearchResults = ({ data }: SearchResultsProps) => {
+const SearchResults = ({ data, onPatientSelect }: SearchResultsProps) => {
   return (
     <div className="m-4 space-y-4">
       {data.length > 0 ? (
@@ -32,6 +16,7 @@ const SearchResults = ({ data }: SearchResultsProps) => {
             chartNumber={patient.chartNumber}
             name={`${patient.firstName} ${patient.lastName}`}
             dob={patient.dateOfBirth}
+            onClick={() => onPatientSelect(patient)}
           />
         ))
       ) : (

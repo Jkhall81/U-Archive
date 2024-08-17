@@ -1,6 +1,8 @@
 "use client";
 
+import { Patient } from "@/lib/dummyData/types";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import PatientInfoBar from "@/components/PatientInfoBar";
 import SearchBar from "@/components/SearchBar";
 import SearchResults from "@/components/SearchResults";
@@ -17,6 +19,9 @@ export default function RootLayout({
     dob: "",
     chartNumber: "",
   });
+  const [showSearchResults, setShowSearchResults] = useState(true);
+  const [selectedPatient, setSelectedPatient] = useState<Patient | null>(null);
+  const router = useRouter();
 
   const filterData = () => {
     return demographicsData
@@ -55,6 +60,15 @@ export default function RootLayout({
         chartNumber: string;
       }
     );
+    setSelectedPatient(null);
+    setShowSearchResults(true);
+    router.push("/dashboard");
+  };
+
+  const handlePatientSelect = (patient: Patient) => {
+    setSelectedPatient(patient);
+    setShowSearchResults(false);
+    router.push("/dashboard/demographics");
   };
 
   const filteredData = filterData();
@@ -65,11 +79,18 @@ export default function RootLayout({
       <div className="w-[20vw]">
         <Sidebar />
       </div>
-      <div className="border-2 border-blue-500 size-full min-h-screen">
-        <div className="border-2 border-orange-500 w-full h-[6vh] mt-[100px]">
+      <div className="size-full min-h-screen">
+        <div className="w-full h-[6vh] mt-[100px]">
           <SearchBar onSubmit={handleSearchSubmit} />
-          <PatientInfoBar />
-          <SearchResults data={filteredData} />
+          {!showSearchResults && selectedPatient && (
+            <PatientInfoBar patient={selectedPatient} />
+          )}
+          {showSearchResults && (
+            <SearchResults
+              data={filteredData}
+              onPatientSelect={handlePatientSelect}
+            />
+          )}
           {children}
         </div>
       </div>

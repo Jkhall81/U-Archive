@@ -31,19 +31,19 @@ const SearchBar = ({ onSubmit }: SearchBarProps) => {
         <SearchBarInput
           name="lastName"
           label="Last Name"
-          placeHolder="Doe"
+          placeHolder=""
           form={form}
         />
         <SearchBarInput
           name="dob"
           label="Date of Birth"
-          placeHolder="05/25/1993"
+          placeHolder=""
           form={form}
         />
         <SearchBarInput
           name="chartNumber"
           label="Chart Number"
-          placeHolder="254"
+          placeHolder=""
           form={form}
         />
         <Button

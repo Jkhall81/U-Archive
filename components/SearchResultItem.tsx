@@ -2,19 +2,19 @@ interface SearchResultItemProps {
   name: string;
   dob: string;
   chartNumber: number;
+  onClick: () => void;
 }
 
 export const SearchResultItem = ({
   name,
   dob,
   chartNumber,
+  onClick,
 }: SearchResultItemProps) => {
   return (
     <section
-      onClick={() => {
-        console.log("Click!!");
-      }}
-      className="flex p-6 space-x-4 border-2 text-2xl dark:border-white border-black rounded-xl dark:hover:border-blue-500 dark:hover:text-blue-500 hover:border-blue-500 hover:text-blue-500"
+      onClick={onClick}
+      className="flex p-6 bg-neutral-300 dark:bg-neutral-900 space-x-4 border-2 hover:font-bold text-2xl dark:border-white border-black rounded-xl dark:hover:border-blue-500 dark:hover:text-blue-500 hover:border-blue-500 hover:text-blue-500 cursor-pointer"
     >
       <div className="flex">
         <span className="mr-2 dark:text-neutral-400">Chart Number: </span>
