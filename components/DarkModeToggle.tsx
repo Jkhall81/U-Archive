@@ -20,8 +20,6 @@ const DarkModeToggle = () => {
       setDarkMode(true);
     } else if (savedTheme === "light") {
       setDarkMode(false);
-    } else if (pathname === "/") {
-      setDarkMode(true);
     }
   }, [pathname]);
 

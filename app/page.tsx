@@ -1,20 +1,23 @@
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <section
-      className="h-screen bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: "url('/landingPage.png')",
-      }}
-    >
+    <section className="h-screen">
+      <Image
+        className="absolute z-0 ml-[50vw] mt-[30vh] rounded-tr-3xl rounded-br-3xl"
+        src="/landingPage.png"
+        alt="sunset"
+        height={1000}
+        width={1000}
+      />
       <main className="size-full min-h-screen flex">
         {/* Main content container left side of screen */}
         <div className="h-full w-full px-6 xl:w-[80vw]">
           {/* Three Line H1 */}
-          <div className="mt-[25vh] space-y-2 w-full flex flex-col text-3xl 2xl:text-6xl text-white font-extrabold">
+          <div className="relative mt-[25vh] space-y-2 w-full flex flex-col text-3xl 2xl:text-6xl dark:text-white text-slate-900 font-extrabold">
             <h1 className="mb-[4vh] text-amber-700 text-7xl">U-Archive</h1>
             <h2>Simplify Storage</h2>
             <h2>and Securely Manage Your Growing</h2>
@@ -22,10 +25,10 @@ export default function Home() {
           </div>
 
           {/* White Divider Line */}
-          <div className="border-b-4 border-white w-[80%] 2xl:w-[60%] mt-[4vh]" />
+          <div className="border-b-4 border-slate-900 dark:border-white w-[80%] 2xl:w-[60%] mt-[4vh]" />
 
           {/* Text */}
-          <p className="mt-[4vh] text-slate-900 prose text-2xl font-bold">
+          <p className="mt-[4vh] dark:text-white text-slate-900 prose text-2xl font-bold">
             At U-Archive, we simplify storage for healthcare providers by
             securely backing up patient records and critical documents. Our
             service helps you manage growing data, ensuring compliance and
@@ -38,7 +41,7 @@ export default function Home() {
             <Link href="/">
               <Button
                 size="lg"
-                className="w-[200px] text-xl border-2 border-white text-white rounded-xl"
+                className="w-[200px] text-xl border-2 border-slate-900 text-slate-900 dark:border-white dark:text-white rounded-xl"
               >
                 Sign in
               </Button>
@@ -46,7 +49,7 @@ export default function Home() {
             <Link href="/">
               <Button
                 size="lg"
-                className="w-[200px] text-xl bg-black text-white rounded-xl"
+                className="w-[200px] text-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 rounded-xl"
               >
                 Learn More
               </Button>
