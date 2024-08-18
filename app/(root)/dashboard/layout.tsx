@@ -36,7 +36,7 @@ export default function RootLayout({
       chartNumber: string;
     }>
   ) => {
-    console.log("Search Data Submitted: ", data); // Log search data
+  
     setSearchData(
       data as {
         lastName: string;
@@ -58,7 +58,7 @@ export default function RootLayout({
   };
 
   const filteredData = filterDemographicsData(searchData);
-  console.log("Filtered Data!", filteredData);
+
 
   return (
     <section className="size-full min-h-screen flex">

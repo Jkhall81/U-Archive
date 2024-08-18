@@ -24,7 +24,6 @@ const DarkModeToggle = () => {
   }, [pathname]);
 
   useEffect(() => {
-    console.log(darkMode);
     if (darkMode !== null) {
       localStorage.setItem("theme", darkMode ? "dark" : "light");
 

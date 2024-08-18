@@ -26,7 +26,7 @@ const SearchBar = ({ onSubmit }: SearchBarProps) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="size-full flex justify-between items-center px-8"
+        className="size-full flex justify-between items-center px-8 pb-4"
       >
         <SearchBarInput
           name="lastName"
@@ -48,7 +48,7 @@ const SearchBar = ({ onSubmit }: SearchBarProps) => {
         />
         <Button
           type="submit"
-          className="text-xl w-[10vw] rounded-xl dark:bg-white dark:text-black bg-slate-400 text-black"
+          className="text-xl w-[10vw] rounded-xl border-2 border-black dark:bg-white dark:text-black bg-neutral-300 text-black"
         >
           Search
         </Button>
