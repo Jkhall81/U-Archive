@@ -1,7 +1,7 @@
-import { Patient } from "@/lib/dummyData/types";
+import { DemographicsItem } from "@/lib/dummyData/types";
 
 interface PatientInfoBarProps {
-  patient: Patient;
+  patient: DemographicsItem;
 }
 
 const PatientInfoBar = ({ patient }: PatientInfoBarProps) => {
@@ -9,14 +9,14 @@ const PatientInfoBar = ({ patient }: PatientInfoBarProps) => {
     <div className="w-full flex justify-evenly rounded-2xl items-center text-xl h-[80px] bg-slate-300 dark:text-white dark:bg-slate-800">
       <div className="flex">
         <span className="mr-4">Chart Number:</span>
-        <p>{patient.chartNumber}</p>
+        <p>{patient.patient.chartNumber}</p>
       </div>
       <p>
-        {patient.firstName} {patient.lastName}
+        {patient.patient.firstName} {patient.patient.lastName}
       </p>
       <div className="flex">
         <span className="mr-4">Date of Birth:</span>
-        <p>{patient.dateOfBirth}</p>
+        <p>{patient.patient.dateOfBirth}</p>
       </div>
       {/* Display other patient information here */}
     </div>

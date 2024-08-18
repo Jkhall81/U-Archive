@@ -1,4 +1,4 @@
-export const visitsDate = [
+export const visitsData = [
   // Chart Number 1
   {
     chartNumber: 1,

@@ -1,13 +1,14 @@
 "use client";
 
-import { Patient } from "@/lib/dummyData/types";
+import { DemographicsItem } from "@/lib/dummyData/types";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import PatientInfoBar from "@/components/PatientInfoBar";
 import SearchBar from "@/components/SearchBar";
 import SearchResults from "@/components/SearchResults";
 import Sidebar from "@/components/Sidebar";
-import { demographicsData } from "@/lib/dummyData/demographics";
+import { usePatientStore } from "@/lib/store";
+import { filterDemographicsData, getRelatedData } from "@/lib/filteringData";
 
 export default function RootLayout({
   children,
@@ -20,30 +21,13 @@ export default function RootLayout({
     chartNumber: "",
   });
   const [showSearchResults, setShowSearchResults] = useState(true);
-  const [selectedPatient, setSelectedPatient] = useState<Patient | null>(null);
   const router = useRouter();
 
-  const filterData = () => {
-    return demographicsData
-      .filter((item) => {
-        const patient = item.patient;
-
-        const matchesLastName = searchData.lastName
-          ? patient.lastName.includes(searchData.lastName)
-          : true;
-
-        const matchesDob = searchData.dob
-          ? patient.dateOfBirth.includes(searchData.dob)
-          : true;
-
-        const matchesChartNumber = searchData.chartNumber
-          ? patient.chartNumber.toString().includes(searchData.chartNumber)
-          : true;
-
-        return matchesLastName && matchesDob && matchesChartNumber;
-      })
-      .map((item) => item.patient);
-  };
+  const setSelectedPatient = usePatientStore(
+    (state) => state.setSelectedPatient
+  );
+  const setRelatedData = usePatientStore((state) => state.setRelatedData);
+  const selectedPatient = usePatientStore((state) => state.selectedPatient);
 
   const handleSearchSubmit = (
     data: Partial<{
@@ -65,14 +49,16 @@ export default function RootLayout({
     router.push("/dashboard");
   };
 
-  const handlePatientSelect = (patient: Patient) => {
-    setSelectedPatient(patient);
+  const handlePatientSelect = (patientData: DemographicsItem) => {
+    setSelectedPatient(patientData);
+    const relatedData = getRelatedData(patientData.patient.chartNumber);
+    setRelatedData(relatedData);
     setShowSearchResults(false);
     router.push("/dashboard/demographics");
   };
 
-  const filteredData = filterData();
-  console.log("filtered data: ", filteredData);
+  const filteredData = filterDemographicsData(searchData);
+  console.log("Filtered Data!", filteredData);
 
   return (
     <section className="size-full min-h-screen flex">
@@ -80,7 +66,7 @@ export default function RootLayout({
         <Sidebar />
       </div>
       <div className="size-full min-h-screen">
-        <div className="w-full h-[6vh] mt-[100px]">
+        <div className="w-full h-[8vh] mt-[100px]">
           <SearchBar onSubmit={handleSearchSubmit} />
           {!showSearchResults && selectedPatient && (
             <PatientInfoBar patient={selectedPatient} />

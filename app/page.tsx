@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <section className="h-screen">
       <Image
-        className="absolute z-0 ml-[50vw] mt-[30vh] rounded-tr-3xl rounded-br-3xl"
+        className="absolute z-0 ml-[56vw] mt-[30vh] rounded-bl-3xl rounded-tr-3xl rounded-br-3xl"
         src="/landingPage.png"
         alt="sunset"
-        height={1000}
-        width={1000}
+        height={800}
+        width={800}
       />
       <main className="size-full min-h-screen flex">
         {/* Main content container left side of screen */}
@@ -28,7 +28,7 @@ export default function Home() {
           <div className="border-b-4 border-slate-900 dark:border-white w-[80%] 2xl:w-[60%] mt-[4vh]" />
 
           {/* Text */}
-          <p className="mt-[4vh] dark:text-white text-slate-900 prose text-2xl font-bold">
+          <p className="relative mt-[4vh] dark:text-white text-slate-900 prose text-2xl font-bold">
             At U-Archive, we simplify storage for healthcare providers by
             securely backing up patient records and critical documents. Our
             service helps you manage growing data, ensuring compliance and

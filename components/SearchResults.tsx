@@ -1,22 +1,22 @@
 import { SearchResultItem } from "./SearchResultItem";
-import { Patient } from "@/lib/dummyData/types";
+import { DemographicsData, DemographicsItem } from "@/lib/dummyData/types";
 
 interface SearchResultsProps {
-  data: Patient[];
-  onPatientSelect: (patient: Patient) => void;
+  data: DemographicsData;
+  onPatientSelect: (patientData: DemographicsItem) => void;
 }
 
 const SearchResults = ({ data, onPatientSelect }: SearchResultsProps) => {
   return (
     <div className="m-4 space-y-4">
       {data.length > 0 ? (
-        data.map((patient) => (
+        data.map((item) => (
           <SearchResultItem
-            key={patient.chartNumber}
-            chartNumber={patient.chartNumber}
-            name={`${patient.firstName} ${patient.lastName}`}
-            dob={patient.dateOfBirth}
-            onClick={() => onPatientSelect(patient)}
+            key={item.patient.chartNumber}
+            chartNumber={item.patient.chartNumber}
+            name={`${item.patient.firstName} ${item.patient.lastName}`}
+            dob={item.patient.dateOfBirth}
+            onClick={() => onPatientSelect(item)}
           />
         ))
       ) : (

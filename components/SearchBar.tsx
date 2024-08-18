@@ -48,7 +48,7 @@ const SearchBar = ({ onSubmit }: SearchBarProps) => {
         />
         <Button
           type="submit"
-          className="text-xl rounded-xl dark:bg-white dark:text-black bg-slate-400 text-black"
+          className="text-xl w-[10vw] rounded-xl dark:bg-white dark:text-black bg-slate-400 text-black"
         >
           Search
         </Button>
