@@ -7,7 +7,7 @@ interface Props {
 export const PatientDisplay = ({ patientData }: Props) => {
   return (
     <main className="mt-6 rounded-2xl mx-1 border-2 border-neutral-300 dark:border-white pb-6">
-      <h2 className="mt-6 text-center text-4xl font-semibold">Patient Info</h2>
+      <h2 className="mt-6 text-center text-4xl font-semibold">Patient</h2>
       <section className="w-full flex">
         {/* Name and Date of Birth */}
         <div className="flex flex-col w-[50%] text-2xl space-y-4 pt-[100px] items-center">

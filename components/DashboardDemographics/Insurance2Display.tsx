@@ -7,9 +7,7 @@ interface Props {
 export const Insurance2Display = ({ insurance2Data }: Props) => {
   return (
     <main className="mt-6 rounded-2xl mx-1 border-2 bg-neutral-300 dark:bg-neutral-800 border-neutral-300 dark:border-white pb-6">
-      <h2 className="mt-6 text-center text-4xl font-semibold">
-        Insurance 2 Info
-      </h2>
+      <h2 className="mt-6 text-center text-4xl font-semibold">Insurance 2</h2>
       <section className="w-full flex">
         {/* Insurance Name, Ded, phone number */}
         <div className="flex flex-col w-[50%] text-2xl space-y-4 pt-[100px] items-center">

@@ -1,27 +1,36 @@
 import { create } from "zustand";
-import { DemographicsItem } from "@/lib/dummyData/types";
+import {
+  DemographicsItem,
+  HistoryItem,
+  Document,
+  Lab,
+  Medication,
+  Problem,
+  Procedure,
+  Visit,
+} from "@/lib/dummyData/types";
 
 interface PatientState {
   selectedPatient: DemographicsItem | null;
 
   relatedData: {
-    documents: any[];
-    history: any[];
-    labs: any[];
-    medications: any[];
-    problems: any[];
-    procedures: any[];
-    visits: any[];
+    documents: Document[];
+    history: HistoryItem[];
+    labs: Lab[];
+    medications: Medication[];
+    problems: Problem[];
+    procedures: Procedure[];
+    visits: Visit[];
   };
   setSelectedPatient: (patient: DemographicsItem | null) => void;
   setRelatedData: (data: {
-    documents: any[];
-    history: any[];
-    labs: any[];
-    medications: any[];
-    problems: any[];
-    procedures: any[];
-    visits: any[];
+    documents: Document[];
+    history: HistoryItem[];
+    labs: Lab[];
+    medications: Medication[];
+    problems: Problem[];
+    procedures: Procedure[];
+    visits: Visit[];
   }) => void;
 }
 

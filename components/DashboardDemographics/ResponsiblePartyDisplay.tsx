@@ -8,7 +8,7 @@ export const ResponsiblePartyDisplay = ({ responsiblePartyData }: Props) => {
   return (
     <main className="mt-6 rounded-2xl mx-1 border-2 bg-neutral-300 dark:bg-neutral-800 border-neutral-300 dark:border-white pb-6">
       <h2 className="mt-6 text-center text-4xl font-semibold">
-        Responsible Party Info
+        Responsible Party
       </h2>
       <section className="w-full flex">
         {/* Name and Date of Birth */}

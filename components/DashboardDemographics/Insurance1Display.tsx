@@ -8,9 +8,7 @@ export const Insurance1Display = ({ insurance1Data }: Props) => {
   console.log("Insurance1 Data", insurance1Data);
   return (
     <main className="mt-6 rounded-2xl mx-1 border-2 border-neutral-300 dark:border-white pb-6">
-      <h2 className="mt-6 text-center text-4xl font-semibold">
-        Insurance 1 Info
-      </h2>
+      <h2 className="mt-6 text-center text-4xl font-semibold">Insurance 1</h2>
       <section className="w-full flex">
         {/* Insurance Name, Ded, phone number */}
         <div className="flex flex-col w-[50%] text-2xl space-y-4 pt-[100px] items-center">
