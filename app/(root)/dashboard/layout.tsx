@@ -1,8 +1,8 @@
 "use client";
 
 import { DemographicsItem } from "@/lib/dummyData/types";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import PatientInfoBar from "@/components/PatientInfoBar";
 import SearchBar from "@/components/SearchBar";
 import SearchResults from "@/components/SearchResults";
@@ -22,12 +22,24 @@ export default function RootLayout({
   });
   const [showSearchResults, setShowSearchResults] = useState(true);
   const router = useRouter();
+  const pathname = usePathname();
 
   const setSelectedPatient = usePatientStore(
     (state) => state.setSelectedPatient
   );
   const setRelatedData = usePatientStore((state) => state.setRelatedData);
   const selectedPatient = usePatientStore((state) => state.selectedPatient);
+
+  useEffect(() => {
+    // Redirect if there is no selectedPatient and the current path is a subpath of /dashboard
+    if (
+      !selectedPatient &&
+      pathname.startsWith("/dashboard/") &&
+      pathname !== "/dashboard"
+    ) {
+      router.push("/dashboard");
+    }
+  }, [selectedPatient, pathname, router]);
 
   const handleSearchSubmit = (
     data: Partial<{
@@ -36,7 +48,6 @@ export default function RootLayout({
       chartNumber: string;
     }>
   ) => {
-  
     setSearchData(
       data as {
         lastName: string;
@@ -58,7 +69,6 @@ export default function RootLayout({
   };
 
   const filteredData = filterDemographicsData(searchData);
-
 
   return (
     <section className="size-full min-h-screen flex">
