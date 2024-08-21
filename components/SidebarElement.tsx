@@ -11,7 +11,7 @@ const SidebarElement = ({ title, icon, className }: Props) => {
   return (
     <Link
       href={`/dashboard/${title.toLowerCase()}`}
-      className={cn("w-full flex pl-20", className)}
+      className={cn("w-full flex pl-10", className)}
     >
       {icon && <span className="mr-4 text-3xl">{icon}</span>}
       {title}

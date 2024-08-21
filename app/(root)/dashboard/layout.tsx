@@ -71,7 +71,7 @@ export default function RootLayout({
   const filteredData = filterDemographicsData(searchData);
 
   return (
-    <section className="size-full min-h-screen flex">
+    <section className="size-full min-h-screen flex pr-4">
       <div className="w-[20vw]">
         <Sidebar />
       </div>
