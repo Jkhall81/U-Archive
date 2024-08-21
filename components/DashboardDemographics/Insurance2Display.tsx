@@ -1,4 +1,5 @@
 import { Insurance2 } from "@/lib/dummyData/types";
+import { Card } from "../Card";
 
 interface Props {
   insurance2Data: Insurance2 | undefined;
@@ -6,70 +7,69 @@ interface Props {
 
 export const Insurance2Display = ({ insurance2Data }: Props) => {
   return (
-    <main className="mt-6 rounded-2xl mx-1 border-2 bg-neutral-300 dark:bg-neutral-800 border-neutral-300 dark:border-white pb-6">
-      <h2 className="mt-6 text-center text-4xl font-semibold">Insurance 2</h2>
+    <main className="mt-6 rounded-2xl mx-1 border-2 bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-white pb-6">
+      <h2 className="mt-6 text-center pb-6 text-4xl font-semibold">
+        Insurance 2
+      </h2>
       <section className="w-full flex">
         {/* Insurance Name, Ded, phone number */}
-        <div className="flex flex-col w-[50%] text-2xl space-y-4 pt-[100px] items-center">
-          <div className="flex">
-            <span className="mr-4">Insurance Provider:</span>
-            <p>{insurance2Data?.ins2Name}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Deductible:</span>
-            <p>${insurance2Data?.ins2Ded}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Contact Number:</span>
-            <p>{insurance2Data?.ins2Phone}</p>
-          </div>
-        </div>
-
+        <Card
+          fields={[
+            {
+              fieldName: "Insurance Provider",
+              fieldValue: insurance2Data?.ins2Name,
+            },
+            {
+              fieldName: "Deductible",
+              fieldValue: insurance2Data?.ins2Ded.toString(),
+            },
+            {
+              fieldName: "Contact Number",
+              fieldValue: insurance2Data?.ins2Phone,
+            },
+          ]}
+        />
         {/* Phone numbers and Email*/}
-        <div className="flex flex-col w-[50%] text-2xl space-y-4 pt-[100px] items-center">
-          <div className="flex">
-            <span className="mr-4">Provider Address:</span>
-            <p>{insurance2Data?.ins2Street1}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Provider Address Continued:</span>
-            <p>{insurance2Data?.ins2Street2}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">City:</span>
-            <p>{insurance2Data?.ins2City}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">State:</span>
-            <p>{insurance2Data?.ins2State}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Zipcode:</span>
-            <p>{insurance2Data?.ins2ZipCode}</p>
-          </div>
-        </div>
+        <Card
+          fields={[
+            {
+              fieldName: "Provider Address",
+              fieldValue: insurance2Data?.ins2Street1,
+            },
+            {
+              fieldName: "Address Continued",
+              fieldValue: insurance2Data?.ins2Street2,
+            },
+            { fieldName: "City", fieldValue: insurance2Data?.ins2City },
+            { fieldName: "State", fieldValue: insurance2Data?.ins2State },
+            { fieldName: "Zipcode", fieldValue: insurance2Data?.ins2ZipCode },
+          ]}
+        />
       </section>
 
       <section className="flex w-full">
         {/* SSN and Chart Number */}
-        <div className="flex flex-col w-[50%] text-2xl space-y-4 pt-[100px] items-center">
-          <div className="flex">
-            <span className="mr-4">Insurance Code:</span>
-            <p>{insurance2Data?.ins2Code}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Member Number:</span>
-            <p>{insurance2Data?.ins2MemberNo}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Group Name:</span>
-            <p>{insurance2Data?.ins2GroupName}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Group Number:</span>
-            <p>{insurance2Data?.Ins2GroupNumber}</p>
-          </div>
-        </div>
+        <Card
+          fields={[
+            {
+              fieldName: "Insurance Code",
+              fieldValue: insurance2Data?.ins2Code,
+            },
+            {
+              fieldName: "Member Number",
+              fieldValue: insurance2Data?.ins2MemberNo,
+            },
+            {
+              fieldName: "Group Name",
+              fieldValue: insurance2Data?.ins2GroupName,
+            },
+            {
+              fieldName: "Group Number",
+              fieldValue: insurance2Data?.Ins2GroupNumber,
+            },
+          ]}
+        />
+        <div className="w-[50%] m-4" />
       </section>
     </main>
   );
