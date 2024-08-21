@@ -1,5 +1,5 @@
 import { Patient } from "@/lib/dummyData/types";
-
+import { PatientDataCard } from "./PatientDisplayComponents/PatientDataCard";
 interface Props {
   patientData: Patient | undefined;
 }
@@ -9,26 +9,13 @@ export const PatientDisplay = ({ patientData }: Props) => {
     <main className="mt-6 rounded-2xl mx-1 border-2 border-neutral-300 dark:border-white pb-6">
       <h2 className="mt-6 text-center text-4xl font-semibold">Patient</h2>
       <section className="w-full flex">
-        {/* Name and Date of Birth */}
-        <div className="flex flex-col w-[50%] text-2xl space-y-4 pt-[100px] items-center">
-          <div className="flex">
-            <span className="mr-4">First Name:</span>
-            <p>{patientData?.firstName}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Middle Initial:</span>
-            <p>{patientData?.midInitial}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Last Name:</span>
-            <p>{patientData?.lastName}</p>
-          </div>
-          <div className="flex">
-            <span className="mr-4">Date of Birth:</span>
-            <p>{patientData?.dateOfBirth}</p>
-          </div>
-        </div>
-
+        {/* Patient Data */}
+        <PatientDataCard
+          firstName={patientData?.firstName}
+          midInitial={patientData?.midInitial}
+          lastName={patientData?.lastName}
+          dateOfBirth={patientData?.dateOfBirth}
+        />
         {/* Phone numbers and Email*/}
         <div className="flex flex-col w-[50%] text-2xl space-y-4 pt-[100px] items-center">
           <div className="flex">

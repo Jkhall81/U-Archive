@@ -9,31 +9,37 @@ const DarkModeToggle = () => {
   const pathname = usePathname();
   const [darkMode, setDarkMode] = useState<null | boolean>(null);
 
-  const toggleTheme = () => {
-    setDarkMode((prevDarkMode) => !prevDarkMode);
-  };
-
+  // Effect to apply the saved theme on initial load
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
 
     if (savedTheme === "dark") {
       setDarkMode(true);
+      document.documentElement.classList.add("dark");
     } else if (savedTheme === "light") {
       setDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    } else {
+      // If no saved theme, use a default theme (you can remove this line if not needed)
+      const isDarkMode = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setDarkMode(isDarkMode);
+      document.documentElement.classList.toggle("dark", isDarkMode);
     }
   }, [pathname]);
 
+  // Effect to save the theme in localStorage
   useEffect(() => {
     if (darkMode !== null) {
       localStorage.setItem("theme", darkMode ? "dark" : "light");
-
-      if (darkMode) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+      document.documentElement.classList.toggle("dark", darkMode);
     }
   }, [darkMode]);
+
+  const toggleTheme = () => {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
+  };
 
   const iconSize = 25;
   return (
@@ -45,4 +51,5 @@ const DarkModeToggle = () => {
     </div>
   );
 };
+
 export default DarkModeToggle;
