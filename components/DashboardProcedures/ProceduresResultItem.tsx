@@ -1,3 +1,6 @@
+import { VerticalDivider } from "../VerticalDivider";
+import { Card } from "../Card";
+
 interface Props {
   index: number;
   encounterNumber: string;
@@ -33,72 +36,53 @@ export const ProceduresResultItem = ({
 }: Props) => {
   return (
     <main className="flex flex-col">
-      <section className="flex py-6 pl-6 text-2xl space-x-4">
+      <section className="flex py-6 pl-6 text-2xl space-x-4 border border-black bg-neutral-300 dark:bg-neutral-800 dark:border-white m-4 rounded-3xl">
         <p>{index + 1}:</p>
+        <VerticalDivider />
         <div className="flex">
           <span className="mr-4 dark:text-neutral-400">Encounter Number:</span>
           <p>{encounterNumber}</p>
         </div>
+        <VerticalDivider />
         <div className="flex">
           <span className="mr-4 dark:text-neutral-400">Facility Name:</span>
           <p>{facilityName}</p>
         </div>
+        <VerticalDivider />
         <div className="flex">
           <span className="mr-4 dark:text-neutral-400">Test Name:</span>
           <p>{testName}</p>
         </div>
+        <VerticalDivider />
         <div className="flex">
           <span className="mr-4 dark:text-neutral-400">Test Date:</span>
           <p>{testDate}</p>
         </div>
+        <VerticalDivider />
         <div className="flex">
           <span className="mr-4 dark:text-neutral-400">Result Date:</span>
           <p>{resultDate}</p>
         </div>
       </section>
       <section className="flex flex-col w-full">
-        <h3 className="text-3xl text-center">Results</h3>
+        <h3 className="text-3xl pb-6 text-center">Results</h3>
         <div className="flex">
-          <div className="w-[50%] text-2xl">
-            <div className="space-y-4 w-full p-6">
-              <div className="flex">
-                <span className="mr-4">Result 1:</span>
-                <p>{result1}</p>
-              </div>
-              <div className="flex">
-                <span className="mr-4">Result 2:</span>
-                <p>{result2}</p>
-              </div>
-              <div className="flex">
-                <span className="mr-4">Result 3:</span>
-                <p>{result3}</p>
-              </div>
-              <div className="flex">
-                <span className="mr-4">Result 4:</span>
-                <p>{result4}</p>
-              </div>
-            </div>
-          </div>
-          <div className="w-[50%] text-2xl">
-            <div className="space-y-4 w-full p-6">
-              <div className="flex">
-                <span className="mr-4">Result 5:</span>
-                <p>{result5}</p>
-              </div>
-              <div className="flex">
-                <span className="mr-4">Result 6:</span>
-                <p>{result6}</p>
-              </div>
-              <div className="flex">
-                <span className="mr-4">Result 7:</span>
-                <p>{result7}</p>
-              </div>
-              <div className="flex">
-                <span className="mr-4">Result 8:</span>
-                <p>{result8}</p>
-              </div>
-            </div>
-          </div>
+          <Card
+            fields={[
+              { fieldName: "Result 1", fieldValue: result1 },
+              { fieldName: "Result 2", fieldValue: result2 },
+              { fieldName: "Result 3", fieldValue: result3 },
+              { fieldName: "Result 4", fieldValue: result4 },
+            ]}
+          />
+          <Card
+            fields={[
+              { fieldName: "Result 5", fieldValue: result5 },
+              { fieldName: "Result 6", fieldValue: result6 },
+              { fieldName: "Result 7", fieldValue: result7 },
+              { fieldName: "Result 8", fieldValue: result8 },
+            ]}
+          />
         </div>
       </section>
     </main>

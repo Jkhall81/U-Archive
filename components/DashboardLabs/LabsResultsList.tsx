@@ -8,7 +8,7 @@ interface Props {
 export const LabsResultsList = ({ data }: Props) => {
   return (
     <section className="border-2 border-neutral-300 dark:border-white mt-6 rounded-3xl">
-      <h2 className="text-4xl text-center mt-6 font-semibold">Labs</h2>
+      <h2 className="text-4xl text-center mt-6 pb-6 font-semibold">Labs</h2>
       {data.map((x, index) => (
         <LabsResultsItem
           key={index}

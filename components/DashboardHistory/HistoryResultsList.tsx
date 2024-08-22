@@ -21,8 +21,8 @@ const HistoryResultsList = ({ history, onClick }: Props) => {
       <h2 className="text-4xl text-center mt-6 font-semibold">History</h2>
       {history.map((x, index) => (
         <HistoryResultItem
-          index={index}
           key={index}
+          index={index}
           item={x.item}
           date={x.date}
           historyCategory={x.historyCategory}

@@ -22,6 +22,7 @@ const SearchResults = ({ data, onPatientSelect }: SearchResultsProps) => {
       ) : (
         <p>No results found</p>
       )}
+      <div className="h-[150px]" />
     </div>
   );
 };
