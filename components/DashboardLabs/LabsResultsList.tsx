@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import {useState} from 'react';
+import { useState } from "react";
 import { Lab } from "@/lib/dummyData/types";
 import { LabsResultsItem } from "./LabsResultsItem";
 
@@ -23,8 +23,6 @@ export const LabsResultsList = ({ data, onClick }: Props) => {
         <LabsResultsItem
           key={index}
           index={index}
-          encounterNumber={x.encounterNumber}
-          labName={x.labName}
           testName={x.testName}
           onClick={() => handleClick(x)}
           isSelected={selectedItem === x}
