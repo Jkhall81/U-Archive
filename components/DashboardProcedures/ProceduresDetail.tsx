@@ -15,10 +15,6 @@ export const ProceduresDetail = ({ item }: Props) => {
       <div className="flex">
         <Card
           fields={[
-            {
-              fieldName: "Encounter Number",
-              fieldValue: item.encounterNumber,
-            },
             { fieldName: "Encounter Number", fieldValue: item.encounterNumber },
             { fieldName: "Facility Name", fieldValue: item.facilityName },
             { fieldName: "Test Name", fieldValue: item.testName },

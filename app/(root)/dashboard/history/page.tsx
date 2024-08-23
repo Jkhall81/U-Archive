@@ -27,10 +27,7 @@ const HistoryPage = () => {
       </div>
       <div className="w-full ml-4">
         {detailDisplayOpen && selectedHistoryItem && (
-          <HistoryDetail
-            item={selectedHistoryItem}
-            onClose={() => setDetailDisplayOpen(false)}
-          />
+          <HistoryDetail item={selectedHistoryItem} />
         )}
       </div>
     </section>
