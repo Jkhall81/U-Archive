@@ -2,7 +2,7 @@ export const labsData = [
   // Chart Number 1
   {
     chartNumber: 1,
-    encounterNumber: "ENC001",
+    encounterNumber: "E001",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-08-01",
@@ -18,7 +18,7 @@ export const labsData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "ENC002",
+    encounterNumber: "E002",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-08-03",
@@ -34,7 +34,7 @@ export const labsData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "ENC003",
+    encounterNumber: "E003",
     labName: "LabCorp",
     testName: "Basic Metabolic Panel",
     testDate: "2024-08-05",
@@ -50,7 +50,7 @@ export const labsData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "ENC016",
+    encounterNumber: "E004",
     labName: "LabCorp",
     testName: "Thyroid Function Test",
     testDate: "2024-09-10",
@@ -66,7 +66,7 @@ export const labsData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "ENC017",
+    encounterNumber: "E005",
     labName: "Quest Diagnostics",
     testName: "Vitamin D Test",
     testDate: "2024-09-15",
@@ -82,7 +82,7 @@ export const labsData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "ENC018",
+    encounterNumber: "E006",
     labName: "LabCorp",
     testName: "Comprehensive Metabolic Panel",
     testDate: "2024-09-20",
@@ -100,7 +100,7 @@ export const labsData = [
   // Chart Number 2
   {
     chartNumber: 2,
-    encounterNumber: "ENC004",
+    encounterNumber: "E007",
     labName: "Quest Diagnostics",
     testName: "Thyroid Panel",
     testDate: "2024-07-10",
@@ -116,7 +116,7 @@ export const labsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "ENC005",
+    encounterNumber: "E008",
     labName: "LabCorp",
     testName: "Liver Function Test",
     testDate: "2024-07-12",
@@ -132,7 +132,7 @@ export const labsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "ENC006",
+    encounterNumber: "E009",
     labName: "Quest Diagnostics",
     testName: "Renal Panel",
     testDate: "2024-07-14",
@@ -148,7 +148,7 @@ export const labsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "ENC019",
+    encounterNumber: "E010",
     labName: "Quest Diagnostics",
     testName: "Liver Function Test",
     testDate: "2024-09-25",
@@ -164,7 +164,7 @@ export const labsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "ENC020",
+    encounterNumber: "E011",
     labName: "LabCorp",
     testName: "Kidney Function Test",
     testDate: "2024-09-30",
@@ -180,7 +180,7 @@ export const labsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "ENC021",
+    encounterNumber: "E012",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-10-05",
@@ -198,7 +198,7 @@ export const labsData = [
   // Chart Number 3
   {
     chartNumber: 3,
-    encounterNumber: "ENC007",
+    encounterNumber: "E013",
     labName: "LabCorp",
     testName: "Iron Studies",
     testDate: "2024-06-15",
@@ -214,7 +214,7 @@ export const labsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "ENC008",
+    encounterNumber: "E014",
     labName: "Quest Diagnostics",
     testName: "Vitamin D Test",
     testDate: "2024-06-18",
@@ -230,7 +230,7 @@ export const labsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "ENC009",
+    encounterNumber: "E015",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-06-20",
@@ -246,7 +246,7 @@ export const labsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "ENC022",
+    encounterNumber: "E016",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-10-10",
@@ -262,7 +262,7 @@ export const labsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "ENC023",
+    encounterNumber: "E017",
     labName: "Quest Diagnostics",
     testName: "Thyroid Function Test",
     testDate: "2024-10-15",
@@ -278,7 +278,7 @@ export const labsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "ENC024",
+    encounterNumber: "E018",
     labName: "LabCorp",
     testName: "Vitamin D Test",
     testDate: "2024-10-20",
@@ -296,7 +296,7 @@ export const labsData = [
   // Chart Number 4
   {
     chartNumber: 4,
-    encounterNumber: "ENC010",
+    encounterNumber: "E019",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-05-10",
@@ -312,7 +312,7 @@ export const labsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "ENC011",
+    encounterNumber: "E020",
     labName: "LabCorp",
     testName: "Basic Metabolic Panel",
     testDate: "2024-05-12",
@@ -328,7 +328,7 @@ export const labsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "ENC012",
+    encounterNumber: "E021",
     labName: "Quest Diagnostics",
     testName: "Renal Function Test",
     testDate: "2024-05-14",
@@ -344,7 +344,7 @@ export const labsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "ENC025",
+    encounterNumber: "E022",
     labName: "Quest Diagnostics",
     testName: "Comprehensive Metabolic Panel",
     testDate: "2024-10-25",
@@ -360,7 +360,7 @@ export const labsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "ENC026",
+    encounterNumber: "E023",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-11-01",
@@ -376,7 +376,7 @@ export const labsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "ENC027",
+    encounterNumber: "E024",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-11-05",
@@ -394,7 +394,7 @@ export const labsData = [
   // Chart Number 5
   {
     chartNumber: 5,
-    encounterNumber: "ENC013",
+    encounterNumber: "E025",
     labName: "LabCorp",
     testName: "Thyroid Panel",
     testDate: "2024-04-10",
@@ -410,7 +410,7 @@ export const labsData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "ENC014",
+    encounterNumber: "E026",
     labName: "Quest Diagnostics",
     testName: "Liver Function Test",
     testDate: "2024-04-12",
@@ -426,7 +426,7 @@ export const labsData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "ENC015",
+    encounterNumber: "E027",
     labName: "LabCorp",
     testName: "Iron Studies",
     testDate: "2024-04-14",
@@ -442,7 +442,7 @@ export const labsData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "ENC028",
+    encounterNumber: "E028",
     labName: "LabCorp",
     testName: "Basic Metabolic Panel",
     testDate: "2024-11-10",
@@ -458,7 +458,7 @@ export const labsData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "ENC029",
+    encounterNumber: "E029",
     labName: "Quest Diagnostics",
     testName: "Liver Function Test",
     testDate: "2024-11-15",
@@ -474,7 +474,7 @@ export const labsData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "ENC030",
+    encounterNumber: "E030",
     labName: "LabCorp",
     testName: "Kidney Function Test",
     testDate: "2024-11-20",
@@ -490,7 +490,7 @@ export const labsData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC031",
+    encounterNumber: "E031",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-08-01",
@@ -506,7 +506,7 @@ export const labsData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC032",
+    encounterNumber: "E032",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-08-05",
@@ -522,7 +522,7 @@ export const labsData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC033",
+    encounterNumber: "E033",
     labName: "LabCorp",
     testName: "Basic Metabolic Panel",
     testDate: "2024-08-10",
@@ -538,7 +538,7 @@ export const labsData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC034",
+    encounterNumber: "E034",
     labName: "Quest Diagnostics",
     testName: "Thyroid Function Test",
     testDate: "2024-08-15",
@@ -554,7 +554,7 @@ export const labsData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC035",
+    encounterNumber: "E035",
     labName: "LabCorp",
     testName: "Vitamin D Test",
     testDate: "2024-08-20",
@@ -570,7 +570,7 @@ export const labsData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC036",
+    encounterNumber: "E036",
     labName: "Quest Diagnostics",
     testName: "Comprehensive Metabolic Panel",
     testDate: "2024-08-25",
@@ -586,7 +586,7 @@ export const labsData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC037",
+    encounterNumber: "E037",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-09-01",
@@ -602,7 +602,7 @@ export const labsData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC038",
+    encounterNumber: "E038",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-09-05",
@@ -618,7 +618,7 @@ export const labsData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC039",
+    encounterNumber: "E039",
     labName: "LabCorp",
     testName: "Basic Metabolic Panel",
     testDate: "2024-09-10",
@@ -634,7 +634,7 @@ export const labsData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC040",
+    encounterNumber: "E040",
     labName: "Quest Diagnostics",
     testName: "Thyroid Function Test",
     testDate: "2024-09-15",
@@ -650,7 +650,7 @@ export const labsData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC041",
+    encounterNumber: "E041",
     labName: "LabCorp",
     testName: "Vitamin D Test",
     testDate: "2024-09-20",
@@ -666,7 +666,7 @@ export const labsData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC042",
+    encounterNumber: "E042",
     labName: "Quest Diagnostics",
     testName: "Comprehensive Metabolic Panel",
     testDate: "2024-09-25",
@@ -682,7 +682,7 @@ export const labsData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC043",
+    encounterNumber: "E043",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-10-01",
@@ -698,7 +698,7 @@ export const labsData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC044",
+    encounterNumber: "E044",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-10-05",
@@ -714,7 +714,7 @@ export const labsData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC045",
+    encounterNumber: "E045",
     labName: "LabCorp",
     testName: "Basic Metabolic Panel",
     testDate: "2024-10-10",
@@ -730,7 +730,7 @@ export const labsData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC046",
+    encounterNumber: "E046",
     labName: "Quest Diagnostics",
     testName: "Thyroid Function Test",
     testDate: "2024-10-15",
@@ -746,7 +746,7 @@ export const labsData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC047",
+    encounterNumber: "E047",
     labName: "LabCorp",
     testName: "Vitamin D Test",
     testDate: "2024-10-20",
@@ -762,7 +762,7 @@ export const labsData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC048",
+    encounterNumber: "E048",
     labName: "Quest Diagnostics",
     testName: "Comprehensive Metabolic Panel",
     testDate: "2024-10-25",
@@ -778,7 +778,7 @@ export const labsData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC049",
+    encounterNumber: "E049",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-11-01",
@@ -794,7 +794,7 @@ export const labsData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC050",
+    encounterNumber: "E050",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-11-05",
@@ -810,7 +810,7 @@ export const labsData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC051",
+    encounterNumber: "E051",
     labName: "LabCorp",
     testName: "Basic Metabolic Panel",
     testDate: "2024-11-10",
@@ -826,7 +826,7 @@ export const labsData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC052",
+    encounterNumber: "E052",
     labName: "Quest Diagnostics",
     testName: "Thyroid Function Test",
     testDate: "2024-11-15",
@@ -842,7 +842,7 @@ export const labsData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC053",
+    encounterNumber: "E053",
     labName: "LabCorp",
     testName: "Vitamin D Test",
     testDate: "2024-11-20",
@@ -858,7 +858,7 @@ export const labsData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC054",
+    encounterNumber: "E054",
     labName: "Quest Diagnostics",
     testName: "Comprehensive Metabolic Panel",
     testDate: "2024-11-25",
@@ -874,7 +874,7 @@ export const labsData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC055",
+    encounterNumber: "E055",
     labName: "LabCorp",
     testName: "Complete Blood Count",
     testDate: "2024-12-01",
@@ -890,7 +890,7 @@ export const labsData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC056",
+    encounterNumber: "E056",
     labName: "Quest Diagnostics",
     testName: "Lipid Panel",
     testDate: "2024-12-05",
@@ -906,7 +906,7 @@ export const labsData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC057",
+    encounterNumber: "E057",
     labName: "LabCorp",
     testName: "Basic Metabolic Panel",
     testDate: "2024-12-10",
@@ -922,7 +922,7 @@ export const labsData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC058",
+    encounterNumber: "E058",
     labName: "Quest Diagnostics",
     testName: "Thyroid Function Test",
     testDate: "2024-12-15",
@@ -938,7 +938,7 @@ export const labsData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC059",
+    encounterNumber: "E059",
     labName: "LabCorp",
     testName: "Vitamin D Test",
     testDate: "2024-12-20",
@@ -954,7 +954,7 @@ export const labsData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC060",
+    encounterNumber: "E060",
     labName: "Quest Diagnostics",
     testName: "Comprehensive Metabolic Panel",
     testDate: "2024-12-25",

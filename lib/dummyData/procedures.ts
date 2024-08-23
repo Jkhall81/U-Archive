@@ -2,7 +2,7 @@ export const proceduresData = [
   // Chart Number 1
   {
     chartNumber: 1,
-    encounterNumber: "E123",
+    encounterNumber: "E061",
     facilityName: "General Hospital",
     testName: "Complete Blood Count",
     testDate: "2024-08-01",
@@ -18,7 +18,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "E124",
+    encounterNumber: "E062",
     facilityName: "Health Clinic",
     testName: "Urinalysis",
     testDate: "2024-08-03",
@@ -34,7 +34,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "E125",
+    encounterNumber: "E063",
     facilityName: "Specialty Lab",
     testName: "Lipid Panel",
     testDate: "2024-08-05",
@@ -50,7 +50,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "ENC016",
+    encounterNumber: "E064",
     facilityName: "General Hospital",
     testName: "Complete Blood Count",
     testDate: "2024-08-01",
@@ -66,7 +66,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "ENC017",
+    encounterNumber: "E065",
     facilityName: "Health Clinic",
     testName: "Urinalysis",
     testDate: "2024-08-03",
@@ -82,7 +82,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "ENC018",
+    encounterNumber: "E066",
     facilityName: "Specialty Lab",
     testName: "Lipid Panel",
     testDate: "2024-08-05",
@@ -100,7 +100,7 @@ export const proceduresData = [
   // Chart Number 2
   {
     chartNumber: 2,
-    encounterNumber: "E223",
+    encounterNumber: "E067",
     facilityName: "Urgent Care",
     testName: "Chest X-Ray",
     testDate: "2024-07-10",
@@ -116,7 +116,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "E224",
+    encounterNumber: "E068",
     facilityName: "Diagnostic Imaging",
     testName: "MRI Brain",
     testDate: "2024-07-12",
@@ -132,7 +132,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "E225",
+    encounterNumber: "E069",
     facilityName: "Health Center",
     testName: "Echocardiogram",
     testDate: "2024-07-14",
@@ -148,7 +148,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "ENC019",
+    encounterNumber: "E070",
     facilityName: "City Hospital",
     testName: "Basic Metabolic Panel",
     testDate: "2024-08-07",
@@ -164,7 +164,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "ENC020",
+    encounterNumber: "E071",
     facilityName: "Wellness Center",
     testName: "Thyroid Function Test",
     testDate: "2024-08-09",
@@ -180,7 +180,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "ENC021",
+    encounterNumber: "E072",
     facilityName: "Diagnostic Lab",
     testName: "Hemoglobin A1c",
     testDate: "2024-08-11",
@@ -198,7 +198,7 @@ export const proceduresData = [
   // Chart Number 3
   {
     chartNumber: 3,
-    encounterNumber: "E323",
+    encounterNumber: "E073",
     facilityName: "Laboratory Services",
     testName: "Glucose Test",
     testDate: "2024-06-15",
@@ -214,7 +214,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "E324",
+    encounterNumber: "E074",
     facilityName: "Medical Labs",
     testName: "Thyroid Function Test",
     testDate: "2024-06-17",
@@ -230,7 +230,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "E325",
+    encounterNumber: "E075",
     facilityName: "Clinical Lab",
     testName: "Vitamin D Levels",
     testDate: "2024-06-19",
@@ -246,7 +246,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "ENC022",
+    encounterNumber: "E076",
     facilityName: "Premier Health",
     testName: "Comprehensive Metabolic Panel",
     testDate: "2024-08-13",
@@ -262,7 +262,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "ENC023",
+    encounterNumber: "E077",
     facilityName: "Advanced Diagnostics",
     testName: "Vitamin D Test",
     testDate: "2024-08-15",
@@ -278,7 +278,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "ENC024",
+    encounterNumber: "E078",
     facilityName: "Community Lab",
     testName: "Prostate-Specific Antigen (PSA)",
     testDate: "2024-08-17",
@@ -296,7 +296,7 @@ export const proceduresData = [
   // Chart Number 4
   {
     chartNumber: 4,
-    encounterNumber: "E423",
+    encounterNumber: "E079",
     facilityName: "Advanced Diagnostics",
     testName: "Hematology Panel",
     testDate: "2024-05-10",
@@ -312,7 +312,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "E424",
+    encounterNumber: "E080",
     facilityName: "Heart Center",
     testName: "Stress Test",
     testDate: "2024-05-12",
@@ -328,7 +328,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "E425",
+    encounterNumber: "E081",
     facilityName: "Diagnostic Center",
     testName: "Allergy Test",
     testDate: "2024-05-14",
@@ -344,7 +344,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "ENC025",
+    encounterNumber: "E082",
     facilityName: "Metro Health",
     testName: "Complete Blood Count",
     testDate: "2024-08-19",
@@ -360,7 +360,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "ENC026",
+    encounterNumber: "E083",
     facilityName: "City Clinic",
     testName: "Thyroid Panel",
     testDate: "2024-08-21",
@@ -376,7 +376,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "ENC027",
+    encounterNumber: "E084",
     facilityName: "Diagnostic Center",
     testName: "Lipid Profile",
     testDate: "2024-08-23",
@@ -394,7 +394,7 @@ export const proceduresData = [
   // Chart Number 5
   {
     chartNumber: 5,
-    encounterNumber: "E523",
+    encounterNumber: "E085",
     facilityName: "Health Institute",
     testName: "Liver Function Test",
     testDate: "2024-04-10",
@@ -410,7 +410,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "E524",
+    encounterNumber: "E086",
     facilityName: "Wellness Clinic",
     testName: "Bone Density Test",
     testDate: "2024-04-12",
@@ -426,7 +426,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "E525",
+    encounterNumber: "E087",
     facilityName: "Diagnostic Labs",
     testName: "Hepatitis Panel",
     testDate: "2024-04-14",
@@ -442,7 +442,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "ENC028",
+    encounterNumber: "E088",
     facilityName: "Elite Health",
     testName: "Basic Metabolic Panel",
     testDate: "2024-08-25",
@@ -458,7 +458,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "ENC029",
+    encounterNumber: "E089",
     facilityName: "Advanced Care",
     testName: "Vitamin B12 Test",
     testDate: "2024-08-27",
@@ -474,7 +474,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "ENC030",
+    encounterNumber: "E090",
     facilityName: "Family Clinic",
     testName: "Hemoglobin A1c",
     testDate: "2024-08-29",
@@ -491,7 +491,7 @@ export const proceduresData = [
   // Chart Number 6
   {
     chartNumber: 6,
-    encounterNumber: "ENC031",
+    encounterNumber: "E091",
     facilityName: "Metro Medical",
     testName: "Complete Blood Count",
     testDate: "2024-08-01",
@@ -507,7 +507,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC032",
+    encounterNumber: "E092",
     facilityName: "Westside Lab",
     testName: "Urinalysis",
     testDate: "2024-08-03",
@@ -523,7 +523,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC033",
+    encounterNumber: "E093",
     facilityName: "Central Health",
     testName: "Lipid Panel",
     testDate: "2024-08-05",
@@ -539,7 +539,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC034",
+    encounterNumber: "E094",
     facilityName: "Northside Clinic",
     testName: "Basic Metabolic Panel",
     testDate: "2024-08-07",
@@ -555,7 +555,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC035",
+    encounterNumber: "E095",
     facilityName: "HealthPlus Lab",
     testName: "Thyroid Function Test",
     testDate: "2024-08-09",
@@ -571,7 +571,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 6,
-    encounterNumber: "ENC036",
+    encounterNumber: "E096",
     facilityName: "City Health Center",
     testName: "Vitamin D Test",
     testDate: "2024-08-11",
@@ -585,27 +585,10 @@ export const proceduresData = [
     result8: "Albumin: 4.2 g/dL",
     resultDate: "2024-08-12",
   },
-  {
-    chartNumber: 6,
-    encounterNumber: "ENC037",
-    facilityName: "Advanced Diagnostics",
-    testName: "Prostate-Specific Antigen (PSA)",
-    testDate: "2024-08-13",
-    result1: "PSA Level: 2.2 ng/mL",
-    result2: "Free PSA: 0.8 ng/mL",
-    result3: "Total PSA: 2.2 ng/mL",
-    result4: "PSA Density: 0.09",
-    result5: "PSA Velocity: 0.04",
-    result6: "Prostate Volume: 28 mL",
-    result7: "Bioavailable PSA: 1.1 ng/mL",
-    result8: "PSA Ratio: 0.36",
-    resultDate: "2024-08-14",
-  },
-
   // Chart Number 7
   {
     chartNumber: 7,
-    encounterNumber: "ENC038",
+    encounterNumber: "E097",
     facilityName: "Bright Future Health",
     testName: "Complete Blood Count",
     testDate: "2024-08-15",
@@ -621,7 +604,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC039",
+    encounterNumber: "E098",
     facilityName: "Eastside Lab",
     testName: "Urinalysis",
     testDate: "2024-08-17",
@@ -637,7 +620,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC040",
+    encounterNumber: "E099",
     facilityName: "Wellness Labs",
     testName: "Lipid Panel",
     testDate: "2024-08-19",
@@ -653,7 +636,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC041",
+    encounterNumber: "E100",
     facilityName: "Family Health Center",
     testName: "Basic Metabolic Panel",
     testDate: "2024-08-21",
@@ -669,7 +652,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC042",
+    encounterNumber: "E101",
     facilityName: "Health Center",
     testName: "Thyroid Function Test",
     testDate: "2024-08-23",
@@ -685,7 +668,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 7,
-    encounterNumber: "ENC043",
+    encounterNumber: "E102",
     facilityName: "City Lab",
     testName: "Vitamin D Test",
     testDate: "2024-08-25",
@@ -703,7 +686,7 @@ export const proceduresData = [
   // Chart Number 8
   {
     chartNumber: 8,
-    encounterNumber: "ENC044",
+    encounterNumber: "E103",
     facilityName: "Regional Medical Center",
     testName: "Complete Blood Count",
     testDate: "2024-08-26",
@@ -719,7 +702,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC045",
+    encounterNumber: "E104",
     facilityName: "North End Lab",
     testName: "Urinalysis",
     testDate: "2024-08-27",
@@ -735,7 +718,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC046",
+    encounterNumber: "E105",
     facilityName: "Southside Health",
     testName: "Lipid Panel",
     testDate: "2024-08-28",
@@ -751,7 +734,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC047",
+    encounterNumber: "E106",
     facilityName: "Downtown Clinic",
     testName: "Basic Metabolic Panel",
     testDate: "2024-08-29",
@@ -767,7 +750,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC048",
+    encounterNumber: "E107",
     facilityName: "Health Alliance",
     testName: "Thyroid Function Test",
     testDate: "2024-08-31",
@@ -783,7 +766,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 8,
-    encounterNumber: "ENC049",
+    encounterNumber: "E108",
     facilityName: "Wellness Lab",
     testName: "Vitamin D Test",
     testDate: "2024-09-02",
@@ -801,7 +784,7 @@ export const proceduresData = [
   // Chart Number 9
   {
     chartNumber: 9,
-    encounterNumber: "ENC050",
+    encounterNumber: "E109",
     facilityName: "Elite Health",
     testName: "Complete Blood Count",
     testDate: "2024-09-04",
@@ -817,7 +800,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC051",
+    encounterNumber: "E110",
     facilityName: "Advanced Lab",
     testName: "Urinalysis",
     testDate: "2024-09-06",
@@ -833,7 +816,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC052",
+    encounterNumber: "E111",
     facilityName: "City Health",
     testName: "Lipid Panel",
     testDate: "2024-09-08",
@@ -849,7 +832,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC053",
+    encounterNumber: "E112",
     facilityName: "Health Center",
     testName: "Basic Metabolic Panel",
     testDate: "2024-09-10",
@@ -865,7 +848,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC054",
+    encounterNumber: "E113",
     facilityName: "Northside Lab",
     testName: "Thyroid Function Test",
     testDate: "2024-09-12",
@@ -881,7 +864,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 9,
-    encounterNumber: "ENC055",
+    encounterNumber: "E114",
     facilityName: "Westside Health",
     testName: "Vitamin D Test",
     testDate: "2024-09-14",
@@ -899,7 +882,7 @@ export const proceduresData = [
   // Chart Number 10
   {
     chartNumber: 10,
-    encounterNumber: "ENC056",
+    encounterNumber: "E115",
     facilityName: "Regional Lab",
     testName: "Complete Blood Count",
     testDate: "2024-09-16",
@@ -915,7 +898,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC057",
+    encounterNumber: "E116",
     facilityName: "Central Health",
     testName: "Urinalysis",
     testDate: "2024-09-18",
@@ -931,7 +914,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC058",
+    encounterNumber: "E117",
     facilityName: "Eastside Lab",
     testName: "Lipid Panel",
     testDate: "2024-09-20",
@@ -947,7 +930,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC059",
+    encounterNumber: "E118",
     facilityName: "City Health",
     testName: "Basic Metabolic Panel",
     testDate: "2024-09-22",
@@ -963,7 +946,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC060",
+    encounterNumber: "E119",
     facilityName: "North End Lab",
     testName: "Thyroid Function Test",
     testDate: "2024-09-24",
@@ -979,7 +962,7 @@ export const proceduresData = [
   },
   {
     chartNumber: 10,
-    encounterNumber: "ENC061",
+    encounterNumber: "E120",
     facilityName: "Westside Health",
     testName: "Vitamin D Test",
     testDate: "2024-09-26",

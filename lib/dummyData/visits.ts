@@ -32,7 +32,7 @@ export const visitsData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "E016",
+    encounterNumber: "E004",
     visitDate: "2024-08-02",
     drFirstName: "John",
     drLastName: "Doe",
@@ -42,7 +42,7 @@ export const visitsData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "E017",
+    encounterNumber: "E005",
     visitDate: "2024-08-06",
     drFirstName: "Emily",
     drLastName: "Davis",
@@ -52,7 +52,7 @@ export const visitsData = [
   },
   {
     chartNumber: 1,
-    encounterNumber: "E018",
+    encounterNumber: "E006",
     visitDate: "2024-08-12",
     drFirstName: "Michael",
     drLastName: "Brown",
@@ -64,7 +64,7 @@ export const visitsData = [
   // Chart Number 2
   {
     chartNumber: 2,
-    encounterNumber: "E004",
+    encounterNumber: "E007",
     visitDate: "2024-07-15",
     drFirstName: "David",
     drLastName: "Brown",
@@ -74,7 +74,7 @@ export const visitsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "E005",
+    encounterNumber: "E008",
     visitDate: "2024-07-20",
     drFirstName: "Eve",
     drLastName: "Jones",
@@ -84,7 +84,7 @@ export const visitsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "E006",
+    encounterNumber: "E009",
     visitDate: "2024-07-25",
     drFirstName: "Frank",
     drLastName: "Miller",
@@ -94,7 +94,7 @@ export const visitsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "E019",
+    encounterNumber: "E010",
     visitDate: "2024-08-03",
     drFirstName: "Sarah",
     drLastName: "Wilson",
@@ -104,7 +104,7 @@ export const visitsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "E020",
+    encounterNumber: "E011",
     visitDate: "2024-08-08",
     drFirstName: "James",
     drLastName: "Moore",
@@ -114,7 +114,7 @@ export const visitsData = [
   },
   {
     chartNumber: 2,
-    encounterNumber: "E021",
+    encounterNumber: "E012",
     visitDate: "2024-08-14",
     drFirstName: "Olivia",
     drLastName: "Taylor",
@@ -126,7 +126,7 @@ export const visitsData = [
   // Chart Number 3
   {
     chartNumber: 3,
-    encounterNumber: "E007",
+    encounterNumber: "E013",
     visitDate: "2024-06-30",
     drFirstName: "Grace",
     drLastName: "Davis",
@@ -136,7 +136,7 @@ export const visitsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "E008",
+    encounterNumber: "E014",
     visitDate: "2024-07-05",
     drFirstName: "Henry",
     drLastName: "Wilson",
@@ -146,7 +146,7 @@ export const visitsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "E009",
+    encounterNumber: "E015",
     visitDate: "2024-07-10",
     drFirstName: "Ivy",
     drLastName: "Moore",
@@ -156,7 +156,7 @@ export const visitsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "E022",
+    encounterNumber: "E016",
     visitDate: "2024-08-04",
     drFirstName: "William",
     drLastName: "Anderson",
@@ -166,7 +166,7 @@ export const visitsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "E023",
+    encounterNumber: "E017",
     visitDate: "2024-08-09",
     drFirstName: "Sophia",
     drLastName: "Thomas",
@@ -176,7 +176,7 @@ export const visitsData = [
   },
   {
     chartNumber: 3,
-    encounterNumber: "E024",
+    encounterNumber: "E018",
     visitDate: "2024-08-15",
     drFirstName: "David",
     drLastName: "Jackson",
@@ -188,7 +188,7 @@ export const visitsData = [
   // Chart Number 4
   {
     chartNumber: 4,
-    encounterNumber: "E010",
+    encounterNumber: "E019",
     visitDate: "2024-06-01",
     drFirstName: "Jack",
     drLastName: "Taylor",
@@ -198,7 +198,7 @@ export const visitsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "E011",
+    encounterNumber: "E020",
     visitDate: "2024-06-05",
     drFirstName: "Kathy",
     drLastName: "Anderson",
@@ -208,7 +208,7 @@ export const visitsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "E012",
+    encounterNumber: "E021",
     visitDate: "2024-06-10",
     drFirstName: "Leo",
     drLastName: "Thomas",
@@ -218,7 +218,7 @@ export const visitsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "E025",
+    encounterNumber: "E022",
     visitDate: "2024-08-07",
     drFirstName: "Mia",
     drLastName: "White",
@@ -228,7 +228,7 @@ export const visitsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "E026",
+    encounterNumber: "E023",
     visitDate: "2024-08-11",
     drFirstName: "Ethan",
     drLastName: "Harris",
@@ -238,7 +238,7 @@ export const visitsData = [
   },
   {
     chartNumber: 4,
-    encounterNumber: "E027",
+    encounterNumber: "E024",
     visitDate: "2024-08-16",
     drFirstName: "Ava",
     drLastName: "Martin",
@@ -250,7 +250,7 @@ export const visitsData = [
   // Chart Number 5
   {
     chartNumber: 5,
-    encounterNumber: "E013",
+    encounterNumber: "E025",
     visitDate: "2024-05-15",
     drFirstName: "Mia",
     drLastName: "Jackson",
@@ -260,7 +260,7 @@ export const visitsData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "E014",
+    encounterNumber: "E026",
     visitDate: "2024-05-20",
     drFirstName: "Nate",
     drLastName: "White",
@@ -270,7 +270,7 @@ export const visitsData = [
   },
   {
     chartNumber: 5,
-    encounterNumber: "E015",
+    encounterNumber: "E027",
     visitDate: "2024-05-25",
     drFirstName: "Olivia",
     drLastName: "Harris",

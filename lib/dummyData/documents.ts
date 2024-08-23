@@ -6,7 +6,7 @@ export const documentsData = [
     documentName: "Blood Test Results",
     documentDate: "2024-08-10",
     documentPath: "/documents/1/blood_test_results.pdf",
-    encounterNumber: "ENC001",
+    encounterNumber: "E001",
   },
   {
     chartNumber: 1,
@@ -14,7 +14,7 @@ export const documentsData = [
     documentName: "Chest X-Ray",
     documentDate: "2024-08-11",
     documentPath: "/documents/1/chest_xray.pdf",
-    encounterNumber: "ENC002",
+    encounterNumber: "E002",
   },
   {
     chartNumber: 1,
@@ -22,7 +22,7 @@ export const documentsData = [
     documentName: "Painkillers Prescription",
     documentDate: "2024-08-12",
     documentPath: "/documents/1/painkillers_prescription.pdf",
-    encounterNumber: "ENC003",
+    encounterNumber: "E003",
   },
   {
     chartNumber: 1,
@@ -30,7 +30,7 @@ export const documentsData = [
     documentName: "Blood Test Report",
     documentDate: "2024-05-01",
     documentPath: "/documents/1/blood_test_report.pdf",
-    encounterNumber: "ENC016",
+    encounterNumber: "E004",
   },
   {
     chartNumber: 1,
@@ -38,7 +38,7 @@ export const documentsData = [
     documentName: "Antibiotics",
     documentDate: "2024-05-03",
     documentPath: "/documents/1/antibiotics.pdf",
-    encounterNumber: "ENC017",
+    encounterNumber: "E005",
   },
   {
     chartNumber: 1,
@@ -46,7 +46,7 @@ export const documentsData = [
     documentName: "Orthopedic Specialist",
     documentDate: "2024-05-06",
     documentPath: "/documents/1/orthopedic_referral.pdf",
-    encounterNumber: "ENC018",
+    encounterNumber: "E006",
   },
 
   // Chart Number 2
@@ -56,7 +56,7 @@ export const documentsData = [
     documentName: "Annual Physical Exam",
     documentDate: "2024-07-01",
     documentPath: "/documents/2/annual_physical_exam.pdf",
-    encounterNumber: "ENC004",
+    encounterNumber: "E007",
   },
   {
     chartNumber: 2,
@@ -64,7 +64,7 @@ export const documentsData = [
     documentName: "Urine Test",
     documentDate: "2024-07-05",
     documentPath: "/documents/2/urine_test.pdf",
-    encounterNumber: "ENC005",
+    encounterNumber: "E008",
   },
   {
     chartNumber: 2,
@@ -72,7 +72,7 @@ export const documentsData = [
     documentName: "Antibiotics Prescription",
     documentDate: "2024-07-07",
     documentPath: "/documents/2/antibiotics_prescription.pdf",
-    encounterNumber: "ENC006",
+    encounterNumber: "E009",
   },
   {
     chartNumber: 2,
@@ -80,7 +80,7 @@ export const documentsData = [
     documentName: "Chest X-Ray",
     documentDate: "2024-05-10",
     documentPath: "/documents/2/chest_xray.pdf",
-    encounterNumber: "ENC019",
+    encounterNumber: "E010",
   },
   {
     chartNumber: 2,
@@ -88,7 +88,7 @@ export const documentsData = [
     documentName: "Annual Physical Exam",
     documentDate: "2024-05-12",
     documentPath: "/documents/2/annual_physical_report.pdf",
-    encounterNumber: "ENC020",
+    encounterNumber: "E011",
   },
   {
     chartNumber: 2,
@@ -96,7 +96,7 @@ export const documentsData = [
     documentName: "Cholesterol Screening",
     documentDate: "2024-05-14",
     documentPath: "/documents/2/cholesterol_screening.pdf",
-    encounterNumber: "ENC021",
+    encounterNumber: "E012",
   },
 
   // Chart Number 3
@@ -106,7 +106,7 @@ export const documentsData = [
     documentName: "Eye Examination",
     documentDate: "2024-06-15",
     documentPath: "/documents/3/eye_examination.pdf",
-    encounterNumber: "ENC007",
+    encounterNumber: "E013",
   },
   {
     chartNumber: 3,
@@ -114,7 +114,7 @@ export const documentsData = [
     documentName: "Dental X-Ray",
     documentDate: "2024-06-17",
     documentPath: "/documents/3/dental_xray.pdf",
-    encounterNumber: "ENC008",
+    encounterNumber: "E014",
   },
   {
     chartNumber: 3,
@@ -122,7 +122,7 @@ export const documentsData = [
     documentName: "Glasses Prescription",
     documentDate: "2024-06-20",
     documentPath: "/documents/3/glasses_prescription.pdf",
-    encounterNumber: "ENC009",
+    encounterNumber: "E015",
   },
   {
     chartNumber: 3,
@@ -130,7 +130,7 @@ export const documentsData = [
     documentName: "Cardiology Consultation",
     documentDate: "2024-05-18",
     documentPath: "/documents/3/cardiology_consultation.pdf",
-    encounterNumber: "ENC022",
+    encounterNumber: "E016",
   },
   {
     chartNumber: 3,
@@ -138,7 +138,7 @@ export const documentsData = [
     documentName: "Blood Pressure Medication",
     documentDate: "2024-05-20",
     documentPath: "/documents/3/blood_pressure_medication.pdf",
-    encounterNumber: "ENC023",
+    encounterNumber: "E017",
   },
   {
     chartNumber: 3,
@@ -146,7 +146,7 @@ export const documentsData = [
     documentName: "Spine X-Ray",
     documentDate: "2024-05-22",
     documentPath: "/documents/3/spine_xray.pdf",
-    encounterNumber: "ENC024",
+    encounterNumber: "E018",
   },
 
   // Chart Number 4
@@ -156,7 +156,7 @@ export const documentsData = [
     documentName: "EKG Results",
     documentDate: "2024-05-10",
     documentPath: "/documents/4/ekg_results.pdf",
-    encounterNumber: "ENC010",
+    encounterNumber: "E019",
   },
   {
     chartNumber: 4,
@@ -164,7 +164,7 @@ export const documentsData = [
     documentName: "Abdominal X-Ray",
     documentDate: "2024-05-12",
     documentPath: "/documents/4/abdominal_xray.pdf",
-    encounterNumber: "ENC011",
+    encounterNumber: "E020",
   },
   {
     chartNumber: 4,
@@ -172,7 +172,7 @@ export const documentsData = [
     documentName: "Blood Pressure Medication",
     documentDate: "2024-05-15",
     documentPath: "/documents/4/blood_pressure_medication.pdf",
-    encounterNumber: "ENC012",
+    encounterNumber: "E021",
   },
   {
     chartNumber: 4,
@@ -180,7 +180,7 @@ export const documentsData = [
     documentName: "Diabetes Screening",
     documentDate: "2024-05-25",
     documentPath: "/documents/4/diabetes_screening.pdf",
-    encounterNumber: "ENC025",
+    encounterNumber: "E022",
   },
   {
     chartNumber: 4,
@@ -188,7 +188,7 @@ export const documentsData = [
     documentName: "Pulmonary Function Test",
     documentDate: "2024-05-28",
     documentPath: "/documents/4/pulmonary_function_test.pdf",
-    encounterNumber: "ENC026",
+    encounterNumber: "E023",
   },
   {
     chartNumber: 4,
@@ -196,7 +196,7 @@ export const documentsData = [
     documentName: "Dermatology Specialist",
     documentDate: "2024-05-30",
     documentPath: "/documents/4/dermatology_referral.pdf",
-    encounterNumber: "ENC027",
+    encounterNumber: "E024",
   },
 
   // Chart Number 5
@@ -206,7 +206,7 @@ export const documentsData = [
     documentName: "MRI Results",
     documentDate: "2024-04-25",
     documentPath: "/documents/5/mri_results.pdf",
-    encounterNumber: "ENC013",
+    encounterNumber: "E025",
   },
   {
     chartNumber: 5,
@@ -214,7 +214,7 @@ export const documentsData = [
     documentName: "Hand X-Ray",
     documentDate: "2024-04-27",
     documentPath: "/documents/5/hand_xray.pdf",
-    encounterNumber: "ENC014",
+    encounterNumber: "E026",
   },
   {
     chartNumber: 5,
@@ -222,7 +222,7 @@ export const documentsData = [
     documentName: "Vitamin D Supplements",
     documentDate: "2024-04-30",
     documentPath: "/documents/5/vitamin_d_supplements.pdf",
-    encounterNumber: "ENC015",
+    encounterNumber: "E027",
   },
   {
     chartNumber: 5,
@@ -230,7 +230,7 @@ export const documentsData = [
     documentName: "MRI Results",
     documentDate: "2024-04-25",
     documentPath: "/documents/5/mri_results.pdf",
-    encounterNumber: "ENC028",
+    encounterNumber: "E028",
   },
   {
     chartNumber: 5,
@@ -238,7 +238,7 @@ export const documentsData = [
     documentName: "Hand X-Ray",
     documentDate: "2024-04-27",
     documentPath: "/documents/5/hand_xray.pdf",
-    encounterNumber: "ENC029",
+    encounterNumber: "E029",
   },
   {
     chartNumber: 5,
@@ -246,7 +246,7 @@ export const documentsData = [
     documentName: "Vitamin D Supplements",
     documentDate: "2024-04-30",
     documentPath: "/documents/5/vitamin_d_supplements.pdf",
-    encounterNumber: "ENC030",
+    encounterNumber: "E030",
   },
   {
     chartNumber: 6,
@@ -254,7 +254,7 @@ export const documentsData = [
     documentName: "Thyroid Panel",
     documentDate: "2024-06-01",
     documentPath: "/documents/6/thyroid_panel.pdf",
-    encounterNumber: "ENC031",
+    encounterNumber: "E031",
   },
   {
     chartNumber: 6,
@@ -262,7 +262,7 @@ export const documentsData = [
     documentName: "Neurology Consultation",
     documentDate: "2024-06-03",
     documentPath: "/documents/6/neurology_consultation.pdf",
-    encounterNumber: "ENC032",
+    encounterNumber: "E032",
   },
   {
     chartNumber: 6,
@@ -270,7 +270,7 @@ export const documentsData = [
     documentName: "Cholesterol Medication",
     documentDate: "2024-06-05",
     documentPath: "/documents/6/cholesterol_medication.pdf",
-    encounterNumber: "ENC033",
+    encounterNumber: "E033",
   },
   {
     chartNumber: 6,
@@ -278,7 +278,7 @@ export const documentsData = [
     documentName: "Knee X-Ray",
     documentDate: "2024-06-07",
     documentPath: "/documents/6/knee_xray.pdf",
-    encounterNumber: "ENC034",
+    encounterNumber: "E034",
   },
   {
     chartNumber: 6,
@@ -286,7 +286,7 @@ export const documentsData = [
     documentName: "Gastroenterology Specialist",
     documentDate: "2024-06-09",
     documentPath: "/documents/6/gastroenterology_referral.pdf",
-    encounterNumber: "ENC035",
+    encounterNumber: "E035",
   },
   {
     chartNumber: 6,
@@ -294,7 +294,7 @@ export const documentsData = [
     documentName: "Physical Therapy Plan",
     documentDate: "2024-06-11",
     documentPath: "/documents/6/physical_therapy_plan.pdf",
-    encounterNumber: "ENC036",
+    encounterNumber: "E036",
   },
   {
     chartNumber: 7,
@@ -302,7 +302,7 @@ export const documentsData = [
     documentName: "Allergy Medication",
     documentDate: "2024-06-15",
     documentPath: "/documents/7/allergy_medication.pdf",
-    encounterNumber: "ENC037",
+    encounterNumber: "E037",
   },
   {
     chartNumber: 7,
@@ -310,7 +310,7 @@ export const documentsData = [
     documentName: "Complete Blood Count",
     documentDate: "2024-06-17",
     documentPath: "/documents/7/complete_blood_count.pdf",
-    encounterNumber: "ENC038",
+    encounterNumber: "E038",
   },
   {
     chartNumber: 7,
@@ -318,7 +318,7 @@ export const documentsData = [
     documentName: "Shoulder X-Ray",
     documentDate: "2024-06-19",
     documentPath: "/documents/7/shoulder_xray.pdf",
-    encounterNumber: "ENC039",
+    encounterNumber: "E039",
   },
   {
     chartNumber: 7,
@@ -326,7 +326,7 @@ export const documentsData = [
     documentName: "Annual Wellness Check",
     documentDate: "2024-06-21",
     documentPath: "/documents/7/annual_wellness_check.pdf",
-    encounterNumber: "ENC040",
+    encounterNumber: "E040",
   },
   {
     chartNumber: 7,
@@ -334,7 +334,7 @@ export const documentsData = [
     documentName: "Cardiology Specialist",
     documentDate: "2024-06-23",
     documentPath: "/documents/7/cardiology_referral.pdf",
-    encounterNumber: "ENC041",
+    encounterNumber: "E041",
   },
   {
     chartNumber: 7,
@@ -342,7 +342,7 @@ export const documentsData = [
     documentName: "Pain Reliever",
     documentDate: "2024-06-25",
     documentPath: "/documents/7/pain_reliever.pdf",
-    encounterNumber: "ENC042",
+    encounterNumber: "E042",
   },
   {
     chartNumber: 8,
@@ -350,7 +350,7 @@ export const documentsData = [
     documentName: "Dermatology Follow-Up",
     documentDate: "2024-07-01",
     documentPath: "/documents/8/dermatology_follow_up.pdf",
-    encounterNumber: "ENC043",
+    encounterNumber: "E043",
   },
   {
     chartNumber: 8,
@@ -358,7 +358,7 @@ export const documentsData = [
     documentName: "Lipid Profile",
     documentDate: "2024-07-03",
     documentPath: "/documents/8/lipid_profile.pdf",
-    encounterNumber: "ENC044",
+    encounterNumber: "E044",
   },
   {
     chartNumber: 8,
@@ -366,7 +366,7 @@ export const documentsData = [
     documentName: "Ankle X-Ray",
     documentDate: "2024-07-05",
     documentPath: "/documents/8/ankle_xray.pdf",
-    encounterNumber: "ENC045",
+    encounterNumber: "E045",
   },
   {
     chartNumber: 8,
@@ -374,7 +374,7 @@ export const documentsData = [
     documentName: "Endocrinology Specialist",
     documentDate: "2024-07-07",
     documentPath: "/documents/8/endocrinology_referral.pdf",
-    encounterNumber: "ENC046",
+    encounterNumber: "E046",
   },
   {
     chartNumber: 8,
@@ -382,7 +382,7 @@ export const documentsData = [
     documentName: "Diabetes Medication",
     documentDate: "2024-07-09",
     documentPath: "/documents/8/diabetes_medication.pdf",
-    encounterNumber: "ENC047",
+    encounterNumber: "E047",
   },
   {
     chartNumber: 8,
@@ -390,7 +390,7 @@ export const documentsData = [
     documentName: "Surgery Follow-Up",
     documentDate: "2024-07-11",
     documentPath: "/documents/8/surgery_follow_up.pdf",
-    encounterNumber: "ENC048",
+    encounterNumber: "E048",
   },
   {
     chartNumber: 9,
@@ -398,7 +398,7 @@ export const documentsData = [
     documentName: "Renal Function Panel",
     documentDate: "2024-07-15",
     documentPath: "/documents/9/renal_function_panel.pdf",
-    encounterNumber: "ENC049",
+    encounterNumber: "E049",
   },
   {
     chartNumber: 9,
@@ -406,7 +406,7 @@ export const documentsData = [
     documentName: "Pelvic X-Ray",
     documentDate: "2024-07-17",
     documentPath: "/documents/9/pelvic_xray.pdf",
-    encounterNumber: "ENC050",
+    encounterNumber: "E050",
   },
   {
     chartNumber: 9,
@@ -414,7 +414,7 @@ export const documentsData = [
     documentName: "Neurology Evaluation",
     documentDate: "2024-07-19",
     documentPath: "/documents/9/neurology_evaluation.pdf",
-    encounterNumber: "ENC051",
+    encounterNumber: "E051",
   },
   {
     chartNumber: 9,
@@ -422,7 +422,7 @@ export const documentsData = [
     documentName: "Oncology Specialist",
     documentDate: "2024-07-21",
     documentPath: "/documents/9/oncology_referral.pdf",
-    encounterNumber: "ENC052",
+    encounterNumber: "E052",
   },
   {
     chartNumber: 9,
@@ -430,7 +430,7 @@ export const documentsData = [
     documentName: "Anti-Inflammatory Medication",
     documentDate: "2024-07-23",
     documentPath: "/documents/9/anti_inflammatory_medication.pdf",
-    encounterNumber: "ENC053",
+    encounterNumber: "E053",
   },
   {
     chartNumber: 9,
@@ -438,7 +438,7 @@ export const documentsData = [
     documentName: "Cardiac Stress Test",
     documentDate: "2024-07-25",
     documentPath: "/documents/9/cardiac_stress_test.pdf",
-    encounterNumber: "ENC054",
+    encounterNumber: "E054",
   },
   {
     chartNumber: 10,
@@ -446,7 +446,7 @@ export const documentsData = [
     documentName: "Hip X-Ray",
     documentDate: "2024-07-30",
     documentPath: "/documents/10/hip_xray.pdf",
-    encounterNumber: "ENC055",
+    encounterNumber: "E055",
   },
   {
     chartNumber: 10,
@@ -454,7 +454,7 @@ export const documentsData = [
     documentName: "Orthopedic Assessment",
     documentDate: "2024-08-01",
     documentPath: "/documents/10/orthopedic_assessment.pdf",
-    encounterNumber: "ENC056",
+    encounterNumber: "E056",
   },
   {
     chartNumber: 10,
@@ -462,7 +462,7 @@ export const documentsData = [
     documentName: "Ophthalmology Specialist",
     documentDate: "2024-08-03",
     documentPath: "/documents/10/ophthalmology_referral.pdf",
-    encounterNumber: "ENC057",
+    encounterNumber: "E057",
   },
   {
     chartNumber: 10,
@@ -470,7 +470,7 @@ export const documentsData = [
     documentName: "Eye Drops",
     documentDate: "2024-08-05",
     documentPath: "/documents/10/eye_drops.pdf",
-    encounterNumber: "ENC058",
+    encounterNumber: "E058",
   },
   {
     chartNumber: 10,
@@ -478,7 +478,7 @@ export const documentsData = [
     documentName: "Basic Metabolic Panel",
     documentDate: "2024-08-07",
     documentPath: "/documents/10/basic_metabolic_panel.pdf",
-    encounterNumber: "ENC059",
+    encounterNumber: "E059",
   },
   {
     chartNumber: 10,
@@ -486,6 +486,6 @@ export const documentsData = [
     documentName: "Gastroenterology Follow-Up",
     documentDate: "2024-08-09",
     documentPath: "/documents/10/gastroenterology_follow_up.pdf",
-    encounterNumber: "ENC060",
+    encounterNumber: "E060",
   },
 ];

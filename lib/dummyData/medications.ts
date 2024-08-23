@@ -14,7 +14,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC001",
+    encounterNumber: "E001",
   },
   {
     chartNumber: 1,
@@ -30,7 +30,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take after meals",
-    encounterNumber: "ENC002",
+    encounterNumber: "E002",
   },
   {
     chartNumber: 1,
@@ -46,7 +46,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor blood pressure",
-    encounterNumber: "ENC003",
+    encounterNumber: "E003",
   },
   {
     chartNumber: 1,
@@ -62,7 +62,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC016",
+    encounterNumber: "E004",
   },
   {
     chartNumber: 1,
@@ -78,7 +78,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take after meals",
-    encounterNumber: "ENC017",
+    encounterNumber: "E005",
   },
   {
     chartNumber: 1,
@@ -94,7 +94,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor blood pressure",
-    encounterNumber: "ENC018",
+    encounterNumber: "E006",
   },
 
   // Chart Number 2
@@ -112,7 +112,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take at bedtime",
-    encounterNumber: "ENC004",
+    encounterNumber: "E007",
   },
   {
     chartNumber: 2,
@@ -128,7 +128,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take before breakfast",
-    encounterNumber: "ENC005",
+    encounterNumber: "E008",
   },
   {
     chartNumber: 2,
@@ -144,7 +144,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take on an empty stomach",
-    encounterNumber: "ENC006",
+    encounterNumber: "E009",
   },
   {
     chartNumber: 2,
@@ -160,7 +160,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the evening",
-    encounterNumber: "ENC019",
+    encounterNumber: "E010",
   },
   {
     chartNumber: 2,
@@ -176,7 +176,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor blood pressure",
-    encounterNumber: "ENC020",
+    encounterNumber: "E011",
   },
   {
     chartNumber: 2,
@@ -192,7 +192,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC021",
+    encounterNumber: "E012",
   },
 
   // Chart Number 3
@@ -210,7 +210,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take as needed for anxiety",
-    encounterNumber: "ENC007",
+    encounterNumber: "E013",
   },
   {
     chartNumber: 3,
@@ -226,7 +226,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor mood changes",
-    encounterNumber: "ENC008",
+    encounterNumber: "E014",
   },
   {
     chartNumber: 3,
@@ -242,7 +242,7 @@ export const medicationsData = [
     frequency: "Three times daily",
     route: "PO",
     comments: "Take with water",
-    encounterNumber: "ENC009",
+    encounterNumber: "E015",
   },
   {
     chartNumber: 3,
@@ -258,7 +258,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take before bedtime",
-    encounterNumber: "ENC022",
+    encounterNumber: "E016",
   },
   {
     chartNumber: 3,
@@ -274,7 +274,7 @@ export const medicationsData = [
     frequency: "Three times daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC023",
+    encounterNumber: "E017",
   },
   {
     chartNumber: 3,
@@ -290,7 +290,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take before meals",
-    encounterNumber: "ENC024",
+    encounterNumber: "E018",
   },
 
   // Chart Number 4
@@ -308,7 +308,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC010",
+    encounterNumber: "E019",
   },
   {
     chartNumber: 4,
@@ -324,7 +324,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Avoid dairy products",
-    encounterNumber: "ENC011",
+    encounterNumber: "E020",
   },
   {
     chartNumber: 4,
@@ -340,7 +340,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Taper dosage as instructed",
-    encounterNumber: "ENC012",
+    encounterNumber: "E021",
   },
   {
     chartNumber: 4,
@@ -356,7 +356,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take as needed for anxiety",
-    encounterNumber: "ENC025",
+    encounterNumber: "E022",
   },
   {
     chartNumber: 4,
@@ -372,7 +372,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC026",
+    encounterNumber: "E023",
   },
   {
     chartNumber: 4,
@@ -388,7 +388,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Monitor blood pressure",
-    encounterNumber: "ENC027",
+    encounterNumber: "E024",
   },
 
   // Chart Number 5
@@ -406,7 +406,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor INR levels",
-    encounterNumber: "ENC013",
+    encounterNumber: "E025",
   },
   {
     chartNumber: 5,
@@ -422,7 +422,7 @@ export const medicationsData = [
     frequency: "Four times daily",
     route: "PO",
     comments: "Complete the full course",
-    encounterNumber: "ENC014",
+    encounterNumber: "E026",
   },
   {
     chartNumber: 5,
@@ -438,7 +438,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take with or without food",
-    encounterNumber: "ENC015",
+    encounterNumber: "E027",
   },
   {
     chartNumber: 5,
@@ -454,7 +454,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC028",
+    encounterNumber: "E028",
   },
   {
     chartNumber: 5,
@@ -470,7 +470,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC029",
+    encounterNumber: "E029",
   },
   {
     chartNumber: 5,
@@ -486,7 +486,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC030",
+    encounterNumber: "E030",
   },
   {
     chartNumber: 6,
@@ -502,7 +502,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC031",
+    encounterNumber: "E031",
   },
   {
     chartNumber: 6,
@@ -518,7 +518,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take with plenty of water",
-    encounterNumber: "ENC032",
+    encounterNumber: "E032",
   },
   {
     chartNumber: 6,
@@ -534,7 +534,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Monitor blood pressure regularly",
-    encounterNumber: "ENC033",
+    encounterNumber: "E033",
   },
   {
     chartNumber: 6,
@@ -550,7 +550,7 @@ export const medicationsData = [
     frequency: "Every 8 hours",
     route: "PO",
     comments: "Take with food to avoid stomach upset",
-    encounterNumber: "ENC034",
+    encounterNumber: "E034",
   },
   {
     chartNumber: 6,
@@ -566,7 +566,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor for swelling",
-    encounterNumber: "ENC035",
+    encounterNumber: "E035",
   },
   {
     chartNumber: 6,
@@ -582,7 +582,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the evening",
-    encounterNumber: "ENC036",
+    encounterNumber: "E036",
   },
   {
     chartNumber: 7,
@@ -598,7 +598,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC037",
+    encounterNumber: "E037",
   },
   {
     chartNumber: 7,
@@ -614,7 +614,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC038",
+    encounterNumber: "E038",
   },
   {
     chartNumber: 7,
@@ -630,7 +630,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take with a full glass of water",
-    encounterNumber: "ENC039",
+    encounterNumber: "E039",
   },
   {
     chartNumber: 7,
@@ -646,7 +646,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor blood pressure regularly",
-    encounterNumber: "ENC040",
+    encounterNumber: "E040",
   },
   {
     chartNumber: 7,
@@ -662,7 +662,7 @@ export const medicationsData = [
     frequency: "Three times daily",
     route: "PO",
     comments: "Take with food if needed",
-    encounterNumber: "ENC041",
+    encounterNumber: "E041",
   },
   {
     chartNumber: 7,
@@ -678,7 +678,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take before breakfast",
-    encounterNumber: "ENC042",
+    encounterNumber: "E042",
   },
   {
     chartNumber: 8,
@@ -694,7 +694,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take as needed for anxiety",
-    encounterNumber: "ENC043",
+    encounterNumber: "E043",
   },
   {
     chartNumber: 8,
@@ -710,7 +710,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC044",
+    encounterNumber: "E044",
   },
   {
     chartNumber: 8,
@@ -726,7 +726,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor blood pressure",
-    encounterNumber: "ENC045",
+    encounterNumber: "E045",
   },
   {
     chartNumber: 8,
@@ -742,7 +742,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC046",
+    encounterNumber: "E046",
   },
   {
     chartNumber: 8,
@@ -758,7 +758,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC047",
+    encounterNumber: "E047",
   },
   {
     chartNumber: 8,
@@ -774,7 +774,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC048",
+    encounterNumber: "E048",
   },
   {
     chartNumber: 9,
@@ -790,7 +790,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take as needed for anxiety",
-    encounterNumber: "ENC049",
+    encounterNumber: "E049",
   },
   {
     chartNumber: 9,
@@ -806,7 +806,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take after meals",
-    encounterNumber: "ENC050",
+    encounterNumber: "E050",
   },
   {
     chartNumber: 9,
@@ -822,7 +822,7 @@ export const medicationsData = [
     frequency: "Three times daily",
     route: "PO",
     comments: "Complete full course",
-    encounterNumber: "ENC051",
+    encounterNumber: "E051",
   },
   {
     chartNumber: 9,
@@ -838,7 +838,7 @@ export const medicationsData = [
     frequency: "Twice daily",
     route: "PO",
     comments: "Take with a full glass of water",
-    encounterNumber: "ENC052",
+    encounterNumber: "E052",
   },
   {
     chartNumber: 9,
@@ -854,7 +854,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Monitor blood pressure",
-    encounterNumber: "ENC053",
+    encounterNumber: "E053",
   },
   {
     chartNumber: 9,
@@ -870,7 +870,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC054",
+    encounterNumber: "E054",
   },
   {
     chartNumber: 10,
@@ -886,7 +886,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC055",
+    encounterNumber: "E055",
   },
   {
     chartNumber: 10,
@@ -902,7 +902,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the evening",
-    encounterNumber: "ENC056",
+    encounterNumber: "E056",
   },
   {
     chartNumber: 10,
@@ -918,7 +918,7 @@ export const medicationsData = [
     frequency: "Three times daily",
     route: "PO",
     comments: "Take with food",
-    encounterNumber: "ENC057",
+    encounterNumber: "E057",
   },
   {
     chartNumber: 10,
@@ -934,7 +934,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC058",
+    encounterNumber: "E058",
   },
   {
     chartNumber: 10,
@@ -950,7 +950,7 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take in the morning",
-    encounterNumber: "ENC059",
+    encounterNumber: "E059",
   },
   {
     chartNumber: 10,
@@ -966,6 +966,6 @@ export const medicationsData = [
     frequency: "Once daily",
     route: "PO",
     comments: "Take before breakfast",
-    encounterNumber: "ENC060",
+    encounterNumber: "E060",
   },
 ];
