@@ -3,8 +3,6 @@ import { VerticalDivider } from "../VerticalDivider";
 
 interface Props {
   item: string;
-  date: string;
-  historyCategory: string;
   index: number;
   onClick: () => void;
   isSelected: boolean;
@@ -12,8 +10,6 @@ interface Props {
 
 export const HistoryResultItem = ({
   item,
-  date,
-  historyCategory,
   index,
   onClick,
   isSelected,

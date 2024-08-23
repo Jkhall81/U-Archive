@@ -24,8 +24,6 @@ const HistoryResultsList = ({ history, onClick }: Props) => {
           key={index}
           index={index}
           item={x.item}
-          date={x.date}
-          historyCategory={x.historyCategory}
           onClick={() => handleClick(x)}
           isSelected={selectedItem === x}
         />
