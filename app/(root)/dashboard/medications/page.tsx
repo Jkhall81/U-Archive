@@ -16,19 +16,20 @@ const MedicationsPage = () => {
     setDetailDisplayOpen(true);
   };
   return (
-    <section className="w-full h-full flex flex-col">
-      <div className="w-full h-full">
+    <section className="w-full h-full flex">
+      <div className="w-[20vw] h-full">
         <MedicationResultsList
           onClick={handleItemClick}
           medications={relatedData.medications}
         />
+      </div>
+      <div className="w-full ml-4">
         {detailDisplayOpen && selectedMedicationItem && (
           <MedicationDetail
             item={selectedMedicationItem}
             onClose={() => setDetailDisplayOpen(false)}
           />
         )}
-        <div className="h-[100px]" />
       </div>
     </section>
   );

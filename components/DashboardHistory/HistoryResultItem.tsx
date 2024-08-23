@@ -39,16 +39,6 @@ export const HistoryResultItem = ({
             <span className="mr-4">Item:</span>
             <p>{item}</p>
           </div>
-          <VerticalDivider />
-          <div className="flex">
-            <span className="mr-4">Type:</span>
-            <p>{historyCategory}</p>
-          </div>
-          <VerticalDivider />
-          <div className="flex">
-            <span className="mr-4">Date:</span>
-            <p>{date}</p>
-          </div>
         </div>
       </div>
     </section>

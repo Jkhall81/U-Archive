@@ -7,7 +7,6 @@ import { HistoryItem } from "@/lib/dummyData/types";
 import HistoryDetail from "@/components/DashboardHistory/HistoryDetail";
 
 const HistoryPage = () => {
-  const selectedPatient = usePatientStore((state) => state.selectedPatient);
   const relatedData = usePatientStore((state) => state.relatedData);
   const [detailDisplayOpen, setDetailDisplayOpen] = useState(false);
   const [selectedHistoryItem, setSelectedHistoryItem] =
@@ -19,19 +18,20 @@ const HistoryPage = () => {
   };
 
   return (
-    <section className="w-full h-full flex flex-col">
-      <div className="w-full h-full">
+    <section className="w-full h-full flex">
+      <div className="w-[20vw] h-full">
         <HistoryResultsList
           onClick={handleItemClick}
           history={relatedData.history}
         />
+      </div>
+      <div className="w-full ml-4">
         {detailDisplayOpen && selectedHistoryItem && (
           <HistoryDetail
             item={selectedHistoryItem}
             onClose={() => setDetailDisplayOpen(false)}
           />
         )}
-        <div className="h-[100px]" />
       </div>
     </section>
   );

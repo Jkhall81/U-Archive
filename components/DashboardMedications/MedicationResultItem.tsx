@@ -14,10 +14,6 @@ interface Props {
 
 export const MedicationResultItem = ({
   medicationName,
-  dose,
-  doseUnit,
-  startDate,
-  endDate,
   index,
   onClick,
   isSelected,
@@ -32,32 +28,17 @@ export const MedicationResultItem = ({
         }`
       )}
     >
-      <div className="w-[5%] flex items-center">
+      <div className="w-[2%] flex items-center">
         <p>{index + 1}</p>
       </div>
       <VerticalDivider />
 
       {/* Centered Content */}
-      <div className="flex-1 flex justify-between items center">
-        <div className="flex items-center space-x-4">
+      <div className="flex">
+        <div className="flex items-center">
           <div className="flex">
-            <span className="mr-4">Medication Name:</span>
+            <span className="mr-4">Medication:</span>
             <p>{medicationName}</p>
-          </div>
-          <VerticalDivider />
-          <div className="flex">
-            <span className="mr-4">Dose:</span>
-            <p>{`${dose} ${doseUnit}`}</p>
-          </div>
-          <VerticalDivider />
-          <div className="flex">
-            <span className="mr-4">Start Date:</span>
-            <p>{startDate}</p>
-          </div>
-          <VerticalDivider />
-          <div className="flex">
-            <span className="mr-4">End Date:</span>
-            <p>{endDate}</p>
           </div>
         </div>
       </div>
