@@ -28,16 +28,16 @@ export const MedicationResultItem = ({
         }`
       )}
     >
-      <div className="w-[2%] flex items-center">
+      <div className="w-4 flex items-center">
         <p>{index + 1}</p>
       </div>
       <VerticalDivider />
 
       {/* Centered Content */}
-      <div className="flex">
+      <div className="flex items-center flex-1 pr-2">
         <div className="flex items-center">
           <div className="flex">
-            <span className="mr-4">Medication:</span>
+            <span className="mr-4 text-blue-500">Medication:</span>
             <p>{medicationName}</p>
           </div>
         </div>

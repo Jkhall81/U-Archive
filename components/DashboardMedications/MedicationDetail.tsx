@@ -3,10 +3,9 @@ import { Card } from "../Card";
 
 interface Props {
   item: Medication;
-  onClose: () => void;
 }
 
-export const MedicationDetail = ({ item, onClose }: Props) => {
+export const MedicationDetail = ({ item }: Props) => {
   return (
     <main className="flex flex-col mt-6 rounded-2xl mx-1 border-2 bg-neutral-300 dark:bg-neutral-800 border-neutral-300 dark:border-white pb-6">
       <h2 className="text-center text-4xl font-semibold pt-6 pb-6">
@@ -15,18 +14,22 @@ export const MedicationDetail = ({ item, onClose }: Props) => {
       <div className="flex">
         <Card
           fields={[
+            { fieldName: "Name", fieldValue: item.medicationName },
             { fieldName: "Duration", fieldValue: item.duration },
-            { fieldName: "Intake", fieldValue: item.intake },
-            { fieldName: "Route", fieldValue: item.route },
+            { fieldName: "Dose", fieldValue: item.dose },
+            { fieldName: "Dose Unit", fieldValue: item.doseUnit },
             { fieldName: "Frequency", fieldValue: item.frequency },
             { fieldName: "Comments", fieldValue: item.comments },
           ]}
         />
         <Card
           fields={[
-            { fieldName: "Encounter Number", fieldValue: item.encounterNumber },
+            { fieldName: "Intake", fieldValue: item.intake },
+            { fieldName: "Route", fieldValue: item.route },
             { fieldName: "Physician Last Name", fieldValue: item.drLastName },
             { fieldName: "Physician First Name", fieldValue: item.drFirstName },
+            { fieldName: "Start Date", fieldValue: item.startDate },
+            { fieldName: "End Date", fieldValue: item.endDate },
           ]}
         />
       </div>

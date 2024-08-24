@@ -5,6 +5,8 @@ import { MedicationResultsList } from "@/components/DashboardMedications/Medicat
 import { usePatientStore } from "@/lib/store";
 import { Medication } from "@/lib/dummyData/types";
 import { MedicationDetail } from "@/components/DashboardMedications/MedicationDetail";
+import { MedicationSearchBar } from "@/components/DashboardMedications/MedicationSearchBar";
+import { MedicationPrescribedDuring } from "@/components/DashboardMedications/MedicationPrescribedDuring";
 const MedicationsPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
   const [detailDisplayOpen, setDetailDisplayOpen] = useState(false);
@@ -16,20 +18,32 @@ const MedicationsPage = () => {
     setDetailDisplayOpen(true);
   };
   return (
-    <section className="w-full h-full flex">
-      <div className="w-[20vw] h-full">
-        <MedicationResultsList
-          onClick={handleItemClick}
-          medications={relatedData.medications}
-        />
+    <section className="w-full h-full flex flex-col">
+      <div className="w-full h-[300px] mt-6">
+        <MedicationSearchBar />
       </div>
-      <div className="w-full ml-4">
-        {detailDisplayOpen && selectedMedicationItem && (
-          <MedicationDetail
-            item={selectedMedicationItem}
-            onClose={() => setDetailDisplayOpen(false)}
+      <div className="flex w-full h-full">
+        <div className="w-[20vw] h-full">
+          <MedicationResultsList
+            onClick={handleItemClick}
+            medications={relatedData.medications}
           />
-        )}
+        </div>
+        <div className="flex flex-col w-full">
+          <div className="w-full ml-4">
+            {detailDisplayOpen && selectedMedicationItem && (
+              <MedicationDetail item={selectedMedicationItem} />
+            )}
+          </div>
+          <div className="w-full ml-4 mt-6">
+            {detailDisplayOpen && selectedMedicationItem && (
+              <MedicationPrescribedDuring
+                relatedData={relatedData}
+                encounterNumber={selectedMedicationItem?.encounterNumber}
+              />
+            )}
+          </div>
+        </div>
       </div>
     </section>
   );

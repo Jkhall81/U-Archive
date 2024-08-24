@@ -129,6 +129,7 @@ export interface Problem {
   probDate: string;
   drFirstName: string;
   drLastName: string;
+  encounterNumber: string;
 }
 
 export interface Procedure {
@@ -167,3 +168,13 @@ export interface DemographicsItem {
 }
 
 export type DemographicsData = DemographicsItem[];
+
+export interface RelatedData {
+  documents: Document[];
+  history: HistoryItem[];
+  labs: Lab[];
+  medications: Medication[];
+  problems: Problem[];
+  procedures: Procedure[];
+  visits: Visit[];
+}

@@ -7,6 +7,7 @@ import { problemsData } from "./dummyData/problems";
 import { proceduresData } from "./dummyData/procedures";
 import { visitsData } from "./dummyData/visits";
 import { DemographicsData } from "./dummyData/types";
+import { RelatedData } from "./dummyData/types";
 
 export const filterDemographicsData = (searchData: {
   lastName: string;
@@ -50,3 +51,25 @@ export const getRelatedData = (chartNumber: number) => {
     visits: visitsData.filter((visit) => visit.chartNumber === chartNumber),
   };
 };
+
+// filter related data for linking based on encounterNumber
+export function filterRelatedData(
+  encounterNumber: string | undefined,
+  relatedData: RelatedData
+): RelatedData {
+  // Define a generic filter function with type constraints
+  const filterByEncounterNumber = <T extends { encounterNumber?: string }>(
+    array: T[]
+  ): T[] => array.filter((item) => item.encounterNumber === encounterNumber);
+
+  return {
+    // Apply the filter function to each property, ensuring types are preserved
+    documents: filterByEncounterNumber(relatedData.documents),
+    history: filterByEncounterNumber(relatedData.history),
+    labs: filterByEncounterNumber(relatedData.labs),
+    medications: filterByEncounterNumber(relatedData.medications),
+    problems: filterByEncounterNumber(relatedData.problems),
+    procedures: filterByEncounterNumber(relatedData.procedures),
+    visits: filterByEncounterNumber(relatedData.visits),
+  };
+}
