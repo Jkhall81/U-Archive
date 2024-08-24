@@ -56,13 +56,13 @@ export const getRelatedData = (chartNumber: number) => {
 export function filterRelatedData(
   encounterNumber: string | undefined,
   relatedData: RelatedData
-): RelatedData {
+): Partial<RelatedData> {
   // Define a generic filter function with type constraints
   const filterByEncounterNumber = <T extends { encounterNumber?: string }>(
     array: T[]
   ): T[] => array.filter((item) => item.encounterNumber === encounterNumber);
 
-  return {
+  const filteredData = {
     // Apply the filter function to each property, ensuring types are preserved
     documents: filterByEncounterNumber(relatedData.documents),
     history: filterByEncounterNumber(relatedData.history),
@@ -72,4 +72,8 @@ export function filterRelatedData(
     procedures: filterByEncounterNumber(relatedData.procedures),
     visits: filterByEncounterNumber(relatedData.visits),
   };
+
+  return Object.fromEntries(
+    Object.entries(filteredData).filter(([, value]) => value.length > 0)
+  ) as Partial<RelatedData>;
 }
