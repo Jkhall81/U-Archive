@@ -19,7 +19,7 @@ export const RelatedDocument = ({ data }: Props) => {
           ]}
         />
       </div>
-      <Button className="text-2xl border-black dark:bg-neutral-800 h-[50px] w-[20vw] mt-8 rounded-3xl border-2 dark:border-white">
+      <Button className="text-2xl mb-8 border-black dark:bg-neutral-800 h-[50px] w-[20vw] mt-8 rounded-3xl border-2 dark:border-white">
         Download
       </Button>
     </section>

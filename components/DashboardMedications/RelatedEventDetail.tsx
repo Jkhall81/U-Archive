@@ -1,15 +1,22 @@
 import { RelatedData } from "@/lib/dummyData/types";
 import { RelatedDocument } from "./RelatedEvents/RelatedDocument";
 import { RelatedLab } from "./RelatedEvents/RelatedLab";
-import { isDocument, isLab } from "./RelatedEvents/typeGuard";
+import { RelatedProblem } from "./RelatedEvents/RelatedProblem";
+import { RelatedVisit } from "./RelatedEvents/RelatedVisit";
+import { RelatedProcedure } from "./RelatedEvents/RelatedProcedure";
+import {
+  isDocument,
+  isLab,
+  isProblem,
+  isVisit,
+  isProcedure,
+} from "./RelatedEvents/typeGuard";
 
 interface Props {
   eventItem: RelatedData;
 }
 
 export const RelatedEventDetail = ({ eventItem }: Props) => {
-  console.log("In Detail", eventItem);
-
   const renderContent = () => {
     switch (true) {
       case isDocument(eventItem):
@@ -17,6 +24,15 @@ export const RelatedEventDetail = ({ eventItem }: Props) => {
 
       case isLab(eventItem):
         return <RelatedLab data={eventItem[0]} />;
+
+      case isProblem(eventItem):
+        return <RelatedProblem data={eventItem[0]} />;
+
+      case isVisit(eventItem):
+        return <RelatedVisit data={eventItem[0]} />;
+
+      case isProcedure(eventItem):
+        return <RelatedProcedure data={eventItem[0]} />;
 
       // Add more cases here as needed
 

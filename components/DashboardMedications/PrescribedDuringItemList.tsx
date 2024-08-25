@@ -16,20 +16,23 @@ export const PrescribedDuringItemList = ({ linkedData, onClick }: Props) => {
     setSelectedItem(item); // Set the clicked item as selected
     onClick(item); // Pass the item to the parent component
   };
+  console.log("selected item", selectedItem);
   return (
     <section className="w-[15vw]">
-      {Object.entries(linkedData).map(([key, value], index) => {
-        return (
-          <PrescribedDuringLinkItem
-            key={index}
-            index={index}
-            type={key}
-            data={value}
-            onClick={() => handleItemClick(value)}
-            isSelected={selectedItem === value}
-          />
-        );
-      })}
+      {Object.entries(linkedData)
+        .filter(([key, _]) => key !== "medications")
+        .map(([key, value], index) => {
+          return (
+            <PrescribedDuringLinkItem
+              key={index}
+              index={index}
+              type={key}
+              data={value}
+              onClick={() => handleItemClick(value)}
+              isSelected={selectedItem === value}
+            />
+          );
+        })}
     </section>
   );
 };

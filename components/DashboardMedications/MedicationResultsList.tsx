@@ -25,8 +25,8 @@ export const MedicationResultsList = ({ medications, onClick }: Props) => {
         <MedicationResultItem
           index={index}
           key={index}
-          medicationName={x.medicationName}
           startDate={x.startDate}
+          medicationName={x.medicationName}
           endDate={x.endDate}
           dose={x.dose}
           doseUnit={x.doseUnit}

@@ -6,7 +6,6 @@ interface Props {
 }
 
 export const Insurance1Display = ({ insurance1Data }: Props) => {
-  console.log("Insurance1 Data", insurance1Data);
   return (
     <main className="mt-6 rounded-2xl mx-1 border-2 border-neutral-300 dark:border-white pb-6">
       <h2 className="mt-6 text-center text-4xl pb-6 font-semibold">

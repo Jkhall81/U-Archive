@@ -32,7 +32,7 @@ export const SearchBarInput = ({ label, placeHolder, name, form }: Props) => {
           <FormLabel className="w-full text-xl">{label}</FormLabel>
           <FormControl>
             <Input
-              className="rounded-xl w-[10vw] dark:bg-white"
+              className="rounded-xl w-[10vw] dark:text-black dark:bg-white"
               placeholder={placeHolder}
               {...field}
             />

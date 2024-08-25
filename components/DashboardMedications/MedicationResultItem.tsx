@@ -14,6 +14,7 @@ interface Props {
 
 export const MedicationResultItem = ({
   medicationName,
+  startDate,
   index,
   onClick,
   isSelected,
@@ -35,10 +36,14 @@ export const MedicationResultItem = ({
 
       {/* Centered Content */}
       <div className="flex items-center flex-1 pr-2">
-        <div className="flex items-center">
+        <div className="flex-col items-center">
           <div className="flex">
             <span className="mr-4 text-blue-500">Medication:</span>
             <p>{medicationName}</p>
+          </div>
+          <div className="flex">
+            <span className="mr-4 text-blue-500">Start Date:</span>
+            <p>{startDate}</p>
           </div>
         </div>
       </div>

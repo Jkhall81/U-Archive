@@ -1,3 +1,29 @@
-export const RelatedVisit = () => {
-  return <div>RelatedVisit</div>;
+import { Visit } from "@/lib/dummyData/types";
+import { RelatedDetailCard } from "@/components/RelatedDetailCard";
+import { Button } from "@/components/ui/button";
+
+interface Props {
+  data: Visit;
+}
+
+export const RelatedVisit = ({ data }: Props) => {
+  return (
+    <section className="w-full flex flex-col items-center">
+      <h2 className="text-3xl text-center mt-8 mb-6">Related Visit</h2>
+      <div className="w-full">
+        <RelatedDetailCard
+          fields={[
+            { fieldName: "Visit Type", fieldValue: data.visitType },
+            { fieldName: "Visit Date", fieldValue: data.visitDate },
+            { fieldName: "PDF File", fieldValue: data.PDFFile },
+            { fieldName: "Physician Last Name", fieldValue: data.drLastName },
+            { fieldName: "Physician First Name", fieldValue: data.drFirstName },
+          ]}
+        />
+      </div>
+      <Button className="text-2xl mb-8 border-black dark:bg-neutral-800 h-[50px] w-[20vw] mt-8 rounded-3xl border-2 dark:border-white">
+        Download
+      </Button>
+    </section>
+  );
 };

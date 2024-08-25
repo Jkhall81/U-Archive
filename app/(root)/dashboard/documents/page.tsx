@@ -5,7 +5,6 @@ import { usePatientStore } from "@/lib/store";
 
 const DocumentsPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
-  console.log("data", relatedData.documents);
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-full">

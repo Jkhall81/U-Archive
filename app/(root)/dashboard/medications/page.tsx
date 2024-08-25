@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { RelatedData } from "@/lib/dummyData/types";
 import { MedicationResultsList } from "@/components/DashboardMedications/MedicationResultsList";
 import { usePatientStore } from "@/lib/store";
@@ -18,6 +18,30 @@ const MedicationsPage = () => {
   const [selectedEventItem, setSelectedEventItem] =
     useState<RelatedData | null>(null);
 
+  // Search Filter state
+  const [medicationName, setMedicationName] = useState("");
+  const [doseStrength, setDoseStrength] = useState("");
+  const [physicianLastName, setPhysicianLastName] = useState("");
+
+  // Filter medications based on search criteria
+  const filteredMedications = useMemo(() => {
+    return relatedData.medications.filter((medication) => {
+      const matchesName = medication.medicationName
+        .toLowerCase()
+        .includes(medicationName.toLowerCase());
+      const matchesDose = medication.dose.toString().includes(doseStrength);
+      const matchesPhysician = medication.drLastName
+        .toLowerCase()
+        .includes(physicianLastName.toLowerCase());
+      return matchesName && matchesDose && matchesPhysician;
+    });
+  }, [
+    medicationName,
+    doseStrength,
+    physicianLastName,
+    relatedData.medications,
+  ]);
+
   const handleItemClick = (item: Medication) => {
     setSelectedMedicationItem(item);
     setDetailDisplayOpen(true);
@@ -27,17 +51,23 @@ const MedicationsPage = () => {
   const handleEventClick = (eventItem: any) => {
     setSelectedEventItem(eventItem);
   };
-  console.log("Event Item", selectedEventItem);
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <MedicationSearchBar />
+        <MedicationSearchBar
+          medicationName={medicationName}
+          doseStrength={doseStrength}
+          physicianLastName={physicianLastName}
+          onMedicationNameChange={setMedicationName}
+          onDoseStrengthChange={setDoseStrength}
+          onPhysicianLastNameChange={setPhysicianLastName}
+        />
       </div>
       <div className="flex w-full h-full">
         <div className="w-[20vw] h-full">
           <MedicationResultsList
             onClick={handleItemClick}
-            medications={relatedData.medications}
+            medications={filteredMedications}
           />
         </div>
         <div className="flex flex-col w-full">
