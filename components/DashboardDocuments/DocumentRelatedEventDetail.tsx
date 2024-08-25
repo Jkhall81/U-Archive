@@ -1,11 +1,11 @@
 import { RelatedData } from "@/lib/dummyData/types";
-import { RelatedDocument } from "../RelatedEvents/RelatedDocument";
+import { RelatedMedication } from "../RelatedEvents/RelatedMedication";
 import { RelatedLab } from "../RelatedEvents/RelatedLab";
 import { RelatedProblem } from "../RelatedEvents/RelatedProblem";
 import { RelatedVisit } from "../RelatedEvents/RelatedVisit";
 import { RelatedProcedure } from "../RelatedEvents/RelatedProcedure";
 import {
-  isDocument,
+  isMedication,
   isLab,
   isProblem,
   isVisit,
@@ -16,11 +16,11 @@ interface Props {
   eventItem: RelatedData;
 }
 
-export const RelatedEventDetail = ({ eventItem }: Props) => {
+export const DocumentRelatedEventDetail = ({ eventItem }: Props) => {
   const renderContent = () => {
     switch (true) {
-      case isDocument(eventItem):
-        return <RelatedDocument data={eventItem[0]} />;
+      case isMedication(eventItem):
+        return <RelatedMedication data={eventItem[0]} />;
 
       case isLab(eventItem):
         return <RelatedLab data={eventItem[0]} />;

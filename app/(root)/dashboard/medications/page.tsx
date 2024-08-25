@@ -1,10 +1,9 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { RelatedData } from "@/lib/dummyData/types";
+import { RelatedData, Medication } from "@/lib/dummyData/types";
 import { MedicationResultsList } from "@/components/DashboardMedications/MedicationResultsList";
 import { usePatientStore } from "@/lib/store";
-import { Medication } from "@/lib/dummyData/types";
 import { MedicationDetail } from "@/components/DashboardMedications/MedicationDetail";
 import { MedicationSearchBar } from "@/components/DashboardMedications/MedicationSearchBar";
 import { MedicationPrescribedDuring } from "@/components/DashboardMedications/MedicationPrescribedDuring";

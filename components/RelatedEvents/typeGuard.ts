@@ -4,6 +4,7 @@ import {
   Problem,
   Visit,
   Procedure,
+  Medication,
 } from "@/lib/dummyData/types";
 
 // Checks if item is an array of Document
@@ -74,6 +75,21 @@ export function isProcedure(items: any): items is Procedure[] {
         typeof item.testName === "string" &&
         typeof item.resultDate === "string" &&
         typeof item.result7 === "string"
+    )
+  );
+}
+
+export function isMedication(items: any): items is Medication[] {
+  return (
+    Array.isArray(items) &&
+    items.every(
+      (item) =>
+        typeof item.chartNumber === "number" &&
+        typeof item.medicationName === "string" &&
+        typeof item.dose === "string" &&
+        typeof item.route === "string" &&
+        typeof item.intake === "string" &&
+        typeof item.frequency === "string"
     )
   );
 }
