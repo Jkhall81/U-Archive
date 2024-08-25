@@ -15,10 +15,8 @@ const HistoryDetail = ({ item }: Props) => {
       <div className="flex">
         <Card
           fields={[
-            {
-              fieldName: "Encounter Number",
-              fieldValue: item.encounterNumber,
-            },
+            { fieldName: "Item", fieldValue: item.item },
+            { fieldName: "Category", fieldValue: item.historyCategory },
             { fieldName: "Description", fieldValue: item.description },
             { fieldName: "Notes", fieldValue: item.notes },
             { fieldName: "Results", fieldValue: item.results },
@@ -28,6 +26,7 @@ const HistoryDetail = ({ item }: Props) => {
           fields={[
             { fieldName: "Physican Last Name", fieldValue: item.drLastName },
             { fieldName: "Physican First Name", fieldValue: item.drFirstName },
+            { fieldName: "Date", fieldValue: item.date },
           ]}
         />
       </div>
