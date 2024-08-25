@@ -5,6 +5,7 @@ import {
   Visit,
   Procedure,
   Medication,
+  HistoryItem,
 } from "@/lib/dummyData/types";
 
 // Checks if item is an array of Document
@@ -90,6 +91,21 @@ export function isMedication(items: any): items is Medication[] {
         typeof item.route === "string" &&
         typeof item.intake === "string" &&
         typeof item.frequency === "string"
+    )
+  );
+}
+
+export function isHistory(items: any): items is HistoryItem[] {
+  return (
+    Array.isArray(items) &&
+    items.every(
+      (item) =>
+        typeof item.chartNumber === "number" &&
+        typeof item.historyCategory === "string" &&
+        typeof item.item === "string" &&
+        typeof item.description === "string" &&
+        typeof item.results === "string" &&
+        typeof item.notes === "string"
     )
   );
 }

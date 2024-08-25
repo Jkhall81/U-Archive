@@ -25,7 +25,7 @@ export default function Home() {
           </div>
 
           {/* White Divider Line */}
-          <div className="border-b-4 border-slate-900 dark:border-white w-[80%] 2xl:w-[60%] mt-[4vh]" />
+          <div className="border-b-4 border-slate-900 dark:border-amber-700 w-[80%] 2xl:w-[60%] mt-[4vh]" />
 
           {/* Text */}
           <p className="relative mt-[4vh] dark:text-white text-slate-900 prose text-2xl font-bold">
@@ -41,7 +41,7 @@ export default function Home() {
             <Link href="/">
               <Button
                 size="lg"
-                className="w-[200px] text-xl border-2 border-slate-900 text-slate-900 dark:border-white dark:text-white rounded-xl"
+                className="w-[200px] text-xl border-2 border-slate-900 text-slate-900 dark:border-amber-700 dark:text-amber-700 rounded-xl"
               >
                 Sign in
               </Button>
@@ -49,7 +49,7 @@ export default function Home() {
             <Link href="/">
               <Button
                 size="lg"
-                className="w-[200px] text-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 rounded-xl"
+                className="w-[200px] text-xl bg-slate-900 text-white dark:bg-amber-700 dark:text-slate-900 rounded-xl"
               >
                 Learn More
               </Button>

@@ -10,7 +10,7 @@ export const historyData = [
     drLastName: "Smith",
     results: "All vitals normal",
     notes: "Patient in good health",
-    encounterNumber: "ENC001",
+    encounterNumber: "E001",
   },
   {
     chartNumber: 1,
@@ -22,7 +22,7 @@ export const historyData = [
     drLastName: "Johnson",
     results: "Vaccine administered successfully",
     notes: "No side effects reported",
-    encounterNumber: "ENC002",
+    encounterNumber: "E002",
   },
   {
     chartNumber: 1,
@@ -34,7 +34,7 @@ export const historyData = [
     drLastName: "Doe",
     results: "Cholesterol slightly elevated",
     notes: "Recommend dietary changes",
-    encounterNumber: "ENC003",
+    encounterNumber: "E003",
   },
   {
     chartNumber: 1,
@@ -46,7 +46,7 @@ export const historyData = [
     drLastName: "Brown",
     results: "No significant findings",
     notes: "No further action required",
-    encounterNumber: "ENC016",
+    encounterNumber: "E004",
   },
   {
     chartNumber: 1,
@@ -58,7 +58,7 @@ export const historyData = [
     drLastName: "Taylor",
     results: "Normal glucose levels",
     notes: "No signs of diabetes",
-    encounterNumber: "ENC017",
+    encounterNumber: "E005",
   },
   {
     chartNumber: 1,
@@ -70,7 +70,7 @@ export const historyData = [
     drLastName: "Wilson",
     results: "Vaccine administered without issues",
     notes: "Schedule for second dose in one month",
-    encounterNumber: "ENC018",
+    encounterNumber: "E006",
   },
 
   // Chart Number 2
@@ -84,7 +84,7 @@ export const historyData = [
     drLastName: "Brown",
     results: "Surgery successful",
     notes: "Patient recovering well",
-    encounterNumber: "ENC004",
+    encounterNumber: "E007",
   },
   {
     chartNumber: 2,
@@ -96,7 +96,7 @@ export const historyData = [
     drLastName: "Taylor",
     results: "Positive for pollen allergy",
     notes: "Prescribed antihistamines",
-    encounterNumber: "ENC005",
+    encounterNumber: "E008",
   },
   {
     chartNumber: 2,
@@ -108,7 +108,7 @@ export const historyData = [
     drLastName: "Garcia",
     results: "No abnormalities detected",
     notes: "Patient advised to maintain hydration",
-    encounterNumber: "ENC006",
+    encounterNumber: "E009",
   },
   {
     chartNumber: 2,
@@ -120,7 +120,7 @@ export const historyData = [
     drLastName: "Martinez",
     results: "Rash diagnosed as eczema",
     notes: "Prescribed topical corticosteroids",
-    encounterNumber: "ENC019",
+    encounterNumber: "E010",
   },
   {
     chartNumber: 2,
@@ -132,7 +132,7 @@ export const historyData = [
     drLastName: "Garcia",
     results: "Elevated LDL cholesterol",
     notes: "Recommend dietary changes and follow-up",
-    encounterNumber: "ENC020",
+    encounterNumber: "E011",
   },
   {
     chartNumber: 2,
@@ -144,7 +144,7 @@ export const historyData = [
     drLastName: "Clark",
     results: "Booster administered successfully",
     notes: "Next booster due in 10 years",
-    encounterNumber: "ENC021",
+    encounterNumber: "E012",
   },
 
   // Chart Number 3
@@ -158,7 +158,7 @@ export const historyData = [
     drLastName: "Martinez",
     results: "Vaccine administered successfully",
     notes: "Next booster due in 10 years",
-    encounterNumber: "ENC007",
+    encounterNumber: "E013",
   },
   {
     chartNumber: 3,
@@ -170,7 +170,7 @@ export const historyData = [
     drLastName: "Davis",
     results: "Mild myopia detected",
     notes: "Prescription for corrective lenses provided",
-    encounterNumber: "ENC008",
+    encounterNumber: "E014",
   },
   {
     chartNumber: 3,
@@ -182,7 +182,7 @@ export const historyData = [
     drLastName: "Lee",
     results: "Surgery successful",
     notes: "Patient advised on post-op care",
-    encounterNumber: "ENC009",
+    encounterNumber: "E015",
   },
   {
     chartNumber: 3,
@@ -194,7 +194,7 @@ export const historyData = [
     drLastName: "Lewis",
     results: "Diagnosis of chronic sinusitis",
     notes: "Prescribed nasal corticosteroids",
-    encounterNumber: "ENC022",
+    encounterNumber: "E016",
   },
   {
     chartNumber: 3,
@@ -206,7 +206,7 @@ export const historyData = [
     drLastName: "Walker",
     results: "All parameters within normal range",
     notes: "No further action needed",
-    encounterNumber: "ENC023",
+    encounterNumber: "E017",
   },
   {
     chartNumber: 3,
@@ -218,7 +218,7 @@ export const historyData = [
     drLastName: "Harris",
     results: "Vaccine administered successfully",
     notes: "No adverse reactions",
-    encounterNumber: "ENC024",
+    encounterNumber: "E018",
   },
 
   // Chart Number 4
@@ -232,7 +232,7 @@ export const historyData = [
     drLastName: "White",
     results: "No abnormalities detected",
     notes: "Patient advised to maintain regular exercise",
-    encounterNumber: "ENC010",
+    encounterNumber: "E019",
   },
   {
     chartNumber: 4,
@@ -244,7 +244,7 @@ export const historyData = [
     drLastName: "Harris",
     results: "Blood sugar levels within normal range",
     notes: "No further action required",
-    encounterNumber: "ENC011",
+    encounterNumber: "E020",
   },
   {
     chartNumber: 4,
@@ -256,7 +256,7 @@ export const historyData = [
     drLastName: "Clark",
     results: "Surgery successful, minor scarring",
     notes: "Patient advised on rehabilitation exercises",
-    encounterNumber: "ENC012",
+    encounterNumber: "E021",
   },
   {
     chartNumber: 4,
@@ -268,7 +268,7 @@ export const historyData = [
     drLastName: "Hall",
     results: "Diagnosis of mild osteoarthritis",
     notes: "Recommend physical therapy",
-    encounterNumber: "ENC025",
+    encounterNumber: "E022",
   },
   {
     chartNumber: 4,
@@ -280,7 +280,7 @@ export const historyData = [
     drLastName: "Young",
     results: "Elevated ALT levels",
     notes: "Recommend further testing",
-    encounterNumber: "ENC026",
+    encounterNumber: "E023",
   },
   {
     chartNumber: 4,
@@ -292,7 +292,7 @@ export const historyData = [
     drLastName: "King",
     results: "Vaccine administered without issues",
     notes: "No adverse reactions",
-    encounterNumber: "ENC027",
+    encounterNumber: "E024",
   },
 
   // Chart Number 5
@@ -306,7 +306,7 @@ export const historyData = [
     drLastName: "Walker",
     results: "Vaccine administered successfully",
     notes: "Second dose scheduled in one month",
-    encounterNumber: "ENC013",
+    encounterNumber: "E025",
   },
   {
     chartNumber: 5,
@@ -318,7 +318,7 @@ export const historyData = [
     drLastName: "Allen",
     results: "Hearing within normal range",
     notes: "No further action required",
-    encounterNumber: "ENC014",
+    encounterNumber: "E026",
   },
   {
     chartNumber: 5,
@@ -330,7 +330,7 @@ export const historyData = [
     drLastName: "King",
     results: "Liver function normal",
     notes: "Patient advised to avoid excessive alcohol consumption",
-    encounterNumber: "ENC015",
+    encounterNumber: "E027",
   },
   {
     chartNumber: 5,
@@ -342,7 +342,7 @@ export const historyData = [
     drLastName: "Wright",
     results: "Diagnosis of IBS",
     notes: "Recommend dietary changes and medication",
-    encounterNumber: "ENC028",
+    encounterNumber: "E028",
   },
   {
     chartNumber: 5,
@@ -354,7 +354,7 @@ export const historyData = [
     drLastName: "Lopez",
     results: "Normal kidney function",
     notes: "No further action needed",
-    encounterNumber: "ENC029",
+    encounterNumber: "E029",
   },
   {
     chartNumber: 5,
@@ -366,7 +366,7 @@ export const historyData = [
     drLastName: "Hill",
     results: "Booster administered successfully",
     notes: "No side effects reported",
-    encounterNumber: "ENC030",
+    encounterNumber: "E030",
   },
   {
     chartNumber: 6,
@@ -378,7 +378,7 @@ export const historyData = [
     drLastName: "Anderson",
     results: "Migraines diagnosed",
     notes: "Prescribed medication for management",
-    encounterNumber: "ENC031",
+    encounterNumber: "E031",
   },
   {
     chartNumber: 6,
@@ -390,7 +390,7 @@ export const historyData = [
     drLastName: "Lee",
     results: "Normal thyroid levels",
     notes: "No further action required",
-    encounterNumber: "ENC032",
+    encounterNumber: "E032",
   },
   {
     chartNumber: 6,
@@ -402,7 +402,7 @@ export const historyData = [
     drLastName: "Clark",
     results: "Vaccine administered without issues",
     notes: "No adverse reactions reported",
-    encounterNumber: "ENC033",
+    encounterNumber: "E033",
   },
   {
     chartNumber: 6,
@@ -414,7 +414,7 @@ export const historyData = [
     drLastName: "Walker",
     results: "Mole removed and sent for biopsy",
     notes: "Awaiting biopsy results",
-    encounterNumber: "ENC034",
+    encounterNumber: "E034",
   },
   {
     chartNumber: 6,
@@ -426,7 +426,7 @@ export const historyData = [
     drLastName: "Harris",
     results: "All parameters normal",
     notes: "No further action required",
-    encounterNumber: "ENC035",
+    encounterNumber: "E035",
   },
   {
     chartNumber: 6,
@@ -438,7 +438,7 @@ export const historyData = [
     drLastName: "Martinez",
     results: "Booster administered successfully",
     notes: "Next booster due in 10 years",
-    encounterNumber: "ENC036",
+    encounterNumber: "E036",
   },
   {
     chartNumber: 7,
@@ -450,7 +450,7 @@ export const historyData = [
     drLastName: "Young",
     results: "Prescription glasses recommended",
     notes: "No signs of serious eye conditions",
-    encounterNumber: "ENC037",
+    encounterNumber: "E037",
   },
   {
     chartNumber: 7,
@@ -462,7 +462,7 @@ export const historyData = [
     drLastName: "Robinson",
     results: "Elevated ALT levels",
     notes: "Recommend follow-up with hepatologist",
-    encounterNumber: "ENC038",
+    encounterNumber: "E038",
   },
   {
     chartNumber: 7,
@@ -474,7 +474,7 @@ export const historyData = [
     drLastName: "Perez",
     results: "Vaccine administered without issues",
     notes: "Second dose scheduled in 2 months",
-    encounterNumber: "ENC039",
+    encounterNumber: "E039",
   },
   {
     chartNumber: 7,
@@ -486,7 +486,7 @@ export const historyData = [
     drLastName: "Lewis",
     results: "Mild asthma diagnosed",
     notes: "Inhaler prescribed",
-    encounterNumber: "ENC040",
+    encounterNumber: "E040",
   },
   {
     chartNumber: 7,
@@ -498,7 +498,7 @@ export const historyData = [
     drLastName: "King",
     results: "No signs of infection",
     notes: "Patient advised to maintain hydration",
-    encounterNumber: "ENC041",
+    encounterNumber: "E041",
   },
   {
     chartNumber: 7,
@@ -510,7 +510,7 @@ export const historyData = [
     drLastName: "Scott",
     results: "Vaccine administered successfully",
     notes: "Schedule for second dose in 6 months",
-    encounterNumber: "ENC042",
+    encounterNumber: "E042",
   },
   {
     chartNumber: 8,
@@ -522,7 +522,7 @@ export const historyData = [
     drLastName: "Taylor",
     results: "GERD diagnosed",
     notes: "Medication prescribed",
-    encounterNumber: "ENC043",
+    encounterNumber: "E043",
   },
   {
     chartNumber: 8,
@@ -534,7 +534,7 @@ export const historyData = [
     drLastName: "White",
     results: "Elevated cholesterol levels",
     notes: "Recommend dietary changes",
-    encounterNumber: "ENC044",
+    encounterNumber: "E044",
   },
   {
     chartNumber: 8,
@@ -546,7 +546,7 @@ export const historyData = [
     drLastName: "Thompson",
     results: "Vaccine administered successfully",
     notes: "No adverse reactions reported",
-    encounterNumber: "ENC045",
+    encounterNumber: "E045",
   },
   {
     chartNumber: 8,
@@ -558,7 +558,7 @@ export const historyData = [
     drLastName: "Lopez",
     results: "Peripheral neuropathy diagnosed",
     notes: "Further testing recommended",
-    encounterNumber: "ENC046",
+    encounterNumber: "E046",
   },
   {
     chartNumber: 8,
@@ -570,7 +570,7 @@ export const historyData = [
     drLastName: "Brown",
     results: "Normal glucose levels",
     notes: "No signs of diabetes",
-    encounterNumber: "ENC047",
+    encounterNumber: "E047",
   },
   {
     chartNumber: 8,
@@ -582,7 +582,7 @@ export const historyData = [
     drLastName: "Davis",
     results: "Vaccine administered without issues",
     notes: "No adverse reactions",
-    encounterNumber: "ENC048",
+    encounterNumber: "E048",
   },
   {
     chartNumber: 9,
@@ -594,7 +594,7 @@ export const historyData = [
     drLastName: "Rodriguez",
     results: "Rheumatoid arthritis diagnosed",
     notes: "Medication and physical therapy recommended",
-    encounterNumber: "ENC049",
+    encounterNumber: "E049",
   },
   {
     chartNumber: 9,
@@ -606,7 +606,7 @@ export const historyData = [
     drLastName: "Garcia",
     results: "Normal kidney function",
     notes: "No further action required",
-    encounterNumber: "ENC050",
+    encounterNumber: "E050",
   },
   {
     chartNumber: 9,
@@ -618,7 +618,7 @@ export const historyData = [
     drLastName: "Martinez",
     results: "Booster administered successfully",
     notes: "Next booster due in 10 years",
-    encounterNumber: "ENC051",
+    encounterNumber: "E051",
   },
   {
     chartNumber: 9,
@@ -630,7 +630,7 @@ export const historyData = [
     drLastName: "Hernandez",
     results: "Nodule benign, no treatment needed",
     notes: "Recommend annual follow-up",
-    encounterNumber: "ENC052",
+    encounterNumber: "E052",
   },
   {
     chartNumber: 9,
@@ -642,7 +642,7 @@ export const historyData = [
     drLastName: "Wilson",
     results: "Low Vitamin D levels",
     notes: "Vitamin D supplement recommended",
-    encounterNumber: "ENC053",
+    encounterNumber: "E053",
   },
   {
     chartNumber: 9,
@@ -654,7 +654,7 @@ export const historyData = [
     drLastName: "Clark",
     results: "Vaccine administered successfully",
     notes: "No adverse reactions",
-    encounterNumber: "ENC054",
+    encounterNumber: "E054",
   },
   {
     chartNumber: 10,
@@ -666,7 +666,7 @@ export const historyData = [
     drLastName: "Lewis",
     results: "Mild osteoarthritis diagnosed",
     notes: "Physical therapy recommended",
-    encounterNumber: "ENC055",
+    encounterNumber: "E055",
   },
   {
     chartNumber: 10,
@@ -678,7 +678,7 @@ export const historyData = [
     drLastName: "Walker",
     results: "A1c within normal range",
     notes: "Continue current management",
-    encounterNumber: "ENC056",
+    encounterNumber: "E056",
   },
   {
     chartNumber: 10,
@@ -690,7 +690,7 @@ export const historyData = [
     drLastName: "Hill",
     results: "Vaccine administered successfully",
     notes: "No adverse reactions",
-    encounterNumber: "ENC057",
+    encounterNumber: "E057",
   },
   {
     chartNumber: 10,
@@ -702,7 +702,7 @@ export const historyData = [
     drLastName: "Adams",
     results: "No signs of heart disease",
     notes: "Chest pain likely musculoskeletal",
-    encounterNumber: "ENC058",
+    encounterNumber: "E058",
   },
   {
     chartNumber: 10,
@@ -714,7 +714,7 @@ export const historyData = [
     drLastName: "Sanchez",
     results: "Elevated LDL levels",
     notes: "Dietary changes recommended",
-    encounterNumber: "ENC059",
+    encounterNumber: "E059",
   },
   {
     chartNumber: 10,
@@ -726,6 +726,6 @@ export const historyData = [
     drLastName: "Collins",
     results: "Vaccine administered without issues",
     notes: "Schedule for second dose in 1 month",
-    encounterNumber: "ENC060",
+    encounterNumber: "E060",
   },
 ];

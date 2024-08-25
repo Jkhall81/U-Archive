@@ -4,12 +4,14 @@ import { RelatedLab } from "../RelatedEvents/RelatedLab";
 import { RelatedProblem } from "../RelatedEvents/RelatedProblem";
 import { RelatedVisit } from "../RelatedEvents/RelatedVisit";
 import { RelatedProcedure } from "../RelatedEvents/RelatedProcedure";
+import { RelatedHistory } from "../RelatedEvents/RelatedHistory";
 import {
   isDocument,
   isLab,
   isProblem,
   isVisit,
   isProcedure,
+  isHistory,
 } from "../RelatedEvents/typeGuard";
 
 interface Props {
@@ -21,6 +23,9 @@ export const RelatedEventDetail = ({ eventItem }: Props) => {
     switch (true) {
       case isDocument(eventItem):
         return <RelatedDocument data={eventItem[0]} />;
+
+      case isHistory(eventItem):
+        return <RelatedHistory data={eventItem[0]} />;
 
       case isLab(eventItem):
         return <RelatedLab data={eventItem[0]} />;

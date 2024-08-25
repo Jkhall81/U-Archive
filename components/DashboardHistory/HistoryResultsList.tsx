@@ -9,7 +9,7 @@ interface Props {
   onClick: (item: HistoryItem) => void;
 }
 
-const HistoryResultsList = ({ history, onClick }: Props) => {
+export const HistoryResultsList = ({ history, onClick }: Props) => {
   const [selectedItem, setSelectedItem] = useState<HistoryItem | null>(null);
 
   const handleClick = (item: HistoryItem) => {
@@ -31,4 +31,3 @@ const HistoryResultsList = ({ history, onClick }: Props) => {
     </section>
   );
 };
-export default HistoryResultsList;

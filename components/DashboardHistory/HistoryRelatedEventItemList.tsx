@@ -2,28 +2,28 @@
 
 import { useState } from "react";
 import { RelatedData } from "@/lib/dummyData/types";
-import { PrescribedDuringLinkItem } from "./PrescribedDuringLinkItem";
+import { HistoryRelatedEventLinkItem } from "./HistoryRelatedEventLinkItem";
 
 interface Props {
   linkedData: Partial<RelatedData>;
   onClick: (item: Partial<RelatedData>) => void;
 }
 
-export const PrescribedDuringItemList = ({ linkedData, onClick }: Props) => {
-  console.log("linked Data", linkedData);
+export const HistoryRelatedEventItemList = ({ linkedData, onClick }: Props) => {
   const [selectedItem, setSelectedItem] = useState<any | null>(null);
 
   const handleItemClick = (item: any) => {
     setSelectedItem(item); // Set the clicked item as selected
     onClick(item); // Pass the item to the parent component
   };
+  console.log("selected item", selectedItem);
   return (
     <section className="w-[15vw]">
       {Object.entries(linkedData)
-        .filter(([key, _]) => key !== "medications")
+        .filter(([key, _]) => key !== "documents")
         .map(([key, value], index) => {
           return (
-            <PrescribedDuringLinkItem
+            <HistoryRelatedEventLinkItem
               key={index}
               index={index}
               type={key}
