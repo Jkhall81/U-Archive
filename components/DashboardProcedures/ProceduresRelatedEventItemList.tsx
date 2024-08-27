@@ -2,14 +2,17 @@
 
 import { useState } from "react";
 import { RelatedData } from "@/lib/dummyData/types";
-import { HistoryRelatedEventLinkItem } from "./HistoryRelatedEventLinkItem";
+import { ProceduresRelatedEventLinkItem } from "./ProceduresRelatedEventLinkItem";
 
 interface Props {
   linkedData: Partial<RelatedData>;
   onClick: (item: Partial<RelatedData>) => void;
 }
 
-export const HistoryRelatedEventItemList = ({ linkedData, onClick }: Props) => {
+export const ProceduresRelatedEventItemList = ({
+  linkedData,
+  onClick,
+}: Props) => {
   const [selectedItem, setSelectedItem] = useState<any | null>(null);
 
   const handleItemClick = (item: any) => {
@@ -19,10 +22,10 @@ export const HistoryRelatedEventItemList = ({ linkedData, onClick }: Props) => {
   return (
     <section className="w-[15vw]">
       {Object.entries(linkedData)
-        .filter(([key, _]) => key !== "documents")
+        .filter(([key, _]) => key !== "procedures")
         .map(([key, value], index) => {
           return (
-            <HistoryRelatedEventLinkItem
+            <ProceduresRelatedEventLinkItem
               key={index}
               index={index}
               type={key}

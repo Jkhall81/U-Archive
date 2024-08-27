@@ -10,7 +10,6 @@ interface Props {
 }
 
 export const PrescribedDuringItemList = ({ linkedData, onClick }: Props) => {
-  console.log("linked Data", linkedData);
   const [selectedItem, setSelectedItem] = useState<any | null>(null);
 
   const handleItemClick = (item: any) => {

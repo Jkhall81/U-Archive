@@ -16,7 +16,6 @@ export const LabsRelatedEventItemList = ({ linkedData, onClick }: Props) => {
     setSelectedItem(item); // Set the clicked item as selected
     onClick(item); // Pass the item to the parent component
   };
-  console.log("selected item", selectedItem);
   return (
     <section className="w-[15vw]">
       {Object.entries(linkedData)
