@@ -1,23 +1,20 @@
-import { cn } from "@/lib/utils";
 import { VerticalDivider } from "../VerticalDivider";
+import { cn } from "@/lib/utils";
 
 interface Props {
   index: number;
-  encounterNumber: string;
-  visitDate: string;
-  drFirstName: string;
-  drLastName: string;
-  visitType: string;
-  PDFFile: string;
+  type: string;
+  data: any;
   onClick: () => void;
   isSelected: boolean;
 }
 
-export const VisitsResultItem = ({
+export const VisitsRelatedEventLinkItem = ({
   index,
-  visitType,
   onClick,
   isSelected,
+  type,
+  data,
 }: Props) => {
   return (
     <section
@@ -36,10 +33,10 @@ export const VisitsResultItem = ({
 
       {/* Centered Content */}
       <div className="flex items-center flex-1 pr-2">
-        <div className="flex-col items-center">
+        <div className="flex items-center">
           <div className="flex">
-            <span className="mr-4 text-blue-500">Visit Type:</span>
-            <p>{visitType}</p>
+            <span className="mr-4 text-blue-500">Related Event:</span>
+            <p>{type}</p>
           </div>
         </div>
       </div>

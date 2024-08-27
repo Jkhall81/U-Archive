@@ -1,31 +1,31 @@
 import { Input } from "../ui/input";
 
 interface Props {
-  testName: string;
-  facilityName: string;
-  testDate: string;
-  onTestNameChange: (value: string) => void;
-  onFacilityNameChange: (value: string) => void;
-  onTestDateChange: (value: string) => void;
+  visitType: string;
+  visitDate: string;
+  drLastName: string;
+  onVisitTypeChange: (value: string) => void;
+  onVisitDateChange: (value: string) => void;
+  onDrLastNameChange: (value: string) => void;
 }
 
-export const ProceduresSearchBar = ({
-  testName,
-  facilityName,
-  testDate,
-  onTestNameChange,
-  onFacilityNameChange,
-  onTestDateChange,
+export const VisitsSearchBar = ({
+  visitType,
+  visitDate,
+  drLastName,
+  onVisitTypeChange,
+  onVisitDateChange,
+  onDrLastNameChange,
 }: Props) => {
   return (
     <section className="flex items-center border-2 dark:border-white w-full h-[200px] rounded-3xl">
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
-          <span className="text-xl mr-4">Test Name:</span>
+          <span className="text-xl mr-4">Visit Type:</span>
           <Input
-            value={testName}
-            onChange={(e) => onTestNameChange(e.target.value)}
-            placeholder="Enter Test Name"
+            value={visitType}
+            onChange={(e) => onVisitTypeChange(e.target.value)}
+            placeholder="Enter Visit Type"
             className="rounded-xl text-xl dark:bg-white dark:text-black"
           />
         </div>
@@ -33,11 +33,11 @@ export const ProceduresSearchBar = ({
       <div className="border-r dark:border-white h-[50%] mt-[10px]" />
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
-          <span className="text-xl mr-4">Facility Name:</span>
+          <span className="text-xl mr-4">Visit Date:</span>
           <Input
-            value={facilityName}
-            onChange={(e) => onFacilityNameChange(e.target.value)}
-            placeholder="Enter Facility Name"
+            value={visitDate}
+            onChange={(e) => onVisitDateChange(e.target.value)}
+            placeholder="Enter Document Type"
             className="rounded-xl text-xl dark:bg-white dark:text-black"
           />
         </div>
@@ -45,11 +45,11 @@ export const ProceduresSearchBar = ({
       <div className="border-r dark:border-white h-[50%] mt-[10px]" />
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
-          <span className="text-xl mr-4">Test Date:</span>
+          <span className="text-xl mr-4">Physician Last Name:</span>
           <Input
-            value={testDate}
-            onChange={(e) => onTestDateChange(e.target.value)}
-            placeholder="Enter Test Date"
+            value={drLastName}
+            onChange={(e) => onDrLastNameChange(e.target.value)}
+            placeholder="Enter Physician Last Name"
             className="rounded-xl text-xl dark:bg-white dark:text-black"
           />
         </div>
