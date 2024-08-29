@@ -18,31 +18,31 @@ export const HistorySearchBar = ({
   onDateChange,
 }: Props) => {
   return (
-    <section className="flex items-center border-2 dark:border-white w-full h-[200px] rounded-3xl">
+    <section className="flex items-center border-2 border-black dark:border-white w-full h-[200px] rounded-3xl">
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
           <span className="text-xl mr-4">History Item:</span>
           <Input
             value={item}
             onChange={(e) => onItemChange(e.target.value)}
-            placeholder="Enter Document Name"
+            placeholder="Enter Item Name"
             className="rounded-xl text-xl dark:bg-white dark:text-black"
           />
         </div>
       </div>
-      <div className="border-r dark:border-white h-[50%] mt-[10px]" />
+      <div className="border-r border-black dark:border-white h-[50%] mt-[10px]" />
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
           <span className="text-xl mr-4">History Category:</span>
           <Input
             value={historyCategory}
             onChange={(e) => onHistoryCategoryChange(e.target.value)}
-            placeholder="Enter Document Type"
+            placeholder="Enter Category"
             className="rounded-xl text-xl dark:bg-white dark:text-black"
           />
         </div>
       </div>
-      <div className="border-r dark:border-white h-[50%] mt-[10px]" />
+      <div className="border-r border-black dark:border-white h-[50%] mt-[10px]" />
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
           <span className="text-xl mr-4">Date:</span>

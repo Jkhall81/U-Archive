@@ -7,7 +7,7 @@ import { HistoryItem, RelatedData } from "@/lib/dummyData/types";
 import HistoryDetail from "@/components/DashboardHistory/HistoryDetail";
 import { HistoryRelatedEvents } from "@/components/DashboardHistory/HistoryRelatedEvents";
 import { HistoryRelatedEventDetail } from "@/components/DashboardHistory/HistoryRelatedEventDetail";
-import { HistorySearchBar } from "@/components/DashboardHistory/HistorySearchBar";
+import { RouteSearchBar } from "@/components/RouteSearchBar";
 
 const HistoryPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
@@ -50,13 +50,19 @@ const HistoryPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <HistorySearchBar
-          item={item}
-          historyCategory={historyCategory}
-          date={date}
-          onItemChange={setItem}
-          onHistoryCategoryChange={setHistoryCategory}
-          onDateChange={setDate}
+        <RouteSearchBar 
+        fieldOne={item}
+        fieldTwo={historyCategory}
+        fieldThree={date}
+        onFieldOneChange={setItem}
+        onFieldTwoChange={setHistoryCategory}
+        onFieldThreeChange={setDate}
+        fieldOneTitle='History Item'
+        fieldTwoTitle='History Category'
+        fieldThreeTitle='Date'
+        fieldOnePlaceholder='Enter Item Name'
+        fieldTwoPlaceholder='Enter Category'
+        fieldThreePlaceholder='Enter Date'
         />
       </div>
       <div className="flex w-full h-full">

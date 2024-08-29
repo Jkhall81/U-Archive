@@ -19,7 +19,7 @@ export const HistoryRelatedEventItemList = ({ linkedData, onClick }: Props) => {
   return (
     <section className="w-[15vw]">
       {Object.entries(linkedData)
-        .filter(([key, _]) => key !== "documents")
+        .filter(([key, _]) => key !== "history")
         .map(([key, value], index) => {
           return (
             <HistoryRelatedEventLinkItem

@@ -5,9 +5,11 @@ import { RelatedData, Medication } from "@/lib/dummyData/types";
 import { MedicationResultsList } from "@/components/DashboardMedications/MedicationResultsList";
 import { usePatientStore } from "@/lib/store";
 import { MedicationDetail } from "@/components/DashboardMedications/MedicationDetail";
+import { RouteSearchBar } from "@/components/RouteSearchBar";
 import { MedicationSearchBar } from "@/components/DashboardMedications/MedicationSearchBar";
 import { MedicationPrescribedDuring } from "@/components/DashboardMedications/MedicationPrescribedDuring";
 import { RelatedEventDetail } from "@/components/DashboardMedications/RelatedEventDetail";
+
 const MedicationsPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
   const [detailDisplayOpen, setDetailDisplayOpen] = useState(false);
@@ -53,13 +55,19 @@ const MedicationsPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <MedicationSearchBar
-          medicationName={medicationName}
-          doseStrength={doseStrength}
-          physicianLastName={physicianLastName}
-          onMedicationNameChange={setMedicationName}
-          onDoseStrengthChange={setDoseStrength}
-          onPhysicianLastNameChange={setPhysicianLastName}
+        <RouteSearchBar 
+        fieldOne={medicationName}
+        fieldTwo={doseStrength}
+        fieldThree={physicianLastName}
+        onFieldOneChange={setMedicationName}
+        onFieldTwoChange={setDoseStrength}
+        onFieldThreeChange={setPhysicianLastName}
+        fieldOneTitle='Medication Name'
+        fieldTwoTitle='Dose Strength'
+        fieldThreeTitle='Physician Last Name'
+        fieldOnePlaceholder='Enter Medication Name'
+        fieldTwoPlaceholder='Dose Strength'
+        fieldThreePlaceholder='Physician Last Name'
         />
       </div>
       <div className="flex w-full h-full">

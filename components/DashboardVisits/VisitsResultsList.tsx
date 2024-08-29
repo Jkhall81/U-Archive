@@ -17,7 +17,7 @@ export const VisitsResultsList = ({ visits, onClick }: Props) => {
     onClick(item);
   };
   return (
-    <section className="border-2 border-neutral-300 dark:border-white mt-6 rounded-3xl">
+    <section className="border-2 border-black dark:border-white mt-6 rounded-3xl">
       <h2 className="text-4xl text-center mt-6 pb-6 font-semibold">Visits</h2>
       {visits.map((x, index) => (
         <VisitsResultItem

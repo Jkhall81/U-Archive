@@ -18,7 +18,7 @@ export const ProblemsSearchBar = ({
   onProbDateChange,
 }: Props) => {
   return (
-    <section className="flex items-center border-2 dark:border-white w-full h-[200px] rounded-3xl">
+    <section className="flex items-center border-2 border-black dark:border-white w-full h-[200px] rounded-3xl">
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
           <span className="text-xl mr-4">Diagnosis Code:</span>
@@ -30,7 +30,7 @@ export const ProblemsSearchBar = ({
           />
         </div>
       </div>
-      <div className="border-r dark:border-white h-[50%] mt-[10px]" />
+      <div className="border-r border-black dark:border-white h-[50%] mt-[10px]" />
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
           <span className="text-xl mr-4">Description:</span>
@@ -42,7 +42,7 @@ export const ProblemsSearchBar = ({
           />
         </div>
       </div>
-      <div className="border-r dark:border-white h-[50%] mt-[10px]" />
+      <div className="border-r border-black dark:border-white h-[50%] mt-[10px]" />
       <div className="flex flex-col items-center justify-center w-[33%]">
         <div className="flex items-center">
           <span className="text-xl mr-4">Problem Date:</span>

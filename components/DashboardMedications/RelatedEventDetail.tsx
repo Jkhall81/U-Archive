@@ -47,7 +47,7 @@ export const RelatedEventDetail = ({ eventItem }: Props) => {
   };
 
   return (
-    <section className="border-2 dark:border-white rounded-2xl w-full mt-6 ml-6">
+    <section className="border-2 border-black dark:border-white rounded-2xl w-full mt-6 ml-6">
       {renderContent()}
     </section>
   );

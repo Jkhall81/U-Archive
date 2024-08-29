@@ -17,7 +17,7 @@ export const MedicationPrescribedDuring = ({
 }: Props) => {
   const linkedData = filterRelatedData(encounterNumber, relatedData);
   return (
-    <section className="border-2 dark:border-white mx-1 rounded-2xl h-full">
+    <section className="border-2 dark:border-white border-black mx-1 rounded-2xl h-full">
       <div className="">
         <PrescribedDuringItemList
           onClick={onEventClick}

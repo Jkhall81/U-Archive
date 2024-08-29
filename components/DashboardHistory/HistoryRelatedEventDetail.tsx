@@ -4,12 +4,14 @@ import { RelatedLab } from "../RelatedEvents/RelatedLab";
 import { RelatedProblem } from "../RelatedEvents/RelatedProblem";
 import { RelatedVisit } from "../RelatedEvents/RelatedVisit";
 import { RelatedProcedure } from "../RelatedEvents/RelatedProcedure";
+import { RelatedDocument } from "../RelatedEvents/RelatedDocument";
 import {
   isMedication,
   isLab,
   isProblem,
   isVisit,
   isProcedure,
+  isDocument,
 } from "../RelatedEvents/typeGuard";
 
 interface Props {
@@ -34,6 +36,9 @@ export const HistoryRelatedEventDetail = ({ eventItem }: Props) => {
       case isProcedure(eventItem):
         return <RelatedProcedure data={eventItem[0]} />;
 
+      case isDocument(eventItem):
+        return <RelatedDocument data={eventItem[0]} />;
+
       // Add more cases here as needed
 
       default:
@@ -42,7 +47,7 @@ export const HistoryRelatedEventDetail = ({ eventItem }: Props) => {
   };
 
   return (
-    <section className="border-2 dark:border-white rounded-2xl w-full mt-6 ml-6">
+    <section className="border-2 border-black dark:border-white rounded-2xl w-full mt-6 ml-6">
       {renderContent()}
     </section>
   );
