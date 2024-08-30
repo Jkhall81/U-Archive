@@ -6,7 +6,7 @@ import { DocumentResultList } from "@/components/DashboardDocuments/DocumentResu
 import { DocumentRelatedEvents } from "@/components/DashboardDocuments/DocumentRelatedEvents";
 import { usePatientStore } from "@/lib/store";
 import { DocumentDetail } from "@/components/DashboardDocuments/DocumentDetail";
-import { DocumentSearchBar } from "@/components/DashboardDocuments/DocumentSearchBar";
+import { RouteSearchBar } from "@/components/RouteSearchBar";
 import { DocumentRelatedEventDetail } from "@/components/DashboardDocuments/DocumentRelatedEventDetail";
 
 const DocumentsPage = () => {
@@ -56,13 +56,19 @@ const DocumentsPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <DocumentSearchBar
-          documentName={documentName}
-          documentType={documentType}
-          documentDate={documentDate}
-          onDocumentNameChange={setDocumentName}
-          onDocumentTypeChange={setDocumentType}
-          onDocumentDateChange={setDocumentDate}
+        <RouteSearchBar
+          fieldOne={documentName}
+          fieldTwo={documentType}
+          fieldThree={documentDate}
+          onFieldOneChange={setDocumentName}
+          onFieldTwoChange={setDocumentType}
+          onFieldThreeChange={setDocumentDate}
+          fieldOneTitle="Document Name"
+          fieldTwoTitle="Document Type"
+          fieldThreeTitle="Date"
+          fieldOnePlaceholder="Enter Document Name"
+          fieldTwoPlaceholder="Enter Document Type"
+          fieldThreePlaceholder="Enter"
         />
       </div>
       <div className="flex w-full h-full">

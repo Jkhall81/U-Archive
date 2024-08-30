@@ -1,0 +1,14 @@
+add pagination.  
+add results not found for filtering.  
+add a pdf to download button.
+add view pdf button and modal to view.
+get px width for common ipad.
+make site mobile responsive for tablets.
+find more common components, and turn them into a single component.
+see if I can make some custom hooks to clean up code.
+fix relatedLinkItem so its highlighted when selected.
+update light mode color scheme.
+Add dummy signin.
+add contact us.
+remove about us.
+write tests.

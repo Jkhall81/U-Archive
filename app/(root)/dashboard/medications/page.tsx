@@ -6,7 +6,6 @@ import { MedicationResultsList } from "@/components/DashboardMedications/Medicat
 import { usePatientStore } from "@/lib/store";
 import { MedicationDetail } from "@/components/DashboardMedications/MedicationDetail";
 import { RouteSearchBar } from "@/components/RouteSearchBar";
-import { MedicationSearchBar } from "@/components/DashboardMedications/MedicationSearchBar";
 import { MedicationPrescribedDuring } from "@/components/DashboardMedications/MedicationPrescribedDuring";
 import { RelatedEventDetail } from "@/components/DashboardMedications/RelatedEventDetail";
 

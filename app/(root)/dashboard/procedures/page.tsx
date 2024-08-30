@@ -5,7 +5,7 @@ import { Procedure, RelatedData } from "@/lib/dummyData/types";
 import { ProceduresDetail } from "@/components/DashboardProcedures/ProceduresDetail";
 import { usePatientStore } from "@/lib/store";
 import { ProceduresResultsList } from "@/components/DashboardProcedures/ProceduresResultsList";
-import { ProceduresSearchBar } from "@/components/DashboardProcedures/ProceduresSearchBar";
+import { RouteSearchBar } from "@/components/RouteSearchBar";
 import { ProceduresRelatedEvents } from "@/components/DashboardProcedures/ProceduresRelatedEvents";
 import { ProceduresRelatedEventDetail } from "@/components/DashboardProcedures/ProceduresRelatedEventDetail";
 
@@ -52,13 +52,19 @@ const ProceduresPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <ProceduresSearchBar
-          testName={testName}
-          facilityName={facilityName}
-          testDate={testDate}
-          onTestNameChange={setTestName}
-          onFacilityNameChange={setFacilityName}
-          onTestDateChange={setTestDate}
+        <RouteSearchBar
+          fieldOne={testName}
+          fieldTwo={facilityName}
+          fieldThree={testDate}
+          onFieldOneChange={setTestName}
+          onFieldTwoChange={setFacilityName}
+          onFieldThreeChange={setTestDate}
+          fieldOneTitle="Test Name"
+          fieldTwoTitle="Facility Name"
+          fieldThreeTitle="Test Date"
+          fieldOnePlaceholder="Enter Test Name"
+          fieldTwoPlaceholder="Enter Facility Name"
+          fieldThreePlaceholder="Enter Test Date"
         />
       </div>
       <div className="flex w-full h-full">

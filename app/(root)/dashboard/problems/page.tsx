@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { RelatedData, Problem } from "@/lib/dummyData/types";
 import { usePatientStore } from "@/lib/store";
 import { ProblemsResultList } from "@/components/DashboardProblems/ProblemsResultList";
-import { ProblemsSearchBar } from "@/components/DashboardProblems/ProblemsSearchBar";
+import { RouteSearchBar } from "@/components/RouteSearchBar";
 import { ProblemDetail } from "@/components/DashboardProblems/ProblemDetail";
 import { ProblemsRelatedEvents } from "@/components/DashboardProblems/ProblemsRelatedEvents";
 import { ProblemsRelatedEventDetail } from "@/components/DashboardProblems/ProblemsRelatedEventDetail";
@@ -47,13 +47,19 @@ const ProblemsPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <ProblemsSearchBar
-          diagCode={diagCode}
-          diagDesc={diagDesc}
-          probDate={probDate}
-          onDiagCodeChange={setDiagCode}
-          onDiagDescChange={setDiagDesc}
-          onProbDateChange={setProbDate}
+        <RouteSearchBar
+          fieldOne={diagCode}
+          fieldTwo={diagDesc}
+          fieldThree={probDate}
+          onFieldOneChange={setDiagCode}
+          onFieldTwoChange={setDiagDesc}
+          onFieldThreeChange={setProbDate}
+          fieldOneTitle="Diagnosis Code"
+          fieldTwoTitle="Description"
+          fieldThreeTitle="Problem Date"
+          fieldOnePlaceholder="Enter Diagnosis Code"
+          fieldTwoPlaceholder="Enter Description"
+          fieldThreePlaceholder="Enter Problem Date"
         />
       </div>
       <div className="flex w-full h-full">

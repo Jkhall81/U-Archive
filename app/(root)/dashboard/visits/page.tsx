@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { RelatedData, Visit } from "@/lib/dummyData/types";
 import { usePatientStore } from "@/lib/store";
 import { VisitsResultsList } from "@/components/DashboardVisits/VisitsResultsList";
-import { VisitsSearchBar } from "@/components/DashboardVisits/VisitsSearchBar";
+import { RouteSearchBar } from "@/components/RouteSearchBar";
 import { VisitsDetail } from "@/components/DashboardVisits/VisitsDetail";
 import { VisitsRelatedEvents } from "@/components/DashboardVisits/VisitsRelatedEvents";
 import { VisitsRelatedEventDetail } from "@/components/DashboardVisits/VisitsRelatedEventDetail";
@@ -55,13 +55,19 @@ const VisitsPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <VisitsSearchBar
-          visitType={visitType}
-          visitDate={visitDate}
-          drLastName={drLastName}
-          onVisitTypeChange={setVisitType}
-          onVisitDateChange={setVisitDate}
-          onDrLastNameChange={setDrLastName}
+        <RouteSearchBar
+          fieldOne={visitType}
+          fieldTwo={visitDate}
+          fieldThree={drLastName}
+          onFieldOneChange={setVisitType}
+          onFieldTwoChange={setVisitDate}
+          onFieldThreeChange={setDrLastName}
+          fieldOneTitle="Visit Type"
+          fieldTwoTitle="Visit Date"
+          fieldThreeTitle="Physician Last Name"
+          fieldOnePlaceholder="Enter Visit Type"
+          fieldTwoPlaceholder="Enter Visit Date"
+          fieldThreePlaceholder="Physician Last Name"
         />
       </div>
       <div className="flex w-full h-full">

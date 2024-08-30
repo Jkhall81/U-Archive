@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { Lab, RelatedData } from "@/lib/dummyData/types";
 import { usePatientStore } from "@/lib/store";
-import { LabsSearchBar } from "@/components/DashboardLabs/LabsSearchBar";
+import { RouteSearchBar } from "@/components/RouteSearchBar";
 import { LabsResultsList } from "@/components/DashboardLabs/LabsResultsList";
 import { LabsDetail } from "@/components/DashboardLabs/LabsDetail";
 import { LabsRelatedEventDetail } from "@/components/DashboardLabs/LabsRelatedEventDetail";
@@ -46,13 +46,19 @@ const LabsPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <LabsSearchBar
-          testName={testName}
-          labName={labName}
-          testDate={testDate}
-          onTestNameChange={setTestName}
-          onLabNameChange={setLabName}
-          onTestDateChange={setTestDate}
+        <RouteSearchBar
+          fieldOne={testName}
+          fieldTwo={labName}
+          fieldThree={testDate}
+          onFieldOneChange={setTestName}
+          onFieldTwoChange={setLabName}
+          onFieldThreeChange={setTestDate}
+          fieldOneTitle="Test Name"
+          fieldTwoTitle="Lab Name"
+          fieldThreeTitle="Test Date"
+          fieldOnePlaceholder="Enter Test Name"
+          fieldTwoPlaceholder="Enter Lab Name"
+          fieldThreePlaceholder="Enter Test Date"
         />
       </div>
       <div className="flex w-full h-full">
