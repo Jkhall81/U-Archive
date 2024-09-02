@@ -26,7 +26,14 @@ export const PaginationComponent = ({
 }: PaginationComponentProps) => {
   const handlePageChange = (page: number) => {
     onPageChange(page);
+    if (setDetailDisplayOpen) {
+      setDetailDisplayOpen(false);
+    }
+    if (setSelectedEventItem) {
+      setSelectedEventItem(null);
+    }
   };
+
   return (
     <Pagination>
       <PaginationContent>
@@ -39,8 +46,6 @@ export const PaginationComponent = ({
             href="#"
             onClick={() => {
               handlePageChange(Math.max(currentPage - 1, 1));
-              setDetailDisplayOpen(false);
-              setSelectedEventItem(null);
             }}
           />
         </PaginationItem>
@@ -51,8 +56,6 @@ export const PaginationComponent = ({
               isActive={currentPage === page}
               onClick={() => {
                 handlePageChange(page);
-                setDetailDisplayOpen(false);
-                setSelectedEventItem(null);
               }}
             >
               {page}
@@ -73,8 +76,6 @@ export const PaginationComponent = ({
             href="#"
             onClick={() => {
               handlePageChange(Math.min(currentPage + 1, totalPages));
-              setDetailDisplayOpen(false);
-              setSelectedEventItem(null);
             }}
           />
         </PaginationItem>
