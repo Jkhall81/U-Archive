@@ -29,7 +29,9 @@ export const SearchBarInput = ({ label, placeHolder, name, form }: Props) => {
       control={form.control}
       render={({ field }) => (
         <FormItem className="flex items-center">
-          <FormLabel className="w-full text-xl">{label}</FormLabel>
+          <FormLabel className="w-full text-xl mr-2 3xl:mr-0">
+            {label}
+          </FormLabel>
           <FormControl>
             <Input
               className="rounded-xl w-[10vw] dark:text-black dark:bg-white"

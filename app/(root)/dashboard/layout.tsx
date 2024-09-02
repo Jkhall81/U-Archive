@@ -72,7 +72,7 @@ export default function RootLayout({
 
   return (
     <section className="size-full min-h-screen flex pr-4">
-      <div className="w-[20vw] mt-[220px] mx-6">
+      <div className="3xl:w-[20vw] 3xl:mt-[220px] mt-[193px] mx-6">
         <Sidebar />
       </div>
       <div className="size-full min-h-screen">

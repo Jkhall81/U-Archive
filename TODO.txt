@@ -10,7 +10,7 @@ make site mobile responsive for tablets.
 find more common components, and turn them into a single reusable component.
 see if I can make some custom hooks to clean up code.
 **fix relatedLinkItem so its highlighted when selected.
-update light mode color scheme.
+**update light mode color scheme.
 Add dummy signin.
 add contact us form.
 remove about us.

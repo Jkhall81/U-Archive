@@ -95,7 +95,6 @@ const MedicationsPage = () => {
                 />
               )}
             </div>
-
             {selectedEventItem && (
               <RelatedEventDetail eventItem={selectedEventItem} />
             )}

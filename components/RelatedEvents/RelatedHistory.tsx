@@ -7,7 +7,7 @@ interface Props {
 
 export const RelatedHistory = ({ data }: Props) => {
   return (
-    <section className="w-full flex flex-col items-center">
+    <section className="w-full flex flex-col items-center dark:bg-transparent bg-neutral-300 rounded-2xl h-full">
       <h2 className="text-3xl text-center mt-8 mb-6">Related History</h2>
       <div className="w-full">
         <RelatedDetailCard

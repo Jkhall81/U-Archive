@@ -17,7 +17,7 @@ export const HistoryRelatedEvents = ({
 }: Props) => {
   const linkedData = filterRelatedData(encounterNumber, relatedData);
   return (
-    <section className="border-2 border-black dark:border-white mx-1 rounded-2xl h-full">
+    <section className="">
       <div className="">
         <HistoryRelatedEventItemList
           onClick={onEventClick}

@@ -34,7 +34,7 @@ export const MedicationResultsList = ({
   );
 
   return (
-    <section className="border-2 border-black dark:border-white mt-6 rounded-3xl">
+    <section className="border-2 border-black bg-slate-300 dark:bg-transparent dark:border-white mt-6 rounded-3xl">
       <h2 className="text-4xl text-center mt-6 font-semibold pb-6">
         Medications
       </h2>

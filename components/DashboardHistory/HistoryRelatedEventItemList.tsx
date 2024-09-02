@@ -29,7 +29,7 @@ export const HistoryRelatedEventItemList = ({ linkedData, onClick }: Props) => {
     .slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <section className="w-[15vw]">
+    <section className="w-[15vw] py-6 border-2 dark:bg-transparent bg-slate-300 dark:border-white border-black rounded-2xl">
       {currentItems.map(([key, value], index) => {
         console.log("SELECTED ITEM", selectedItem);
         console.log("VALUE", value);

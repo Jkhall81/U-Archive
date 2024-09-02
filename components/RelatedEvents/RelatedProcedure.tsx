@@ -7,7 +7,7 @@ interface Props {
 
 export const RelatedProcedure = ({ data }: Props) => {
   return (
-    <section className="w-full flex flex-col items-center">
+    <section className="w-full flex flex-col items-center dark:bg-transparent bg-neutral-300 rounded-2xl h-full pb-14">
       <h2 className="text-3xl text-center mt-8 mb-6">Related Procedure</h2>
       <div className="w-full">
         <RelatedDetailCard
