@@ -86,7 +86,7 @@ const MedicationsPage = () => {
             )}
           </div>
           <div className="flex pb-[200px]">
-            <div className="ml-4 mt-6 mb-[200px]">
+            <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedMedicationItem && (
                 <MedicationPrescribedDuring
                   relatedData={relatedData}

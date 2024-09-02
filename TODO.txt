@@ -14,6 +14,5 @@ update light mode color scheme.
 Add dummy signin.
 add contact us form.
 remove about us.
-Add date to related Event link item.
 Fix dark mode flicker
 write tests.
