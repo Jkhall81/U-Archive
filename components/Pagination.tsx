@@ -13,8 +13,8 @@ interface PaginationComponentProps {
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
-  setDetailDisplayOpen: (isOpen: boolean) => void;
-  setSelectedEventItem: (item: null) => void;
+  setDetailDisplayOpen?: (isOpen: boolean) => void;
+  setSelectedEventItem?: (item: null) => void;
 }
 
 export const PaginationComponent = ({
