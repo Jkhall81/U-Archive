@@ -20,7 +20,7 @@ export const VisitsRelatedEventLinkItem = ({
     <section
       onClick={onClick}
       className={cn(
-        "flex justify-center space-x-4 border border-black dark:bg-neutral-800 bg-neutral-300 dark:border-white m-4 rounded-3xl text-xl cursor-pointer py-6 pl-6 hover:text-blue-600 hover:border-blue-600 dark:hover:border-blue-600",
+        "flex justify-center space-x-4 select-none border border-black dark:bg-neutral-800 bg-neutral-300 dark:border-white m-4 rounded-3xl text-xl cursor-pointer py-6 pl-6 hover:text-blue-600 hover:border-blue-600 dark:hover:border-blue-600",
         `${
           isSelected ? "text-blue-500 border-blue-500 dark:border-blue-500" : ""
         }`

@@ -8,9 +8,16 @@ import { PaginationComponent } from "../Pagination";
 interface Props {
   data: Problem[];
   onClick: (item: Problem) => void;
+  setDetailDisplayOpen: (isOpen: boolean) => void;
+  setSelectedEventItem: (item: null) => void;
 }
 
-export const ProblemsResultList = ({ data, onClick }: Props) => {
+export const ProblemsResultList = ({
+  data,
+  onClick,
+  setDetailDisplayOpen,
+  setSelectedEventItem,
+}: Props) => {
   const [selectedItem, setSelectedItem] = useState<Problem | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -43,6 +50,8 @@ export const ProblemsResultList = ({ data, onClick }: Props) => {
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}
+          setDetailDisplayOpen={setDetailDisplayOpen}
+          setSelectedEventItem={setSelectedEventItem}
         />
       </div>
     </section>

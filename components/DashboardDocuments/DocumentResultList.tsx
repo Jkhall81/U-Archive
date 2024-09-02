@@ -8,9 +8,16 @@ import { PaginationComponent } from "../Pagination";
 interface Props {
   data: Document[];
   onClick: (item: Document) => void;
+  setDetailDisplayOpen: (isOpen: boolean) => void;
+  setSelectedEventItem: (item: null) => void;
 }
 
-export const DocumentResultList = ({ data, onClick }: Props) => {
+export const DocumentResultList = ({
+  data,
+  onClick,
+  setDetailDisplayOpen,
+  setSelectedEventItem,
+}: Props) => {
   const [selectedItem, setSelectedItem] = useState<Document | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -47,6 +54,8 @@ export const DocumentResultList = ({ data, onClick }: Props) => {
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}
+          setDetailDisplayOpen={setDetailDisplayOpen}
+          setSelectedEventItem={setSelectedEventItem}
         />
       </div>
     </section>

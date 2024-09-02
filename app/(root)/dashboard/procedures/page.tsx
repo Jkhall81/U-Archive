@@ -72,6 +72,8 @@ const ProceduresPage = () => {
           <ProceduresResultsList
             onClick={handleItemClick}
             data={filteredProcedures}
+            setDetailDisplayOpen={setDetailDisplayOpen}
+            setSelectedEventItem={setSelectedEventItem}
           />
           <div className="h-[200px]" />
         </div>

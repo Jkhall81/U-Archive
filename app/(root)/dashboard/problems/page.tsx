@@ -67,6 +67,8 @@ const ProblemsPage = () => {
           <ProblemsResultList
             onClick={handleItemClick}
             data={filteredProblems}
+            setDetailDisplayOpen={setDetailDisplayOpen}
+            setSelectedEventItem={setSelectedEventItem}
           />
           <div className="h-[200px]" />
         </div>

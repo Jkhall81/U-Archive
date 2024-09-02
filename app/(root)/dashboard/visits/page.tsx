@@ -75,6 +75,8 @@ const VisitsPage = () => {
           <VisitsResultsList
             onClick={handleItemClick}
             visits={filteredVisits}
+            setDetailDisplayOpen={setDetailDisplayOpen}
+            setSelectedEventItem={setSelectedEventItem}
           />
           <div className="h-[200px]" />
         </div>

@@ -7,17 +7,22 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { cn } from "@/lib/utils";
 
 interface PaginationComponentProps {
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
+  setDetailDisplayOpen: (isOpen: boolean) => void;
+  setSelectedEventItem: (item: null) => void;
 }
 
 export const PaginationComponent = ({
   currentPage,
   totalPages,
   onPageChange,
+  setDetailDisplayOpen,
+  setSelectedEventItem,
 }: PaginationComponentProps) => {
   const handlePageChange = (page: number) => {
     onPageChange(page);
@@ -27,9 +32,16 @@ export const PaginationComponent = ({
       <PaginationContent>
         <PaginationItem>
           <PaginationPrevious
-            className="text-xl"
+            className={cn(
+              "text-xl",
+              `${currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""}`
+            )}
             href="#"
-            onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
+            onClick={() => {
+              handlePageChange(Math.max(currentPage - 1, 1));
+              setDetailDisplayOpen(false);
+              setSelectedEventItem(null);
+            }}
           />
         </PaginationItem>
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
@@ -37,7 +49,11 @@ export const PaginationComponent = ({
             <PaginationLink
               href="#"
               isActive={currentPage === page}
-              onClick={() => handlePageChange(page)}
+              onClick={() => {
+                handlePageChange(page);
+                setDetailDisplayOpen(false);
+                setSelectedEventItem(null);
+              }}
             >
               {page}
             </PaginationLink>
@@ -46,11 +62,20 @@ export const PaginationComponent = ({
         {totalPages > 5 && <PaginationEllipsis />}
         <PaginationItem>
           <PaginationNext
-            className="text-xl"
+            className={cn(
+              "text-xl",
+              `${
+                currentPage === totalPages
+                  ? "opacity-50 cursor-not-allowed"
+                  : ""
+              }`
+            )}
             href="#"
-            onClick={() =>
-              handlePageChange(Math.min(currentPage + 1, totalPages))
-            }
+            onClick={() => {
+              handlePageChange(Math.min(currentPage + 1, totalPages));
+              setDetailDisplayOpen(false);
+              setSelectedEventItem(null);
+            }}
           />
         </PaginationItem>
       </PaginationContent>

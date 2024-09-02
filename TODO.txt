@@ -1,6 +1,6 @@
 **add pagination. 
-disable pagination links if there is no extra content to view.
-reset related detail item when moving to another page with pagination.
+**disable pagination links if there is no extra content to view.
+**reset related detail item when moving to another page with pagination.
 add dates to all result list items. 
 add results not found for filtering when there is nothing found.  
 add a pdf to download button.

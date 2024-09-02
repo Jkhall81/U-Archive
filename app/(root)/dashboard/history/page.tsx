@@ -70,6 +70,8 @@ const HistoryPage = () => {
           <HistoryResultsList
             onClick={handleItemClick}
             history={filteredHistory}
+            setDetailDisplayOpen={setDetailDisplayOpen}
+            setSelectedEventItem={setSelectedEventItem}
           />
           <div className="h-[200px]" />
         </div>

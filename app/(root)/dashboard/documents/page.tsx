@@ -76,6 +76,8 @@ const DocumentsPage = () => {
           <DocumentResultList
             onClick={handleItemClick}
             data={filteredDocuments}
+            setDetailDisplayOpen={setDetailDisplayOpen}
+            setSelectedEventItem={setSelectedEventItem}
           />
           <div className="h-[200px]" />
         </div>

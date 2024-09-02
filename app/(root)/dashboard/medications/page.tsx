@@ -74,6 +74,8 @@ const MedicationsPage = () => {
           <MedicationResultsList
             onClick={handleItemClick}
             medications={filteredMedications}
+            setDetailDisplayOpen={setDetailDisplayOpen}
+            setSelectedEventItem={setSelectedEventItem}
           />
           <div className="h-[200px]" />
         </div>
