@@ -31,6 +31,8 @@ export const HistoryRelatedEventItemList = ({ linkedData, onClick }: Props) => {
   return (
     <section className="w-[15vw]">
       {currentItems.map(([key, value], index) => {
+        console.log("SELECTED ITEM", selectedItem);
+        console.log("VALUE", value);
         return (
           <HistoryRelatedEventLinkItem
             key={index}
@@ -38,7 +40,7 @@ export const HistoryRelatedEventItemList = ({ linkedData, onClick }: Props) => {
             type={key}
             data={value}
             onClick={() => handleItemClick(value)}
-            isSelected={selectedItem === value}
+            isSelected={JSON.stringify(selectedItem) === JSON.stringify(value)}
           />
         );
       })}

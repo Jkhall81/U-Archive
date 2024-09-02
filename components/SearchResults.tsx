@@ -1,5 +1,6 @@
 import { SearchResultItem } from "./SearchResultItem";
 import { DemographicsData, DemographicsItem } from "@/lib/dummyData/types";
+import { NoResults } from "./NoResults";
 
 interface SearchResultsProps {
   data: DemographicsData;
@@ -20,7 +21,7 @@ const SearchResults = ({ data, onPatientSelect }: SearchResultsProps) => {
           />
         ))
       ) : (
-        <p>No results found</p>
+        <NoResults />
       )}
       <div className="h-[150px]" />
     </div>

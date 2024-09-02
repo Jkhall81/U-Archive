@@ -43,6 +43,7 @@ export const ProblemsResultList = ({
           key={index}
           index={index}
           diagDesc={x.diagDesc}
+          date={x.probDate}
         />
       ))}
       <div className="flex justify-center my-6">

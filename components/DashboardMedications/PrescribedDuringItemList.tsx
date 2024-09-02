@@ -38,7 +38,7 @@ export const PrescribedDuringItemList = ({ linkedData, onClick }: Props) => {
             type={key}
             data={value}
             onClick={() => handleItemClick(value)}
-            isSelected={selectedItem === value}
+            isSelected={JSON.stringify(selectedItem) === JSON.stringify(value)}
           />
         );
       })}

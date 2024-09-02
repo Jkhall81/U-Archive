@@ -39,7 +39,11 @@ export const MedicationResultItem = ({
         <div className="flex-col items-center">
           <div className="flex">
             <span className="mr-4 text-blue-500">Medication:</span>
-            <p>{medicationName}</p>
+            <p>
+              {medicationName.length > 19
+                ? medicationName.slice(0, 19) + "..."
+                : medicationName}
+            </p>
           </div>
           <div className="flex">
             <span className="mr-4 text-blue-500">Start Date:</span>

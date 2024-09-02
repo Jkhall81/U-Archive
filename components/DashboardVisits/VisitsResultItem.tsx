@@ -16,6 +16,7 @@ interface Props {
 export const VisitsResultItem = ({
   index,
   visitType,
+  visitDate,
   onClick,
   isSelected,
 }: Props) => {
@@ -39,7 +40,15 @@ export const VisitsResultItem = ({
         <div className="flex-col items-center">
           <div className="flex">
             <span className="mr-4 text-blue-500">Visit Type:</span>
-            <p>{visitType}</p>
+            <p>
+              {visitType.length > 12
+                ? visitType.slice(0, 13) + "..."
+                : visitType}
+            </p>
+          </div>
+          <div className="flex">
+            <span className="mr-4 text-blue-500">Date:</span>
+            <p>{visitDate}</p>
           </div>
         </div>
       </div>

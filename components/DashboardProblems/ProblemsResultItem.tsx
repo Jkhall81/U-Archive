@@ -4,6 +4,7 @@ import { VerticalDivider } from "../VerticalDivider";
 interface Props {
   index: number;
   diagDesc: string;
+  date: string;
   onClick: () => void;
   isSelected: boolean;
 }
@@ -12,6 +13,7 @@ export const ProblemsResultItem = ({
   index,
   diagDesc,
   onClick,
+  date,
   isSelected,
 }: Props) => {
   return (
@@ -29,11 +31,17 @@ export const ProblemsResultItem = ({
       </div>
       <VerticalDivider />
 
-      <div className="flex-1 flex justify-between items center">
-        <div className="flex items-center space-x-4">
+      <div className="flex-1 flex items-center">
+        <div className="flex-col items-center">
           <div className="flex">
-            <span className="mr-4">Description:</span>
-            <p>{diagDesc.slice(0, 15)}...</p>
+            <span className="mr-4 text-blue-500">Description:</span>
+            <p>
+              {diagDesc.length > 12 ? diagDesc.slice(0, 13) + "..." : diagDesc}
+            </p>
+          </div>
+          <div className="flex">
+            <span className="mr-4 text-blue-500">Date:</span>
+            <p>{date}</p>
           </div>
         </div>
       </div>

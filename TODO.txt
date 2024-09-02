@@ -1,18 +1,20 @@
 **add pagination. 
 **disable pagination links if there is no extra content to view.
 **reset related detail item when moving to another page with pagination.
-add dates to all result list items. 
-add results not found for filtering when there is nothing found.  
+**add dates to all result list items. 
+**add results not found for filtering when there is nothing found.  
 add a pdf to download button.
 add view pdf button and pop up modal to view pdf.
 get px width for common ipad.
 make site mobile responsive for tablets.
 find more common components, and turn them into a single reusable component.
 see if I can make some custom hooks to clean up code.
-fix relatedLinkItem so its highlighted when selected.
+**fix relatedLinkItem so its highlighted when selected.
 update light mode color scheme.
 Add dummy signin.
 add contact us form.
 remove about us.
 Fix dark mode flicker
 write tests.
+testing for related event list longer than 5
+Make sidebar disappear if a patient hasn't been selected

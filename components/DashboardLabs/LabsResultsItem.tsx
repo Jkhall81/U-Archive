@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 interface Props {
   testName: string;
   index: number;
+  testDate: string;
   onClick: () => void;
   isSelected: boolean;
 }
@@ -11,6 +12,7 @@ interface Props {
 export const LabsResultsItem = ({
   index,
   testName,
+  testDate,
   onClick,
   isSelected,
 }: Props) => {
@@ -29,11 +31,17 @@ export const LabsResultsItem = ({
       </div>
       <VerticalDivider />
 
-      <div className="flex-1 flex justify-between items center">
-        <div className="flex items-center space-x-4">
+      <div className="flex-1 flex items-center">
+        <div className="flex-col items-center">
           <div className="flex">
-            <span className="mr-4">Test:</span>
-            <p>{testName}</p>
+            <span className="mr-4 text-blue-500">Test:</span>
+            <p>
+              {testName.length > 18 ? testName.slice(0, 19) + "..." : testName}
+            </p>
+          </div>
+          <div className="flex">
+            <span className="mr-4 text-blue-500">Date:</span>
+            <p>{testDate}</p>
           </div>
         </div>
       </div>

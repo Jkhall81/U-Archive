@@ -45,6 +45,7 @@ export const ProceduresResultsList = ({
           key={index}
           index={index}
           testName={x.testName}
+          date={x.testDate}
         />
       ))}
       <div className="flex justify-center my-6">

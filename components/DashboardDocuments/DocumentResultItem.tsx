@@ -15,6 +15,7 @@ interface Props {
 export const DocumentResultItem = ({
   index,
   documentName,
+  documentDate,
   onClick,
   isSelected,
 }: Props) => {
@@ -38,7 +39,15 @@ export const DocumentResultItem = ({
         <div className="flex-col items-center">
           <div className="flex">
             <span className="mr-4 text-blue-500">Name:</span>
-            <p>{documentName}</p>
+            <p>
+              {documentName.length > 18
+                ? documentName.slice(0, 19) + "..."
+                : documentName}
+            </p>
+          </div>
+          <div className="flex">
+            <span className="mr-4 text-blue-500">Date:</span>
+            <p>{documentDate}</p>
           </div>
         </div>
       </div>

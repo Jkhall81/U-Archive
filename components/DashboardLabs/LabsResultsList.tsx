@@ -41,6 +41,7 @@ export const LabsResultsList = ({
           key={index}
           index={index}
           testName={x.testName}
+          testDate={x.testDate}
           onClick={() => handleClick(x)}
           isSelected={selectedItem === x}
         />

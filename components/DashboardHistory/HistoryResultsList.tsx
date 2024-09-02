@@ -41,6 +41,7 @@ export const HistoryResultsList = ({
           key={index}
           index={index}
           item={x.item}
+          date={x.date}
           onClick={() => handleClick(x)}
           isSelected={selectedItem === x}
         />

@@ -41,7 +41,7 @@ export const ProceduresRelatedEventItemList = ({
             type={key}
             data={value}
             onClick={() => handleItemClick(value)}
-            isSelected={selectedItem === value}
+            isSelected={JSON.stringify(selectedItem) === JSON.stringify(value)}
           />
         );
       })}
