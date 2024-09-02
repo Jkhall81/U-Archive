@@ -26,7 +26,7 @@ const elements = [
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <div className="space-y-10 border-2 border-black dark:border-white rounded-2xl text-2xl flex flex-col py-8 w-full">
+    <div className="space-y-10 border-2 select-none border-black dark:border-white rounded-2xl text-2xl flex flex-col py-8 w-full">
       {elements.map((x, index) => {
         const isActive = pathname === `/dashboard/${x.title.toLowerCase()}`;
         return (

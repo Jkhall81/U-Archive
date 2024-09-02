@@ -27,6 +27,7 @@ export const PaginationComponent = ({
       <PaginationContent>
         <PaginationItem>
           <PaginationPrevious
+            className="text-xl"
             href="#"
             onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
           />
@@ -45,6 +46,7 @@ export const PaginationComponent = ({
         {totalPages > 5 && <PaginationEllipsis />}
         <PaginationItem>
           <PaginationNext
+            className="text-xl"
             href="#"
             onClick={() =>
               handlePageChange(Math.min(currentPage + 1, totalPages))

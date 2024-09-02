@@ -44,7 +44,7 @@ export const MedicationResultsList = ({ medications, onClick }: Props) => {
           isSelected={selectedItem === x}
         />
       ))}
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center my-6">
         <PaginationComponent
           currentPage={currentPage}
           totalPages={totalPages}

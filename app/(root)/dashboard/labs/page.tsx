@@ -64,6 +64,7 @@ const LabsPage = () => {
       <div className="flex w-full h-full">
         <div className="w-[20vw] h-full">
           <LabsResultsList onClick={handleItemClick} data={filteredLabs} />
+          <div className="h-[200px]" />
         </div>
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">

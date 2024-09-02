@@ -54,19 +54,19 @@ const MedicationsPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <RouteSearchBar 
-        fieldOne={medicationName}
-        fieldTwo={doseStrength}
-        fieldThree={physicianLastName}
-        onFieldOneChange={setMedicationName}
-        onFieldTwoChange={setDoseStrength}
-        onFieldThreeChange={setPhysicianLastName}
-        fieldOneTitle='Medication Name'
-        fieldTwoTitle='Dose Strength'
-        fieldThreeTitle='Physician Last Name'
-        fieldOnePlaceholder='Enter Medication Name'
-        fieldTwoPlaceholder='Dose Strength'
-        fieldThreePlaceholder='Physician Last Name'
+        <RouteSearchBar
+          fieldOne={medicationName}
+          fieldTwo={doseStrength}
+          fieldThree={physicianLastName}
+          onFieldOneChange={setMedicationName}
+          onFieldTwoChange={setDoseStrength}
+          onFieldThreeChange={setPhysicianLastName}
+          fieldOneTitle="Medication Name"
+          fieldTwoTitle="Dose Strength"
+          fieldThreeTitle="Physician Last Name"
+          fieldOnePlaceholder="Enter Medication Name"
+          fieldTwoPlaceholder="Dose Strength"
+          fieldThreePlaceholder="Physician Last Name"
         />
       </div>
       <div className="flex w-full h-full">
@@ -75,6 +75,7 @@ const MedicationsPage = () => {
             onClick={handleItemClick}
             medications={filteredMedications}
           />
+          <div className="h-[200px]" />
         </div>
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">
@@ -82,8 +83,8 @@ const MedicationsPage = () => {
               <MedicationDetail item={selectedMedicationItem} />
             )}
           </div>
-          <div className="flex">
-            <div className="ml-4 mt-6">
+          <div className="flex pb-[200px]">
+            <div className="ml-4 mt-6 mb-[200px]">
               {detailDisplayOpen && selectedMedicationItem && (
                 <MedicationPrescribedDuring
                   relatedData={relatedData}

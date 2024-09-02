@@ -73,6 +73,7 @@ const ProceduresPage = () => {
             onClick={handleItemClick}
             data={filteredProcedures}
           />
+          <div className="h-[200px]" />
         </div>
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">

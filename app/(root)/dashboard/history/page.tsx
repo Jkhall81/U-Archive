@@ -50,19 +50,19 @@ const HistoryPage = () => {
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
-        <RouteSearchBar 
-        fieldOne={item}
-        fieldTwo={historyCategory}
-        fieldThree={date}
-        onFieldOneChange={setItem}
-        onFieldTwoChange={setHistoryCategory}
-        onFieldThreeChange={setDate}
-        fieldOneTitle='History Item'
-        fieldTwoTitle='History Category'
-        fieldThreeTitle='Date'
-        fieldOnePlaceholder='Enter Item Name'
-        fieldTwoPlaceholder='Enter Category'
-        fieldThreePlaceholder='Enter Date'
+        <RouteSearchBar
+          fieldOne={item}
+          fieldTwo={historyCategory}
+          fieldThree={date}
+          onFieldOneChange={setItem}
+          onFieldTwoChange={setHistoryCategory}
+          onFieldThreeChange={setDate}
+          fieldOneTitle="History Item"
+          fieldTwoTitle="History Category"
+          fieldThreeTitle="Date"
+          fieldOnePlaceholder="Enter Item Name"
+          fieldTwoPlaceholder="Enter Category"
+          fieldThreePlaceholder="Enter Date"
         />
       </div>
       <div className="flex w-full h-full">
@@ -71,6 +71,7 @@ const HistoryPage = () => {
             onClick={handleItemClick}
             history={filteredHistory}
           />
+          <div className="h-[200px]" />
         </div>
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">

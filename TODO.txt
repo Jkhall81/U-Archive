@@ -1,4 +1,7 @@
-add pagination.  
+**add pagination. 
+disable pagination links if there is no extra content to view.
+reset related detail item when moving to another page with pagination.
+add dates to all result list items. 
 add results not found for filtering when there is nothing found.  
 add a pdf to download button.
 add view pdf button and pop up modal to view pdf.
@@ -11,4 +14,6 @@ update light mode color scheme.
 Add dummy signin.
 add contact us form.
 remove about us.
+Add date to related Event link item.
+Fix dark mode flicker
 write tests.
