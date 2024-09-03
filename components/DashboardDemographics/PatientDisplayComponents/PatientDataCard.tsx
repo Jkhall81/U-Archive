@@ -14,7 +14,7 @@ export const PatientDataCard = ({
   dateOfBirth,
 }: Props) => {
   return (
-    <div className="flex flex-col h-full w-[50%] text-2xl py-8 items-center border-2 border-white m-4 rounded-2xl">
+    <div className="flex flex-col h-full w-[50%] py-8 items-center border-2 border-white m-4 rounded-2xl">
       <div className="space-y-2">
         <SingleField
           fieldNameStyles="text-blue-500"

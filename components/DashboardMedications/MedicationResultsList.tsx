@@ -35,7 +35,7 @@ export const MedicationResultsList = ({
 
   return (
     <section className="border-2 border-black bg-slate-300 dark:bg-transparent dark:border-white mt-6 rounded-3xl">
-      <h2 className="text-4xl text-center mt-6 font-semibold pb-6">
+      <h2 className="text-2xl 3xl:text-4xl text-center mt-6 font-semibold pb-6">
         Medications
       </h2>
       {currentItems.map((x, index) => (

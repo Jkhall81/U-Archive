@@ -9,7 +9,7 @@ interface Props {
 const HistoryDetail = ({ item }: Props) => {
   return (
     <main className="flex flex-col mt-6 rounded-2xl mr-4 border-2 bg-neutral-300 dark:bg-neutral-800 border-black dark:border-white pb-6">
-      <h2 className="text-center text-4xl pb-6 font-semibold pt-6">
+      <h2 className="text-center text-2xl 3xl:text-4xl pb-6 font-semibold pt-6">
         History Details
       </h2>
       <div className="flex">

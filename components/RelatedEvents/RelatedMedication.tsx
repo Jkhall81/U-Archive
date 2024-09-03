@@ -8,7 +8,9 @@ interface Props {
 export const RelatedMedication = ({ data }: Props) => {
   return (
     <section className="w-full h-full flex bg-neutral-300 rounded-2xl dark:bg-transparent flex-col items-center pb-14">
-      <h2 className="text-3xl text-center mt-8 mb-6">Related Medication</h2>
+      <h2 className="text-2xl 3xl:text-3xl text-center mt-8 mb-6">
+        Related Medication
+      </h2>
       <div className="w-full">
         <RelatedDetailCard
           fields={[

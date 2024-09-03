@@ -9,7 +9,7 @@ interface Props {
 export const ProceduresDetail = ({ item }: Props) => {
   return (
     <main className="flex flex-col mt-6 rounded-2xl mr-4 border-2 border-black bg-neutral-300 dark:bg-neutral-800 dark:border-white pb-6">
-      <h2 className="text-center text-4xl pb-6 font-semibold pt-6">
+      <h2 className="text-center text-2xl 3xl:text-4xl pb-6 font-semibold pt-6">
         Procedure Details
       </h2>
       <div className="flex">

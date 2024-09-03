@@ -8,7 +8,9 @@ interface Props {
 export const PatientDisplay = ({ patientData }: Props) => {
   return (
     <main className="mt-6 rounded-2xl mx-1 border-2 border-black dark:border-white pb-6">
-      <h2 className="mt-6 text-center text-4xl pb-6 font-semibold">Patient</h2>
+      <h2 className="mt-6 text-center text-2xl 3xl:text-4xl pb-6 font-semibold">
+        Patient
+      </h2>
       <section className="w-full flex">
         {/* Patient Data */}
         <Card

@@ -35,7 +35,7 @@ export const HistoryResultsList = ({
 
   return (
     <section className="border-2 border-black dark:bg-transparent bg-slate-300 dark:border-white mt-6 rounded-3xl">
-      <h2 className="text-4xl text-center mt-6 font-semibold">History</h2>
+      <h2 className="text-2xl 3xl:text-4xl text-center mt-6 font-semibold">History</h2>
       {currentItems.map((x, index) => (
         <HistoryResultItem
           key={index}
