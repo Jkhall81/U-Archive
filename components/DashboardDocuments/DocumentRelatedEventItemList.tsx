@@ -32,7 +32,7 @@ export const DocumentRelatedEventItemList = ({
     .slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <section className="w-[15vw] py-6 border-2 border-black dark:border-white rounded-2xl dark:bg-transparent bg-slate-300">
+    <section className="3xl:w-[400px] py-6 border-2 border-black dark:border-white rounded-2xl dark:bg-transparent bg-slate-300">
       {currentItems.map(([key, value], index) => {
         return (
           <DocumentRelatedEventLinkItem

@@ -68,7 +68,7 @@ const ProceduresPage = () => {
         />
       </div>
       <div className="flex w-full h-full">
-        <div className="w-[20vw] h-full">
+        <div className="3xl:w-[510px] w-[410px] h-full">
           <ProceduresResultsList
             onClick={handleItemClick}
             data={filteredProcedures}

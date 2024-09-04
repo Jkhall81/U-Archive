@@ -29,7 +29,7 @@ export const PrescribedDuringItemList = ({ linkedData, onClick }: Props) => {
     .slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <section className="w-[15vw] bg-slate-300 dark:bg-transparent dark:border-white py-6 border-2 border-black rounded-2xl">
+    <section className="3xl:w-[400px] bg-slate-300 dark:bg-transparent dark:border-white py-6 border-2 border-black rounded-2xl">
       {currentItems.map(([key, value], index) => {
         return (
           <PrescribedDuringLinkItem
