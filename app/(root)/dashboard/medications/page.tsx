@@ -2,12 +2,12 @@
 
 import { useState, useMemo } from "react";
 import { RelatedData, Medication } from "@/lib/dummyData/types";
-import { MedicationResultsList } from "@/components/DashboardMedications/MedicationResultsList";
-import { usePatientStore } from "@/lib/store";
-import { MedicationDetail } from "@/components/DashboardMedications/MedicationDetail";
 import { RouteSearchBar } from "@/components/RouteSearchBar";
-import { MedicationPrescribedDuring } from "@/components/DashboardMedications/MedicationPrescribedDuring";
+import { usePatientStore } from "@/lib/store";
 import { RelatedEventDetail } from "@/components/DashboardMedications/RelatedEventDetail";
+import { RouteResultsList } from "@/components/RouteComponents/RouteResultList";
+import { RouteDetail } from "@/components/RouteComponents/RouteDetail";
+import { RouteRelatedEvents } from "@/components/RouteComponents/routeRelatedEvents";
 
 const MedicationsPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
@@ -71,9 +71,10 @@ const MedicationsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <MedicationResultsList
+          <RouteResultsList<Medication>
+            sectionTitle="Medication"
             onClick={handleItemClick}
-            medications={filteredMedications}
+            data={filteredMedications}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
           />
@@ -82,13 +83,17 @@ const MedicationsPage = () => {
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">
             {detailDisplayOpen && selectedMedicationItem && (
-              <MedicationDetail item={selectedMedicationItem} />
+              <RouteDetail
+                detailTitle="Medication Details"
+                item={selectedMedicationItem}
+              />
             )}
           </div>
           <div className="flex pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedMedicationItem && (
-                <MedicationPrescribedDuring
+                <RouteRelatedEvents
+                  ignoreType="medications"
                   relatedData={relatedData}
                   encounterNumber={selectedMedicationItem?.encounterNumber}
                   onEventClick={handleEventClick}

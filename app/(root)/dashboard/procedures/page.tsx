@@ -2,12 +2,12 @@
 
 import { useState, useMemo } from "react";
 import { Procedure, RelatedData } from "@/lib/dummyData/types";
-import { ProceduresDetail } from "@/components/DashboardProcedures/ProceduresDetail";
 import { usePatientStore } from "@/lib/store";
-import { ProceduresResultsList } from "@/components/DashboardProcedures/ProceduresResultsList";
 import { RouteSearchBar } from "@/components/RouteSearchBar";
-import { ProceduresRelatedEvents } from "@/components/DashboardProcedures/ProceduresRelatedEvents";
 import { ProceduresRelatedEventDetail } from "@/components/DashboardProcedures/ProceduresRelatedEventDetail";
+import { RouteRelatedEvents } from "@/components/RouteComponents/routeRelatedEvents";
+import { RouteDetail } from "@/components/RouteComponents/RouteDetail";
+import { RouteResultsList } from "@/components/RouteComponents/RouteResultList";
 
 const ProceduresPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
@@ -69,7 +69,8 @@ const ProceduresPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <ProceduresResultsList
+          <RouteResultsList<Procedure>
+            sectionTitle="Procedures"
             onClick={handleItemClick}
             data={filteredProcedures}
             setDetailDisplayOpen={setDetailDisplayOpen}
@@ -80,13 +81,17 @@ const ProceduresPage = () => {
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">
             {detailDisplayOpen && selectedProcedureItem && (
-              <ProceduresDetail item={selectedProcedureItem} />
+              <RouteDetail
+                detailTitle="Procedure Details"
+                item={selectedProcedureItem}
+              />
             )}
           </div>
           <div className="flex pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedProcedureItem && (
-                <ProceduresRelatedEvents
+                <RouteRelatedEvents
+                  ignoreType="procedures"
                   relatedData={relatedData}
                   encounterNumber={selectedProcedureItem?.encounterNumber}
                   onEventClick={handleEventClick}

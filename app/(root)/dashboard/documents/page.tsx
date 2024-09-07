@@ -2,12 +2,13 @@
 
 import { useState, useMemo } from "react";
 import { RelatedData, Document } from "@/lib/dummyData/types";
-import { DocumentResultList } from "@/components/DashboardDocuments/DocumentResultList";
-import { DocumentRelatedEvents } from "@/components/DashboardDocuments/DocumentRelatedEvents";
 import { usePatientStore } from "@/lib/store";
-import { DocumentDetail } from "@/components/DashboardDocuments/DocumentDetail";
-import { RouteSearchBar } from "@/components/RouteSearchBar";
 import { DocumentRelatedEventDetail } from "@/components/DashboardDocuments/DocumentRelatedEventDetail";
+import { RouteResultsList } from "@/components/RouteComponents/RouteResultList";
+import { RouteRelatedEvents } from "@/components/RouteComponents/routeRelatedEvents";
+import { RouteDetail } from "@/components/RouteComponents/RouteDetail";
+
+import { RouteSearchBar } from "@/components/RouteSearchBar";
 
 const DocumentsPage = () => {
   // data
@@ -73,7 +74,8 @@ const DocumentsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <DocumentResultList
+          <RouteResultsList<Document>
+            sectionTitle="Documents"
             onClick={handleItemClick}
             data={filteredDocuments}
             setDetailDisplayOpen={setDetailDisplayOpen}
@@ -84,16 +86,20 @@ const DocumentsPage = () => {
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">
             {detailDisplayOpen && selectedDocumentItem && (
-              <DocumentDetail item={selectedDocumentItem} />
+              <RouteDetail
+                detailTitle="Document Details"
+                item={selectedDocumentItem}
+              />
             )}
           </div>
           <div className="flex pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedDocumentItem && (
-                <DocumentRelatedEvents
+                <RouteRelatedEvents
                   relatedData={relatedData}
                   encounterNumber={selectedDocumentItem?.encounterNumber}
                   onEventClick={handleEventClick}
+                  ignoreType="documents"
                 />
               )}
             </div>

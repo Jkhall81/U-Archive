@@ -2,17 +2,17 @@ import { VerticalDivider } from "../VerticalDivider";
 import { cn } from "@/lib/utils";
 
 interface Props {
-  testName: string;
+  fieldName: string;
   index: number;
-  testDate: string;
+  fieldDate: string;
   onClick: () => void;
   isSelected: boolean;
 }
 
-export const LabsResultsItem = ({
+export const RouteResultsItem = ({
   index,
-  testName,
-  testDate,
+  fieldName,
+  fieldDate,
   onClick,
   isSelected,
 }: Props) => {
@@ -38,12 +38,14 @@ export const LabsResultsItem = ({
           <div className="flex">
             <span className="3xl:mr-4 mr-2 text-blue-500">Test:</span>
             <p>
-              {testName.length > 18 ? testName.slice(0, 19) + "..." : testName}
+              {fieldName.length > 18
+                ? fieldName.slice(0, 19) + "..."
+                : fieldName}
             </p>
           </div>
           <div className="flex">
             <span className="3xl:mr-4 mr-2 text-blue-500">Date:</span>
-            <p>{testDate}</p>
+            <p>{fieldDate}</p>
           </div>
         </div>
       </div>

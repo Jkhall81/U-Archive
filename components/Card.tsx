@@ -2,7 +2,7 @@ import { SingleField } from "@/components/SingleField";
 
 interface Field {
   fieldName: string;
-  fieldValue: string | undefined;
+  fieldValue: string | number | undefined;
 }
 
 interface Props {

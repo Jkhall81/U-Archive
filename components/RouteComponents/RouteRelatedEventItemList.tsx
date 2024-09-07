@@ -2,17 +2,19 @@
 
 import { useState } from "react";
 import { RelatedData } from "@/lib/dummyData/types";
-import { ProceduresRelatedEventLinkItem } from "./ProceduresRelatedEventLinkItem";
+import { RouteRelatedEventLinkItem } from "./RouteRelatedEventLinkItem";
 import { PaginationComponent } from "../Pagination";
 
 interface Props {
   linkedData: Partial<RelatedData>;
   onClick: (item: Partial<RelatedData>) => void;
+  ignoreType: string;
 }
 
-export const ProceduresRelatedEventItemList = ({
+export const RouteRelatedEventItemList = ({
   linkedData,
   onClick,
+  ignoreType,
 }: Props) => {
   const [selectedItem, setSelectedItem] = useState<any | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
@@ -24,18 +26,18 @@ export const ProceduresRelatedEventItemList = ({
   };
 
   const totalPages = Math.ceil(
-    Object.entries(linkedData).filter(([key, _]) => key !== "procedures")
-      .length / itemsPerPage
+    Object.entries(linkedData).filter(([key, _]) => key !== ignoreType).length /
+      itemsPerPage
   );
   const currentItems = Object.entries(linkedData)
-    .filter(([key, _]) => key !== "procedures")
+    .filter(([key, _]) => key !== ignoreType)
     .slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
     <section className="3xl:w-[400px] py-6 border-2 border-black dark:border-white rounded-2xl dark:bg-transparent bg-slate-300">
       {currentItems.map(([key, value], index) => {
         return (
-          <ProceduresRelatedEventLinkItem
+          <RouteRelatedEventLinkItem
             key={index}
             index={index}
             type={key}

@@ -4,10 +4,10 @@ import { useState, useMemo } from "react";
 import { Lab, RelatedData } from "@/lib/dummyData/types";
 import { usePatientStore } from "@/lib/store";
 import { RouteSearchBar } from "@/components/RouteSearchBar";
-import { LabsResultsList } from "@/components/DashboardLabs/LabsResultsList";
-import { LabsDetail } from "@/components/DashboardLabs/LabsDetail";
 import { LabsRelatedEventDetail } from "@/components/DashboardLabs/LabsRelatedEventDetail";
-import { LabsRelatedEvents } from "@/components/DashboardLabs/LabsRelatedEvents";
+import { RouteResultsList } from "@/components/RouteComponents/RouteResultList";
+import { RouteDetail } from "@/components/RouteComponents/RouteDetail";
+import { RouteRelatedEvents } from "@/components/RouteComponents/routeRelatedEvents";
 
 const LabsPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
@@ -63,7 +63,8 @@ const LabsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <LabsResultsList
+          <RouteResultsList<Lab>
+            sectionTitle="Labs"
             onClick={handleItemClick}
             data={filteredLabs}
             setDetailDisplayOpen={setDetailDisplayOpen}
@@ -74,13 +75,14 @@ const LabsPage = () => {
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">
             {detailDisplayOpen && selectedLabItem && (
-              <LabsDetail item={selectedLabItem} />
+              <RouteDetail detailTitle="Lab Details" item={selectedLabItem} />
             )}
           </div>
           <div className="flex pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedLabItem && (
-                <LabsRelatedEvents
+                <RouteRelatedEvents
+                  ignoreType="labs"
                   relatedData={relatedData}
                   encounterNumber={selectedLabItem?.encounterNumber}
                   onEventClick={handleEventClick}

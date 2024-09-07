@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 interface Props {
   fieldName: string | undefined;
-  fieldValue: string | undefined;
+  fieldValue: string | number | undefined;
   fieldNameStyles?: string;
   fieldValueStyles?: string;
 }

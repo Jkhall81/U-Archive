@@ -1,13 +1,13 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { HistoryResultsList } from "@/components/DashboardHistory/HistoryResultsList";
 import { usePatientStore } from "@/lib/store";
-import { HistoryItem, RelatedData } from "@/lib/dummyData/types";
-import HistoryDetail from "@/components/DashboardHistory/HistoryDetail";
-import { HistoryRelatedEvents } from "@/components/DashboardHistory/HistoryRelatedEvents";
-import { HistoryRelatedEventDetail } from "@/components/DashboardHistory/HistoryRelatedEventDetail";
 import { RouteSearchBar } from "@/components/RouteSearchBar";
+import { HistoryItem, RelatedData } from "@/lib/dummyData/types";
+import { HistoryRelatedEventDetail } from "@/components/DashboardHistory/HistoryRelatedEventDetail";
+import { RouteResultsList } from "@/components/RouteComponents/RouteResultList";
+import { RouteDetail } from "@/components/RouteComponents/RouteDetail";
+import { RouteRelatedEvents } from "@/components/RouteComponents/routeRelatedEvents";
 
 const HistoryPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
@@ -67,9 +67,10 @@ const HistoryPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <HistoryResultsList
+          <RouteResultsList<HistoryItem>
+            sectionTitle="History"
             onClick={handleItemClick}
-            history={filteredHistory}
+            data={filteredHistory}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
           />
@@ -78,13 +79,17 @@ const HistoryPage = () => {
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">
             {detailDisplayOpen && selectedHistoryItem && (
-              <HistoryDetail item={selectedHistoryItem} />
+              <RouteDetail
+                detailTitle="History Details"
+                item={selectedHistoryItem}
+              />
             )}
           </div>
           <div className="flex pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedHistoryItem && (
-                <HistoryRelatedEvents
+                <RouteRelatedEvents
+                  ignoreType="history"
                   relatedData={relatedData}
                   encounterNumber={selectedHistoryItem?.encounterNumber}
                   onEventClick={handleEventClick}

@@ -34,9 +34,7 @@ const PatientInfoBar = ({ patient }: PatientInfoBarProps) => {
           <span className="mr-4 text-neutral-600 dark:text-blue-500">
             Email:
           </span>
-          <p>
-            {patient.patient.firstName} {patient.patient.email}
-          </p>
+          <p>{patient.patient.email}</p>
         </div>
       </div>
       <div className="flex flex-col">

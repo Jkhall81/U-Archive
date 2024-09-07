@@ -9,7 +9,7 @@ interface Props {
   isSelected: boolean;
 }
 
-export const VisitsRelatedEventLinkItem = ({
+export const RouteRelatedEventLinkItem = ({
   index,
   onClick,
   isSelected,

@@ -3,11 +3,11 @@
 import { useState, useMemo } from "react";
 import { RelatedData, Visit } from "@/lib/dummyData/types";
 import { usePatientStore } from "@/lib/store";
-import { VisitsResultsList } from "@/components/DashboardVisits/VisitsResultsList";
 import { RouteSearchBar } from "@/components/RouteSearchBar";
-import { VisitsDetail } from "@/components/DashboardVisits/VisitsDetail";
-import { VisitsRelatedEvents } from "@/components/DashboardVisits/VisitsRelatedEvents";
 import { VisitsRelatedEventDetail } from "@/components/DashboardVisits/VisitsRelatedEventDetail";
+import { RouteResultsList } from "@/components/RouteComponents/RouteResultList";
+import { RouteDetail } from "@/components/RouteComponents/RouteDetail";
+import { RouteRelatedEvents } from "@/components/RouteComponents/routeRelatedEvents";
 
 const VisitsPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
@@ -72,9 +72,10 @@ const VisitsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <VisitsResultsList
+          <RouteResultsList<Visit>
+            sectionTitle="Visits"
             onClick={handleItemClick}
-            visits={filteredVisits}
+            data={filteredVisits}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
           />
@@ -83,13 +84,17 @@ const VisitsPage = () => {
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">
             {detailDisplayOpen && selectedVisitItem && (
-              <VisitsDetail item={selectedVisitItem} />
+              <RouteDetail
+                detailTitle="Visit Details"
+                item={selectedVisitItem}
+              />
             )}
           </div>
           <div className="flex pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedVisitItem && (
-                <VisitsRelatedEvents
+                <RouteRelatedEvents
+                  ignoreType="visits"
                   relatedData={relatedData}
                   encounterNumber={selectedVisitItem?.encounterNumber}
                   onEventClick={handleEventClick}

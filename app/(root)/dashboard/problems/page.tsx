@@ -3,11 +3,11 @@
 import { useState, useMemo } from "react";
 import { RelatedData, Problem } from "@/lib/dummyData/types";
 import { usePatientStore } from "@/lib/store";
-import { ProblemsResultList } from "@/components/DashboardProblems/ProblemsResultList";
 import { RouteSearchBar } from "@/components/RouteSearchBar";
-import { ProblemDetail } from "@/components/DashboardProblems/ProblemDetail";
-import { ProblemsRelatedEvents } from "@/components/DashboardProblems/ProblemsRelatedEvents";
 import { ProblemsRelatedEventDetail } from "@/components/DashboardProblems/ProblemsRelatedEventDetail";
+import { RouteResultsList } from "@/components/RouteComponents/RouteResultList";
+import { RouteDetail } from "@/components/RouteComponents/RouteDetail";
+import { RouteRelatedEvents } from "@/components/RouteComponents/routeRelatedEvents";
 
 const ProblemsPage = () => {
   const relatedData = usePatientStore((state) => state.relatedData);
@@ -64,7 +64,8 @@ const ProblemsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <ProblemsResultList
+          <RouteResultsList<Problem>
+            sectionTitle="Problems"
             onClick={handleItemClick}
             data={filteredProblems}
             setDetailDisplayOpen={setDetailDisplayOpen}
@@ -75,13 +76,17 @@ const ProblemsPage = () => {
         <div className="flex flex-col w-full">
           <div className="w-full ml-4">
             {detailDisplayOpen && selectedProblemItem && (
-              <ProblemDetail item={selectedProblemItem} />
+              <RouteDetail
+                detailTitle="Problem Details"
+                item={selectedProblemItem}
+              />
             )}
           </div>
           <div className="flex pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedProblemItem && (
-                <ProblemsRelatedEvents
+                <RouteRelatedEvents
+                  ignoreType="problems"
                   relatedData={relatedData}
                   encounterNumber={selectedProblemItem?.encounterNumber}
                   onEventClick={handleEventClick}
