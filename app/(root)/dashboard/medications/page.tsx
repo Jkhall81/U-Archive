@@ -71,14 +71,15 @@ const MedicationsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <RouteResultsList<Medication>
+          <RouteResultsList<Medication, Medication>
             sectionTitle="Medication"
+            ignoreType="medication"
             onClick={handleItemClick}
             data={filteredMedications}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
             detailDisplayOpen={detailDisplayOpen}
-            selectedMedicationItem={selectedMedicationItem}
+            selectedEntityItem={selectedMedicationItem}
             relatedData={relatedData}
             encounterNumber={selectedMedicationItem?.encounterNumber}
             onEventClick={handleEventClick}

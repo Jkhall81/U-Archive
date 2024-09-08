@@ -72,12 +72,18 @@ const VisitsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <RouteResultsList<Visit>
+          <RouteResultsList<Visit, Visit>
             sectionTitle="Visits"
+            ignoreType="visits"
             onClick={handleItemClick}
             data={filteredVisits}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
+            detailDisplayOpen={detailDisplayOpen}
+            selectedEntityItem={selectedVisitItem}
+            relatedData={relatedData}
+            encounterNumber={selectedVisitItem?.encounterNumber}
+            onEventClick={handleEventClick}
           />
           <div className="h-[200px]" />
         </div>
@@ -90,7 +96,7 @@ const VisitsPage = () => {
               />
             )}
           </div>
-          <div className="flex pb-[200px]">
+          <div className="tabet:flex hidden pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedVisitItem && (
                 <RouteRelatedEvents

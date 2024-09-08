@@ -74,12 +74,18 @@ const DocumentsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <RouteResultsList<Document>
+          <RouteResultsList<Document, Document>
             sectionTitle="Documents"
+            ignoreType="documents"
             onClick={handleItemClick}
             data={filteredDocuments}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
+            detailDisplayOpen={detailDisplayOpen}
+            selectedEntityItem={selectedDocumentItem}
+            relatedData={relatedData}
+            encounterNumber={selectedDocumentItem?.encounterNumber}
+            onEventClick={handleEventClick}
           />
           <div className="h-[200px]" />
         </div>
@@ -92,7 +98,7 @@ const DocumentsPage = () => {
               />
             )}
           </div>
-          <div className="flex pb-[200px]">
+          <div className="tablet:flex hidden pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedDocumentItem && (
                 <RouteRelatedEvents

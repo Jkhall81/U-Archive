@@ -72,7 +72,7 @@ export default function RootLayout({
   const filteredData = filterDemographicsData(searchData);
 
   return (
-    <section className="w-full h-full min-h-screen tablet:flex pr-4">
+    <section className="w-full h-full min-h-screen tablet:flex px-2 tablet:pr-4">
       <div>
         <TabletNav />
       </div>

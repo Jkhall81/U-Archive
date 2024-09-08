@@ -64,12 +64,18 @@ const ProblemsPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <RouteResultsList<Problem>
+          <RouteResultsList<Problem, Problem>
             sectionTitle="Problems"
+            ignoreType="problems"
             onClick={handleItemClick}
             data={filteredProblems}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
+            detailDisplayOpen={detailDisplayOpen}
+            selectedEntityItem={selectedProblemItem}
+            relatedData={relatedData}
+            encounterNumber={selectedProblemItem?.encounterNumber}
+            onEventClick={handleEventClick}
           />
           <div className="h-[200px]" />
         </div>
@@ -82,7 +88,7 @@ const ProblemsPage = () => {
               />
             )}
           </div>
-          <div className="flex pb-[200px]">
+          <div className="tablet:flex hidden pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedProblemItem && (
                 <RouteRelatedEvents

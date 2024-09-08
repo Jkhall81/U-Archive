@@ -16,7 +16,7 @@ import { RouteResultsItem } from "./RouteResultsItem";
 import { PaginationComponent } from "../Pagination";
 import { RouteRelatedEvents } from "./routeRelatedEvents";
 
-interface Props<T> {
+interface Props<T, S> {
   data: T[];
   onClick: (item: T) => void;
   setDetailDisplayOpen: (isOpen: boolean) => void;
@@ -26,7 +26,8 @@ interface Props<T> {
   relatedData: RelatedData;
   onEventClick: (item: Partial<RelatedData>) => void;
   detailDisplayOpen: boolean;
-  selectedMedicationItem: Medication | null;
+  selectedEntityItem: S | null;
+  ignoreType: string;
 }
 
 export const RouteResultsList = <
@@ -37,19 +38,21 @@ export const RouteResultsList = <
     | Medication
     | Problem
     | Procedure
-    | Visit
+    | Visit,
+  S
 >({
   data,
   onClick,
   setDetailDisplayOpen,
   setSelectedEventItem,
   sectionTitle,
-  selectedMedicationItem,
   detailDisplayOpen,
   relatedData,
   encounterNumber,
   onEventClick,
-}: Props<T>) => {
+  selectedEntityItem,
+  ignoreType,
+}: Props<T, S>) => {
   const [selectedItem, setSelectedItem] = useState<T | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -84,10 +87,10 @@ export const RouteResultsList = <
             />
 
             {/* Conditionally render RouteRelatedEvents right after the selected item */}
-            {isSelected && detailDisplayOpen && selectedMedicationItem && (
+            {isSelected && detailDisplayOpen && selectedEntityItem && (
               <div className="mx-2 mt-4 tablet:hidden">
                 <RouteRelatedEvents
-                  ignoreType="medications"
+                  ignoreType={ignoreType}
                   relatedData={relatedData}
                   encounterNumber={encounterNumber}
                   onEventClick={onEventClick}

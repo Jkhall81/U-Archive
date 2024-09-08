@@ -69,12 +69,18 @@ const HistoryPage = () => {
       </div>
       <div className="flex w-full h-full">
         <div className="3xl:w-[510px] w-[410px] h-full">
-          <RouteResultsList<HistoryItem>
+          <RouteResultsList<HistoryItem, HistoryItem>
             sectionTitle="History"
+            ignoreType="history"
             onClick={handleItemClick}
             data={filteredHistory}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
+            detailDisplayOpen={detailDisplayOpen}
+            selectedEntityItem={selectedHistoryItem}
+            relatedData={relatedData}
+            encounterNumber={selectedHistoryItem?.encounterNumber}
+            onEventClick={handleEventClick}
           />
           <div className="h-[200px]" />
         </div>
@@ -87,7 +93,7 @@ const HistoryPage = () => {
               />
             )}
           </div>
-          <div className="flex pb-[200px]">
+          <div className="tablet:flex hidden pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedHistoryItem && (
                 <RouteRelatedEvents
