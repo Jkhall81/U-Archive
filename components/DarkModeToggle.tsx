@@ -7,7 +7,7 @@ import { IoMoonSharp } from "react-icons/io5";
 import { cn } from "@/lib/utils";
 
 interface Props {
-  styles: string;
+  styles?: string;
   size?: number;
 }
 
