@@ -32,7 +32,7 @@ export const RouteSearchBar = ({
   return (
     <section className="flex items-center border-2 bg-zinc-300 dark:bg-transparent border-black dark:border-white w-full h-[200px] rounded-3xl">
       <div className="flex flex-col items-center justify-center w-[33%]">
-        <div className="3xl:text-xl flex items-center">
+        <div className="3xl:text-xl space-y-2 tablet:space-y-0 tablet:flex items-center">
           <span className="mr-4 text-neutral-600 dark:text-blue-500">
             {fieldOneTitle}:
           </span>
@@ -46,7 +46,7 @@ export const RouteSearchBar = ({
       </div>
       <div className="border-r border-black dark:border-white h-[50%] mt-[10px]" />
       <div className="flex flex-col items-center justify-center w-[33%]">
-        <div className="3xl:text-xl flex items-center">
+        <div className="3xl:text-xl space-y-2 tablet:space-y-0 tablet:flex items-center">
           <span className="mr-4 text-neutral-600 dark:text-blue-500">
             {fieldTwoTitle}:
           </span>
@@ -60,7 +60,7 @@ export const RouteSearchBar = ({
       </div>
       <div className="border-r border-black dark:border-white h-[50%] mt-[10px]" />
       <div className="flex flex-col items-center justify-center w-[33%]">
-        <div className="3xl:text-xl flex items-center">
+        <div className="3xl:text-xl space-y-2 tablet:space-y-0 tablet:flex items-center">
           <span className="mr-4 text-neutral-600 dark:text-blue-500">
             {fieldThreeTitle}:
           </span>

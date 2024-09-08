@@ -6,7 +6,7 @@ interface PatientInfoBarProps {
 
 const PatientInfoBar = ({ patient }: PatientInfoBarProps) => {
   return (
-    <div className="w-full mt-[16px] flex justify-evenly rounded-2xl border-2 border-blue-500 items-center 3xl:text-2xl h-[120px] bg-neutral-300 dark:text-white dark:bg-slate-800">
+    <div className="w-full mt-[16px] space-x-2 px-2 flex justify-evenly rounded-2xl border-2 border-blue-500 items-center 3xl:text-2xl h-[120px] bg-neutral-300 dark:text-white dark:bg-slate-800">
       <div className="flex flex-col">
         <div className="flex">
           <span className="mr-4 text-neutral-600 dark:text-blue-500">
@@ -16,7 +16,7 @@ const PatientInfoBar = ({ patient }: PatientInfoBarProps) => {
         </div>
         <div className="flex mt-2">
           <span className="mr-4 text-neutral-600 dark:text-blue-500">
-            Home PHone:
+            Home Phone:
           </span>
           <p>{patient.patient.homePhone}</p>
         </div>

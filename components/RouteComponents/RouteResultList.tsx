@@ -9,10 +9,12 @@ import {
   Problem,
   Procedure,
   Visit,
+  RelatedData,
 } from "@/lib/dummyData/types";
 import { getResultsItemProps } from "./UtilityFunctions";
 import { RouteResultsItem } from "./RouteResultsItem";
 import { PaginationComponent } from "../Pagination";
+import { RouteRelatedEvents } from "./routeRelatedEvents";
 
 interface Props<T> {
   data: T[];
@@ -20,6 +22,11 @@ interface Props<T> {
   setDetailDisplayOpen: (isOpen: boolean) => void;
   setSelectedEventItem: (item: null) => void;
   sectionTitle: string;
+  encounterNumber: string | undefined;
+  relatedData: RelatedData;
+  onEventClick: (item: Partial<RelatedData>) => void;
+  detailDisplayOpen: boolean;
+  selectedMedicationItem: Medication | null;
 }
 
 export const RouteResultsList = <
@@ -37,6 +44,11 @@ export const RouteResultsList = <
   setDetailDisplayOpen,
   setSelectedEventItem,
   sectionTitle,
+  selectedMedicationItem,
+  detailDisplayOpen,
+  relatedData,
+  encounterNumber,
+  onEventClick,
 }: Props<T>) => {
   const [selectedItem, setSelectedItem] = useState<T | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,17 +72,32 @@ export const RouteResultsList = <
       </h2>
       {currentItems.map((x, index) => {
         const { fieldName, fieldDate } = getResultsItemProps(x);
+        const isSelected = selectedItem === x;
         return (
-          <RouteResultsItem
-            key={index}
-            index={index}
-            fieldName={fieldName}
-            fieldDate={fieldDate}
-            onClick={() => handleClick(x)}
-            isSelected={selectedItem === x}
-          />
+          <div key={index}>
+            <RouteResultsItem
+              index={index}
+              fieldName={fieldName}
+              fieldDate={fieldDate}
+              onClick={() => handleClick(x)}
+              isSelected={isSelected}
+            />
+
+            {/* Conditionally render RouteRelatedEvents right after the selected item */}
+            {isSelected && detailDisplayOpen && selectedMedicationItem && (
+              <div className="mx-2 mt-4 tablet:hidden">
+                <RouteRelatedEvents
+                  ignoreType="medications"
+                  relatedData={relatedData}
+                  encounterNumber={encounterNumber}
+                  onEventClick={onEventClick}
+                />
+              </div>
+            )}
+          </div>
         );
       })}
+
       <div className="flex justify-center my-6">
         <PaginationComponent
           currentPage={currentPage}

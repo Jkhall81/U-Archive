@@ -9,6 +9,7 @@ import SearchResults from "@/components/SearchResults";
 import Sidebar from "@/components/Sidebar";
 import { usePatientStore } from "@/lib/store";
 import { filterDemographicsData, getRelatedData } from "@/lib/filteringData";
+import { TabletNav } from "@/components/TabletNav";
 
 export default function RootLayout({
   children,
@@ -71,12 +72,15 @@ export default function RootLayout({
   const filteredData = filterDemographicsData(searchData);
 
   return (
-    <section className="size-full min-h-screen flex pr-4">
-      <div className="3xl:w-[20vw] 3xl:mt-[220px] mt-[193px] mx-6">
+    <section className="w-full h-full min-h-screen tablet:flex pr-4">
+      <div>
+        <TabletNav />
+      </div>
+      <div className="3xl:w-[20vw] 3xl:mt-[220px] tablet:mt-[193px] mx-6 tablet:block hidden">
         <Sidebar />
       </div>
       <div className="size-full min-h-screen">
-        <div className="w-full h-[8vh] mt-[100px]">
+        <div className="w-full h-[10vh] tablet:mt-[100px] mt-4">
           <SearchBar onSubmit={handleSearchSubmit} />
           {!showSearchResults && selectedPatient && (
             <PatientInfoBar patient={selectedPatient} />

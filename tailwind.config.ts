@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       screens: {
+        tablet: "810px",
         "3xl": "1930px",
       },
       colors: {

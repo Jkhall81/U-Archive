@@ -77,6 +77,11 @@ const MedicationsPage = () => {
             data={filteredMedications}
             setDetailDisplayOpen={setDetailDisplayOpen}
             setSelectedEventItem={setSelectedEventItem}
+            detailDisplayOpen={detailDisplayOpen}
+            selectedMedicationItem={selectedMedicationItem}
+            relatedData={relatedData}
+            encounterNumber={selectedMedicationItem?.encounterNumber}
+            onEventClick={handleEventClick}
           />
           <div className="h-[200px]" />
         </div>
@@ -89,7 +94,7 @@ const MedicationsPage = () => {
               />
             )}
           </div>
-          <div className="flex pb-[200px]">
+          <div className="tablet:flex hidden pb-[200px]">
             <div className="ml-4 mt-6">
               {detailDisplayOpen && selectedMedicationItem && (
                 <RouteRelatedEvents

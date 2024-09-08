@@ -26,32 +26,36 @@ const SearchBar = ({ onSubmit }: SearchBarProps) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="size-full flex justify-between items-center px-8 pb-4"
+        className="size-full tablet:flex justify-between items-center px-8 pb-4"
       >
-        <SearchBarInput
-          name="lastName"
-          label="Last Name"
-          placeHolder=""
-          form={form}
-        />
-        <SearchBarInput
-          name="dob"
-          label="Date of Birth"
-          placeHolder=""
-          form={form}
-        />
-        <SearchBarInput
-          name="chartNumber"
-          label="Chart Number"
-          placeHolder=""
-          form={form}
-        />
-        <Button
-          type="submit"
-          className="text-xl w-[10vw] rounded-xl border-2 border-black dark:bg-white dark:text-black bg-neutral-300 text-black"
-        >
-          Search
-        </Button>
+        <div className="flex justify-between">
+          <SearchBarInput
+            name="lastName"
+            label="Last Name"
+            placeHolder=""
+            form={form}
+          />
+          <SearchBarInput
+            name="dob"
+            label="Date of Birth"
+            placeHolder=""
+            form={form}
+          />
+          <SearchBarInput
+            name="chartNumber"
+            label="Chart Number"
+            placeHolder=""
+            form={form}
+          />
+        </div>
+        <div className="flex justify-center mt-2">
+          <Button
+            type="submit"
+            className="text-xl tablet:w-[10vw] w-[180px] ml-4 rounded-xl border-2 border-black dark:bg-white dark:text-black bg-neutral-300 text-black"
+          >
+            Search
+          </Button>
+        </div>
       </form>
     </Form>
   );
