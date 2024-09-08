@@ -93,8 +93,9 @@ const HistoryPage = () => {
               />
             )}
           </div>
-          <div className="tablet:flex hidden pb-[200px]">
-            <div className="ml-4 mt-6">
+
+          <div className="tablet:flex pb-[200px]">
+            <div className="ml-4 mt-6 hidden tablet:flex">
               {detailDisplayOpen && selectedHistoryItem && (
                 <RouteRelatedEvents
                   ignoreType="history"
@@ -104,10 +105,11 @@ const HistoryPage = () => {
                 />
               )}
             </div>
-
-            {selectedEventItem && (
-              <HistoryRelatedEventDetail eventItem={selectedEventItem} />
-            )}
+            <div className="ml-4 tablet:w-full tablet:ml-0 tablet:mr-6">
+              {selectedEventItem && (
+                <HistoryRelatedEventDetail eventItem={selectedEventItem} />
+              )}
+            </div>
           </div>
         </div>
       </div>

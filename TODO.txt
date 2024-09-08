@@ -6,7 +6,7 @@
 add a pdf to download button.
 add view pdf button and pop up modal to view pdf.
 **get px width for common ipad.
-make site mobile responsive for tablets.
+**make site mobile responsive for tablets.
 **find more common components, and turn them into a single reusable component.
 see if I can make some custom hooks to clean up code.
 **fix relatedLinkItem so its highlighted when selected.

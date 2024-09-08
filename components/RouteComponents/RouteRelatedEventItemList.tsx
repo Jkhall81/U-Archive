@@ -34,7 +34,7 @@ export const RouteRelatedEventItemList = ({
     .slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <section className="3xl:w-[400px] py-6 border-2 border-black dark:border-white rounded-2xl dark:bg-neutral-500 tablet:dark:bg-transparent bg-slate-300">
+    <section className="3xl:w-[400px] py-6 border-2 border-black dark:border-white rounded-2xl dark:bg-neutral-500 tablet:dark:bg-transparent tablet:bg-slate-300 bg-neutral-100">
       {currentItems.map(([key, value], index) => {
         return (
           <RouteRelatedEventLinkItem

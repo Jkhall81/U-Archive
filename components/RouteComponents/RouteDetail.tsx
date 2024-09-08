@@ -22,7 +22,7 @@ export const RouteDetail = ({ item, detailTitle }: Props) => {
       <h2 className="text-center text-2xl 3xl:text-4xl font-semibold pt-6 pb-6">
         {detailTitle}
       </h2>
-      <div className="flex">
+      <div className="tablet:flex">
         <Card fields={fields1} />
         <Card fields={fields2} />
       </div>

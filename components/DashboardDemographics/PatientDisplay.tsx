@@ -14,6 +14,7 @@ export const PatientDisplay = ({ patientData }: Props) => {
       <section className="w-full flex">
         {/* Patient Data */}
         <Card
+          inDemographics={true}
           fields={[
             { fieldName: "First Name", fieldValue: patientData?.firstName },
             {
@@ -29,6 +30,7 @@ export const PatientDisplay = ({ patientData }: Props) => {
         />
         {/* Phone numbers and Email*/}
         <Card
+          inDemographics={true}
           fields={[
             { fieldName: "Home Phone", fieldValue: patientData?.homePhone },
             { fieldName: "Work Phone", fieldValue: patientData?.workPhone },
@@ -41,6 +43,7 @@ export const PatientDisplay = ({ patientData }: Props) => {
       <section className="flex w-full">
         {/* SSN and Chart Number */}
         <Card
+          inDemographics={true}
           fields={[
             {
               fieldName: "Chart Number",
@@ -54,6 +57,7 @@ export const PatientDisplay = ({ patientData }: Props) => {
         />
         {/* Address */}
         <Card
+          inDemographics={true}
           fields={[
             { fieldName: "Street Address", fieldValue: patientData?.street1 },
             {

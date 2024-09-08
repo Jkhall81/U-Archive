@@ -93,8 +93,8 @@ const ProceduresPage = () => {
               />
             )}
           </div>
-          <div className="tablet:flex hidden pb-[200px]">
-            <div className="ml-4 mt-6">
+          <div className="tablet:flex pb-[200px]">
+            <div className="ml-4 mt-6 hidden tablet:flex">
               {detailDisplayOpen && selectedProcedureItem && (
                 <RouteRelatedEvents
                   ignoreType="procedures"
@@ -104,10 +104,11 @@ const ProceduresPage = () => {
                 />
               )}
             </div>
-
-            {selectedEventItem && (
-              <ProceduresRelatedEventDetail eventItem={selectedEventItem} />
-            )}
+            <div className="ml-4 tablet:w-full tablet:ml-0 tablet:mr-6">
+              {selectedEventItem && (
+                <ProceduresRelatedEventDetail eventItem={selectedEventItem} />
+              )}
+            </div>
           </div>
         </div>
       </div>

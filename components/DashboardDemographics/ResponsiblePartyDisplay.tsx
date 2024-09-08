@@ -14,6 +14,7 @@ export const ResponsiblePartyDisplay = ({ responsiblePartyData }: Props) => {
       <section className="w-full flex">
         {/* Name and Date of Birth */}
         <Card
+          inDemographics={true}
           fields={[
             {
               fieldName: "First Name",
@@ -35,6 +36,7 @@ export const ResponsiblePartyDisplay = ({ responsiblePartyData }: Props) => {
         />
         {/* Phone numbers and Email*/}
         <Card
+          inDemographics={true}
           fields={[
             {
               fieldName: "Home Phone",
@@ -56,6 +58,7 @@ export const ResponsiblePartyDisplay = ({ responsiblePartyData }: Props) => {
       <section className="flex w-full">
         {/* SSN and Chart Number */}
         <Card
+          inDemographics={true}
           fields={[
             {
               fieldName: "Chart Number",
@@ -69,6 +72,7 @@ export const ResponsiblePartyDisplay = ({ responsiblePartyData }: Props) => {
         />
         {/* Address */}
         <Card
+          inDemographics={true}
           fields={[
             {
               fieldName: "Street Address",

@@ -14,6 +14,7 @@ export const Insurance1Display = ({ insurance1Data }: Props) => {
       <section className="w-full flex">
         {/* Insurance Name, Ded, phone number */}
         <Card
+          inDemographics={true}
           fields={[
             {
               fieldName: "Insurance Provider",
@@ -31,6 +32,7 @@ export const Insurance1Display = ({ insurance1Data }: Props) => {
         />
         {/* Phone numbers and Email*/}
         <Card
+          inDemographics={true}
           fields={[
             {
               fieldName: "Provider Address",
@@ -50,6 +52,7 @@ export const Insurance1Display = ({ insurance1Data }: Props) => {
       <section className="flex w-full">
         {/* SSN and Chart Number */}
         <Card
+          inDemographics={true}
           fields={[
             {
               fieldName: "Insurance Code",
@@ -69,7 +72,7 @@ export const Insurance1Display = ({ insurance1Data }: Props) => {
             },
           ]}
         />
-        <div className="w-[50%] m-4" />
+        <div className="tablet:w-[50%] w-full m-4" />
       </section>
     </main>
   );

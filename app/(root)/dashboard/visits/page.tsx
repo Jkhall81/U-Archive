@@ -96,8 +96,8 @@ const VisitsPage = () => {
               />
             )}
           </div>
-          <div className="tabet:flex hidden pb-[200px]">
-            <div className="ml-4 mt-6">
+          <div className="tablet:flex pb-[200px]">
+            <div className="ml-4 mt-6 hidden tablet:flex">
               {detailDisplayOpen && selectedVisitItem && (
                 <RouteRelatedEvents
                   ignoreType="visits"
@@ -107,10 +107,11 @@ const VisitsPage = () => {
                 />
               )}
             </div>
-
-            {selectedEventItem && (
-              <VisitsRelatedEventDetail eventItem={selectedEventItem} />
-            )}
+            <div className="ml-4 tablet:w-full tablet:ml-0 tablet:mr-6">
+              {selectedEventItem && (
+                <VisitsRelatedEventDetail eventItem={selectedEventItem} />
+              )}
+            </div>
           </div>
         </div>
       </div>
