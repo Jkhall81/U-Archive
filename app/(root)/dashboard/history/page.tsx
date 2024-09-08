@@ -47,8 +47,6 @@ const HistoryPage = () => {
     setSelectedEventItem(eventItem);
   };
 
-  console.log("SCREEN WIDTH", window.innerWidth);
-
   return (
     <section className="w-full h-full flex flex-col">
       <div className="w-full h-[300px] mt-6">
