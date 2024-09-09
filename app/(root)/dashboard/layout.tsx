@@ -76,7 +76,7 @@ export default function RootLayout({
       <div>
         <TabletNav />
       </div>
-      <div className="3xl:w-[20vw] 3xl:mt-[220px] tablet:mt-[193px] mx-6 tablet:block hidden">
+      <div className="3xl:w-[20vw] 3xl:mt-[240px] tablet:mt-[240px] mx-6 tablet:block hidden">
         <Sidebar />
       </div>
       <div className="size-full min-h-screen">
