@@ -50,7 +50,9 @@ export const TabletNav = () => {
     <section className="w-full h-full flex-col">
       <div className="tablet:hidden cursor-pointer flex justify-between">
         <GiHamburgerMenu onClick={handleModal} className="m-4" size={60} />
-
+        <Link className="text-3xl mt-4 font-semibold" href="/">
+          Home
+        </Link>
         <DarkModeToggle styles="m-4" size={45} />
       </div>
       <aside
@@ -62,11 +64,14 @@ export const TabletNav = () => {
         {elements.map((x, index) => {
           const isActive = pathname === `/dashboard/${x.title.toLowerCase()}`;
           return (
-            <main className="flex-col mx-auto" key={index}>
-              <div onClick={() => setIsOpen(false)} className="flex">
+            <main key={index} className="flex justify-center">
+              <div
+                onClick={() => setIsOpen(false)}
+                className="flex items-center justify-start w-[200px] tablet:w-0" // Adjust width as necessary
+              >
                 <span className="text-4xl mr-4">{x.icon}</span>
                 <Link
-                  className={cn(isActive ? "text-blue-500" : "")}
+                  className={cn(isActive ? "text-blue-500" : "", "text-center")}
                   href={x.href}
                 >
                   {x.title}

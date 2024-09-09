@@ -2,12 +2,22 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 export default function Home() {
   return (
     <section className="h-screen">
+      <nav className="tablet:hidden select-none h-16 px-8 flex items-center text-2xl font-semibold justify-between">
+        <Link className="" href="/">
+          Home
+        </Link>
+        <DarkModeToggle />
+        <Link className="" href="/dashboard">
+          Dashboard
+        </Link>
+      </nav>
       <Image
-        className="absolute z-0 ml-[56vw] mt-[30vh] rounded-bl-3xl rounded-tr-3xl rounded-br-3xl"
+        className="absolute hidden tablet:block z-0 ml-[56vw] mt-[30vh] rounded-bl-3xl rounded-tr-3xl rounded-br-3xl"
         src="/landingPage.png"
         alt="sunset"
         height={800}
